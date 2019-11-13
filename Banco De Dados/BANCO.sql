@@ -1,4 +1,4 @@
-create schema if not exists VFEROMA;
+create schema if not exists vferoma;
 use VFEROMA;
 
 create table Instituto(
@@ -56,9 +56,4 @@ create table Feedback(
     id_aluno int not null,
     id_feedback int auto_increment not null primary key,
     foreign key (id_aluno) references Usuario (login) on delete cascade on update cascade
-);
-
-create table teste(
-	id int not null primary key,
-    valor double
 );
