@@ -1,11 +1,11 @@
 # VFeRoma :rocket:
 <h3>Autores do Código: </h3>
 <UL> 
-  <LI><a href="https://github.com/Bruno-Vasconcelos">Bruno Vasconcelos :bird:</a></LI>
-  <LI><a href="https://github.com/Bimbole">Felipe Urias :rabbit2: </a></LI>
-  <LI><a href="https://github.com/ElfinLobster243">Marcos Pires :ram:</a></LI>
-  <LI><a href="https://github.com/mateusfilipe">Mateus Filipe :ant:</a></LI>
-  <LI><a href="https://github.com/RodrigoMalaquias">Rodrigo Malaquias :camel:</a></LI>
+  <LI><a href="https://github.com/Bruno-Vasconcelos">Bruno Vasconcelos :racehorse:</a></LI>
+  <LI><a href="https://github.com/Bimbole">Felipe Urias :penguin:</a></LI>
+  <LI><a href="https://github.com/ElfinLobster243">Marcos Pires :octopus:</a></LI>
+  <LI><a href="https://github.com/mateusfilipe">Mateus Filipe water_buffalo:</a></LI>
+  <LI><a href="https://github.com/RodrigoMalaquias">Rodrigo Malaquias :dog2:</a></LI>
 </UL>
 
 <h3>Objetivo deste código: :dart:</h3>
