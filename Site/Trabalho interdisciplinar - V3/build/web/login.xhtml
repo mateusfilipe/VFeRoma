@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="faces/index.xhtml"> Página Inicial</a>
+            <a href="faces/cadastro.xhtml">Cadastro</a>
+            <a class="active" href="">Login</a>
+        </div>
+        <div><h1>Login</h1></div>
+        <div>
+            <center>
+            <h:form>
+                <h:messages />
+                <h:panelGrid columns="2">
+                    <h:outputLabel value ="Usuario" for="usuario" />
+                    <h:inputText id="usuario" label="Usuario"  required="true" />
+                <h:outputLabel value ="Senha" for="senha" />
+                <h:inputSecret id="senha" label="Senha"  required="true" />
+                <h:outputText />
+                <h:commandButton action="administrador_index.xhtml" value="Salvar" />
+                </h:panelGrid>
+            </h:form>
+            </center>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <managed-bean>
+        <managed-bean-name>UsuarioBean</managed-bean-name>
+        <managed-bean-class>Interdisciplinar.web.UsuarioBean</managed-bean-class>
+    
+        <managed-bean-scope>request</managed-bean-scope></managed-bean>
+    <navigation-rule>
+
+        <from-view-id>*</from-view-id>
+
+        <navigation-case>
+
+            <from-outcome>inicio</from-outcome>
+
+            <to-view-id>faces/index.xhtml</to-view-id>
+
+        </navigation-case>
+
+        <navigation-case>
+
+            <from-outcome>cadastro</from-outcome>
+
+            <to-view-id>faces/cadastro.xhtml</to-view-id>
+
+        </navigation-case>
+        
+        <navigation-case>
+
+            <from-outcome>login</from-outcome>
+
+            <to-view-id>/login.xhtml</to-view-id>
+            
+        </navigation-case>
+        
+
+    </navigation-rule>
+
+    <navigation-rule>
+
+        <from-view-id>/cadastro.xhtml</from-view-id>
+
+        <navigation-case>
+
+            <from-outcome>sucesso</from-outcome>
+
+            <to-view-id>/index.xhtml</to-view-id>
+
+        </navigation-case>
+
+    </navigation-rule>
+    <!-->
+    <navigation-rule>
+
+        <from-view-id>/login.xhtml</from-view-id>
+
+        <navigation-case>
+
+            <from-outcome>sucesso</from-outcome>
+
+            <to-view-id>/administrador.xhtml</to-view-id>
+
+        </navigation-case>
+
+    </navigation-rule>
+    <-->
+</faces-config>

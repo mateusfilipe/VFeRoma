@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Pagina inicial</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <style type="text/css">
+            h1{
+                font-family: Arial;
+                text-align: center;
+                font-size: 45pt;
+            }
+            body{
+                background-color: #78c28c;
+            }
+             /* Add a black background color to the top navigation */
+            .topnav {
+                background-color: #333;
+                overflow: hidden;
+            }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Add a color to the active/current link */
+            .topnav a.active {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h1>VFeRoma</h1>
+       <div class="topnav">
+            <a class="active" href="faces/index.xhtml"> Página Inicial</a>
+            <a href="faces/cadastro.xhtml">Cadastro</a>
+            <a href="faces/login.xhtml">Login</a>
+        </div>
+        <br/>
+        <!-- Slide de fotos-->
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <img src="IF Sabara.jpg" alt="IF Sabara" style="width:100%; height: 517px"/>
+                        <div class="carousel-caption">
+                            <h3>IFMG Campus Sabará</h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="IF Bambui.jpg" alt="IF Bambui" style="width:100%; height: 517px"/>
+                        <div class="carousel-caption">
+                            <h3>IFMG Campus Bambuí</h3>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="IF Reitoria.jpg" alt="IF Reitoria" style="width:100%; height: 517px"/>
+                        <div class="carousel-caption">
+                            <h3>IFMG Reitoria</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </h:body>
+    <!-- Ranking-->
+    <h1>Ranking</h1>
+    <center>
+    <div>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-ca27{font-size:36px;font-family:Arial, Helvetica, sans-serif !important;;background-color:#b9c9fe;color:#343434;border-color:#ffffff;text-align:center;vertical-align:middle}
+.tg .tg-3jdj{font-size:28px;font-family:Arial, Helvetica, sans-serif !important;;color:#343434;border-color:#ffffff;text-align:center;vertical-align:middle}
+.tg .tg-9ja3{font-weight:bold;font-size:36px;font-family:Arial, Helvetica, sans-serif !important;;color:#343434;border-color:#ffffff;text-align:center;vertical-align:middle}
+.tg .tg-nq8y{font-weight:bold;font-size:36px;font-family:Arial, Helvetica, sans-serif !important;;background-color:#b9c9fe;color:#343434;border-color:#ffffff;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-9ja3">Campus</th>
+    <th class="tg-nq8y">Papel (Kg)</th>
+    <th class="tg-nq8y">PET (Kg)</th>
+    <th class="tg-nq8y">Plástico (Kg)</th>
+    <th class="tg-nq8y">Vidro (Kg)</th>
+  </tr>
+  <tr>
+    <td class="tg-ca27">Campus 1</td>
+    <td class="tg-3jdj"> X,X </td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+  </tr>
+  <tr>
+    <td class="tg-ca27">Campus 2</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+  </tr>
+  <tr>
+    <td class="tg-ca27">Campus 3</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+  </tr>
+  <tr>
+    <td class="tg-ca27">Campus 4</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+  </tr>
+</table>
+    </div>
+    </center>
+    
+    <div>
+    <h2> Sugestões </h2>
+    <p>Deixe-nos uma sugestão para melhorar nossos serviços!</p>
+    <textarea   name="Sugestoes" rows="4" cols="50">
+        alo pião
+    </textarea>
+    </div>
+</html>
+

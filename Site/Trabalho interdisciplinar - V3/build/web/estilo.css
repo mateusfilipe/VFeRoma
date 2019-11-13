@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/09/2019, 10:17:13
+    Author     : aluno
+*/
+h1{
+    font-family: Arial;
+    text-align: center;
+    font-size: 45pt;
+}
+body{
+    background-color: #4CAF50;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #5eb861;
+    color: white;
+}
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-ca27{font-size:36px;font-family:Arial, Helvetica, sans-serif !important;;background-color:#b9c9fe;color:#343434;border-color:#ffffff;text-align:center;vertical-align:middle}
+.tg .tg-3jdj{font-size:28px;font-family:Arial, Helvetica, sans-serif !important;;color:#343434;border-color:#ffffff;text-align:center;vertical-align:middle}
+.tg .tg-9ja3{font-weight:bold;font-size:36px;font-family:Arial, Helvetica, sans-serif !important;;color:#343434;border-color:#ffffff;text-align:center;vertical-align:middle}
+.tg .tg-nq8y{font-weight:bold;font-size:36px;font-family:Arial, Helvetica, sans-serif !important;;background-color:#b9c9fe;color:#343434;border-color:#ffffff;text-align:center;vertical-align:middle}

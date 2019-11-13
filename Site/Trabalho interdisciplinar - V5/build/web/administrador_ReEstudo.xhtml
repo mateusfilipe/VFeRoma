@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>Adiministrador: Re-Estudo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="faces/administrador_index.xhtml" >Inicio</a>
+            <a href="faces/administrador_IF.xhtml">Informações IF</a>
+            <a href="faces/administrador_infoConta.xhtml">Informações conta</a>
+            <a class="active">Re-Estudo</a>
+            <a href="#Relatório Coleta">Relatório Coleta</a>
+            <a href="#Ranking" >Ranking</a>
+            <a href="faces/index.xhtml">Logoff</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+        <div>
+            <center>
+                <h2>DESCRIÇÃO DA MUDANÇA</h2>
+            </center>
+            <textarea name="Descricao mudanca"  rows="4" cols="50">
+Digite aqui a mudança
+            </textarea>
+            <br></br>
+            <h4>Modificação Grafo</h4>
+            <input type="file" name="mapa" value=""/>
+<!--            <div>
+                <p class="round1"> <br/>&nbsp;&nbsp;&nbsp;Para qualquer alteração no mapa mandar e-mail para a equipe com o novo mapa
+                    <a href="mailto:veferoma@gmail.com?Subject=Alteração%20nos%20dados%20do%20IF" target="_top">veferoma@gmail.com</a>
+                    .<br/>&nbsp;
+                </p> 
+            </div>-->
+            <center>
+                <h2>FEEDBACK ALUNOS</h2>
+            </center>
+             
+        </div>
+
+    </body>
+</html>

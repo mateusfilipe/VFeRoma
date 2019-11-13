@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="faces/index.xhtml"> Página Inicial</a>
+            <a href="faces/cadastro.xhtml">Cadastro</a>
+            <a class="active" href="">Login</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div><h1>Login</h1></div>
+        <div>
+            <center>
+                <h:form>
+                    <h:messages />
+                    <h:panelGrid columns="2">
+                        <h:outputLabel value ="Usuario" for="usuario" />
+                        <h:inputText id="usuario" label="Usuario" value="#{Administrador.nome}" required="true" />
+
+                        <h:outputLabel value ="Senha" for="senha" />
+                        <h:inputSecret id="senha" label="Senha"  required="true" />
+                        <div>
+                            <h:selectBooleanCheckbox  id="checkbox" value="#{Administrador.tipoUsuario}" onclick="javascript:setInputValue()" /> Administrador 
+                        </div>                    
+                        <h:outputText />
+
+                        <script>
+                            function setInputValue() {
+                            #{Administrador.setTipoUsuario(document.getElementById("dynamicField").value)};
+                                return #{Administrador.tipoUsuario};
+                            }
+                        </script>
+
+
+                        <div id="div1" name="div1">
+                            <h:commandButton action="#{Administrador.logar()}" value="Login" />
+                        </div>
+
+                    </h:panelGrid>
+                </h:form>
+            </center>
+        </div>
+    </body>
+</html>
