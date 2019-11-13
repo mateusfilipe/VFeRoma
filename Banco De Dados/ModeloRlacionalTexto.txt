@@ -1,0 +1,7 @@
+'' = FK
+* = PK
+IF(codigoIF*, qtd_alunos, localidade, grafo_associado);
+Lixeira(id_lixeira*, qtd_coletada, localidade, codigoIF'', id_tLixo'');
+TipoDeLixo(id_tLixo*, tipoLixo, descrição, facilidadeRecicla);
+Usuário(Login*, e-mail, losenha, Nome_admIF, CPF, Cargo, Nome_admSite, Função,codigoIF'');
+
