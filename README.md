@@ -22,3 +22,8 @@
   <LI>BrModelo :chart_with_upwards_trend:</LI>
 </UL>
 
+<h3>Algoritmos utilizados: :fax:</h3>
+<UL>
+  <LI>Arvores de Steiner</LI>
+  Utilizado para encontrar ponto [...]
+</UL>
