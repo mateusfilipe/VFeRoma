@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>Adiministrador: IF</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="faces/administrador_index.xhtml" >Inicio</a>
+            <a class="active">Informações IF</a>
+            <a href="faces/administrador_infoConta.xhtml">Informações conta</a>
+            <a href="faces/administrador_ReEstudo.xhtml">Re-Estudo</a>
+            <a href="faces/administrador_RelatorioColeta.xhtml">Relatório Coleta</a>
+            <a href="faces/adminstrador_ranking.xhtml" >Ranking</a>
+            <a href="faces/index.xhtml">Logoff</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div>
+            <p> Nome IF: <h:outputText value="#{IF.nomeCampus}"/></p>
+            <p> Localidade: <h:outputText value="#{IF.localidade}"/></p>
+            <p>Quantidade de alunos: <h:outputText value="#{IF.quantidadeAlunos}"/></p>
+            <p>Pontos de Coleta: </p>
+            <img src="mapa.png"/>
+            <p> </p>
+        </div>
+        <div>
+            <p class="round1"> <br/>&nbsp;&nbsp;&nbsp;Para qualquer alteração nos dados mandar e-mail para a equipe 
+            <a href="mailto:trashmap.if@gmail.com?Subject=Alteração%20nos%20dados%20do%20IF" target="_top">trashmap.if@gmail.com</a>
+            .<br/>&nbsp;
+            </p> 
+        </div>
+    </body>
+</html>
