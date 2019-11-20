@@ -43,15 +43,31 @@
                         <h:outputLabel value ="Senha" for="senha" />
                         <h:inputSecret id="senha" label="Senha"  required="true" />
                             <h:selectBooleanCheckbox  id="checkbox" value="#{Usuario.tipoUsuario}" onclick="javascript:setInputValue()"/> 
-                            <label for="checkbox">Adiministrador</label> 
+                            <input type="checkbox">Adiministrador</input> 
                         <h:outputText />
 
                         <div id="div1" name="div1">
                             <h:commandButton action="#{Usuario.logar()}" value="Login" />
                         </div>
-
+                                   
                     </h:panelGrid>
                 </h:form>
+                			<div  class="divlogin">
+				
+				<h:form>
+					<h1>Login</h1>
+					<br/>
+					Usuário: <input type="text" onfocus="this.value='';" value="  Digite seu email" />
+					<br/><br/>
+					Senha: <input type="password"/>
+					<br/><br/>
+					<input type="checkbox"  />
+					Administrador
+					<br/><br/>
+				
+				</h:form>
+			
+			</div>
             </center>
         </div>
     </body>
