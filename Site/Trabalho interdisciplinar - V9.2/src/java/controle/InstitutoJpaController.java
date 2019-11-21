@@ -19,6 +19,7 @@ import java.util.Collection;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.transaction.Transactional;
 import javax.transaction.UserTransaction;
 import modelo.Instituto;
 import modelo.Lixeira;
@@ -26,9 +27,9 @@ import modelo.Usuario;
 
 /**
  *
- * @author marco
+ * @author aluno
  */
-
+@Transactional
 public class InstitutoJpaController implements Serializable {
 
     public InstitutoJpaController(UserTransaction utx, EntityManagerFactory emf) {

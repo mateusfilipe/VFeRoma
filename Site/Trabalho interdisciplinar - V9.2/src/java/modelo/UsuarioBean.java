@@ -12,12 +12,14 @@ import java.net.MalformedURLException;
 import static java.rmi.Naming.lookup;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
+import java.util.List;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
+import javax.transaction.Transactional;
 import javax.transaction.UserTransaction;
 
 
@@ -37,6 +39,9 @@ public class UsuarioBean {
         return adm;
     }
 
+    public void setTipoUsuario(boolean tipoUsuario) {
+        this.adm = tipoUsuario;
+    }
     public void setAdm(boolean adm) {
         this.adm = adm;
     }
@@ -85,6 +90,7 @@ public class UsuarioBean {
         return "cadastro";
     }
   
+ 
     public String salvar() throws NamingException, NotBoundException, MalformedURLException, RemoteException {
 
         FacesContext context = FacesContext.getCurrentInstance();
@@ -96,14 +102,26 @@ public class UsuarioBean {
 
         return "cadastro";
         }
-         Instituto u = new Instituto(7, 20, "Sabara", "Q");
         Context context1 = new InitialContext();
         UserTransaction utx = (UserTransaction)   context1.lookup("java:comp/UserTransaction");
+        Instituto u = new Instituto();
+        u.setIdInstituto(null);
+        u.setLocalidade("Sabara");
+        u.setQtdAlunos(20);
+        u.setCodGrafo("Q");
+//        System.out.println("INST: "+u.getLocalidade());
         InstitutoJpaController controlador = new InstitutoJpaController(utx,ControleBDUsuario.getControle().getEmf());
 //        Usuario u = new Usuario(login, email, senha, nome);
 //        UsuarioJpaController controlador = new UsuarioJpaController(null,ControleBDUsuario.getControle().getEmf());
         try {
             controlador.create(u);
+            controlador.findInstitutoEntities();
+             List<Instituto> lista = controlador.findInstitutoEntities();
+            for (Instituto usuario : lista) {
+                System.out.println("-----" + usuario.getCodGrafo());
+            }
+//    controlador.destroy(1);
+//    controlador.edit(u);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
