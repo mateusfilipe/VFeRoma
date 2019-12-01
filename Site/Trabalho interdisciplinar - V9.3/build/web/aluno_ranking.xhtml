@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <head>
+        <title>Ranking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <script>
+            
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </head>
+    <body>
+         <div class="topnav" id="myTopnav">
+            <a href="faces/aluno_index.xhtml">Inicio</a>
+            <a href="faces/aluno_Feedback.xhtml">FeedBack</a>
+            <a class="active">Ranking</a>
+            <a href="faces/index.xhtml">Logoff</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div> 
+         <h1>Ranking</h1>
+    <center>
+    <div>
+<table class="tg">
+  <tr>
+      
+    <th class="tg-9ja3">Campus</th>
+    <th class="tg-nq8y">Papel (Kg)</th>
+    <th class="tg-nq8y">PET (Kg)</th>
+    <th class="tg-nq8y">Plástico (Kg)</th>
+    <th class="tg-nq8y">Vidro (Kg)</th>
+  </tr>
+  <tr>
+      <c:forEach items="#{InstitutoBean.institutos}" var="ins">
+          <td class="tg-ca27"> ${ins.campus}</td>
+         
+          <tr></tr>
+      </c:forEach>
+    
+<!--    <td class="tg-3jdj"> 1,X </td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>-->
+  </tr>
+<!--  <tr>
+    <td class="tg-ca27">Campus 2</td>
+    <td class="tg-3jdj">2,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+  </tr>
+  <tr>
+    <td class="tg-ca27">Campus 3</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+  </tr>
+  <tr>
+    <td class="tg-ca27">Campus 4</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+    <td class="tg-3jdj">X,X</td>
+  </tr>-->
+</table>
+        
+<!--<p:dataTable var="inst" value="#{InstitutoBean.institutos}">
+    <p:column headerText="Campus">
+            <h:outputText value="${inst.campus}"/>
+    </p:column>
+    
+    <p:column headerText="Tipo">
+        <td>a</td>
+    </p:column>
+ 
+    <p:column headerText="Color">
+        <td>bb</td>
+    </p:column>
+</p:dataTable>-->
+    </div>
+    </center>
+        
+    </body>
+</html>
