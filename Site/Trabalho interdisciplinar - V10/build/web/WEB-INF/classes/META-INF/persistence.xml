@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Trabalho_interdisciplinarPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <jta-data-source>java:app/BD</jta-data-source>
+    <class>modelo.Instituto</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <!--        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <class>modelo.Instituto</class>-->
+    <!--  <property name="hibernate.current_session_context_class" value="thread"/>
+    <property name="hibernate.connection.pool_size" value="5"/>
+    <property name="hibernate.show_sql" value="false"/>
+    <property name="hibernate.hbm2ddl.auto" value="update"/>
+    <property name="hibernate.format_sql" value="true"/>-->
+    <properties>
+    </properties>
+  </persistence-unit>
+</persistence>

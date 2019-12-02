@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>Aluno</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <script>
+            function enviado()
+            {
+                alert("Enviado!\r\nOrigado pela sujestão, analizaremos o mais rápido possível!")
+            }
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </head>
+    <body>
+         <div class="topnav" id="myTopnav">
+            <a class="active">Inicio</a>
+            <a href="faces/aluno_Feedback.xhtml">FeedBack</a>
+            <a href="faces/aluno_ranking.xhtml">Ranking</a>
+            <a href="faces/index.xhtml">Logoff</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div> 
+        
+        <div>
+            <center><h3>Bem Vindo</h3></center>
+        </div>
+        <div>
+            <p> Nome: <h:outputText value="#{UsuarioBean.nome}"/></p>
+        </div>
+         <div>
+           <p>Pontos de Coleta: </p>
+           <img src="mapa.png"/>
+        </div>
+    </body>
+</html>
