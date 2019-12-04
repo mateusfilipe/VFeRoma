@@ -18,7 +18,7 @@ public class FeedbackBean {
 
     private String feedbackUsuario;
     private Integer idFeedback;
-    private Instituto idInstituto;
+    private Integer idInstituto;
 
     public String getFeedbackUsuario() {
         return feedbackUsuario;
@@ -36,11 +36,11 @@ public class FeedbackBean {
         this.idFeedback = idFeedback;
     }
 
-    public Instituto getIdInstituto() {
+    public Integer getIdInstituto() {
         return idInstituto;
     }
 
-    public void setIdInstituto(Instituto idInstituto) {
+    public void setIdInstituto(Integer idInstituto) {
         this.idInstituto = idInstituto;
     }
 
@@ -52,7 +52,7 @@ public class FeedbackBean {
         Feedback feedback = new Feedback();
         feedback.setFeedbackUsuario(feedbackUsuario);
         feedback.setIdFeedback(null);
-        feedback.setIdInstituto(ControleInstituto.procuraInstituto(idFeedback));
+        feedback.setIdInstituto(ControleInstituto.procuraInstituto(idInstituto));
         return "enviar";
     }
 }

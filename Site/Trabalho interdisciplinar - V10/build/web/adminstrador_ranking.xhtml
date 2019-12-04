@@ -5,99 +5,133 @@
       xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
     <head>
         <title>Ranking</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" type="text/css" href="estilo.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-        <script>
-            function enviado()
-            {
-                alert("Enviado!\r\nOrigado pela sujestão, analizaremos o mais rápido possível!")
-            }
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+
+
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <!--background-color:#000000-->
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+
+        <!-- Custom styles for this template -->
+        <link href="css/grayscale.min1.css" rel="stylesheet"/>
+        <link rel="icon" href="favicon.ico"/>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/grayscale.min1.js"></script>
+
     </head>
-    <body>
-         <div class="topnav" id="myTopnav">
-            <a href="faces/administrador_index.xhtml" >Inicio</a>
-            <a href="faces/administrador_IF.xhtml">Informações IF</a>
-            <a href="faces/administrador_infoConta.xhtml">Informações conta</a>
-            <a href="faces/administrador_ReEstudo.xhtml">Re-Estudo</a>
-            <a href="faces/administrador_RelatorioColeta.xhtml">Relatório Coleta</a>
-            <a class="active" href="#Ranking" >Ranking</a>
-            <a href="faces/index.xhtml">Logoff</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div> 
-         <h1>Ranking</h1>
-    <center>
-    <div>
-<table class="tg">
-  <tr>
-      
-    <th class="tg-9ja3">Campus</th>
-    <th class="tg-nq8y">Papel (Kg)</th>
-    <th class="tg-nq8y">PET (Kg)</th>
-    <th class="tg-nq8y">Plástico (Kg)</th>
-    <th class="tg-nq8y">Vidro (Kg)</th>
-  </tr>
-  <tr>
-      <c:forEach items="#{InstitutoBean.institutos}" var="ins">
-          <td class="tg-ca27"> ${ins.campus}</td>
-         
-          <tr></tr>
-      </c:forEach>
-    
-<!--    <td class="tg-3jdj"> 1,X </td>
-    <td class="tg-3jdj">X,X</td>
-    <td class="tg-3jdj">X,X</td>
-    <td class="tg-3jdj">X,X</td>-->
-  </tr>
-<!--  <tr>
-    <td class="tg-ca27">Campus 2</td>
-    <td class="tg-3jdj">2,X</td>
-    <td class="tg-3jdj">X,X</td>
-    <td class="tg-3jdj">X,X</td>
-    <td class="tg-3jdj">X,X</td>
-  </tr>
-  <tr>
-    <td class="tg-ca27">Campus 3</td>
-    <td class="tg-3jdj">X,X</td>
-    <td class="tg-3jdj">X,X</td>
-    <td class="tg-3jdj">X,X</td>
-    <td class="tg-3jdj">X,X</td>
-  </tr>
-  <tr>
-    <td class="tg-ca27">Campus 4</td>
-    <td class="tg-3jdj">X,X</td>
-    <td class="tg-3jdj">X,X</td>
-    <td class="tg-3jdj">X,X</td>
-    <td class="tg-3jdj">X,X</td>
-  </tr>-->
-</table>
-        
+
+    <body class="projects-section bg-light">
+        <!-- NAVIGATION-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white" id="mainNav1">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="faces/administrador_index.xhtml">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger " href="faces/administrador_IF.xhtml">Informações IF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="faces/administrador_infoConta.xhtml">Informações conta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="faces/administrador_ReEstudo.xhtml">Re-Estudo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger " href="faces/administrador_RelatorioColeta.xhtml">Relatório Coleta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger active bg-light">Ranking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="faces/index.xhtml">Logoff</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Ranking</h1>
+        <center>
+            <div>
+                <table class="tg">
+                    <tr>
+
+                        <th class="tg-9ja3">Campus</th>
+                        <th class="tg-nq8y">Papel (Kg)</th>
+                        <th class="tg-nq8y">PET (Kg)</th>
+                        <th class="tg-nq8y">Plástico (Kg)</th>
+                        <th class="tg-nq8y">Vidro (Kg)</th>
+                    </tr>
+                    <tr>
+                        <c:forEach items="#{InstitutoBean.institutos}" var="ins">
+                            <td class="tg-ca27"> ${ins.campus}</td>
+
+                            <tr></tr>
+                        </c:forEach>
+
+                        <!--    <td class="tg-3jdj"> 1,X </td>
+                            <td class="tg-3jdj">X,X</td>
+                            <td class="tg-3jdj">X,X</td>
+                            <td class="tg-3jdj">X,X</td>-->
+                    </tr>
+                    <!--  <tr>
+                        <td class="tg-ca27">Campus 2</td>
+                        <td class="tg-3jdj">2,X</td>
+                        <td class="tg-3jdj">X,X</td>
+                        <td class="tg-3jdj">X,X</td>
+                        <td class="tg-3jdj">X,X</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-ca27">Campus 3</td>
+                        <td class="tg-3jdj">X,X</td>
+                        <td class="tg-3jdj">X,X</td>
+                        <td class="tg-3jdj">X,X</td>
+                        <td class="tg-3jdj">X,X</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-ca27">Campus 4</td>
+                        <td class="tg-3jdj">X,X</td>
+                        <td class="tg-3jdj">X,X</td>
+                        <td class="tg-3jdj">X,X</td>
+                        <td class="tg-3jdj">X,X</td>
+                      </tr>-->
+                </table>
+
 <!--<p:dataTable var="inst" value="#{InstitutoBean.institutos}">
-    <p:column headerText="Campus">
-            <h:outputText value="${inst.campus}"/>
-    </p:column>
-    
-    <p:column headerText="Tipo">
-        <td>a</td>
-    </p:column>
- 
-    <p:column headerText="Color">
-        <td>bb</td>
-    </p:column>
+<p:column headerText="Campus">
+    <h:outputText value="${inst.campus}"/>
+</p:column>
+
+<p:column headerText="Tipo">
+<td>a</td>
+</p:column>
+
+<p:column headerText="Color">
+<td>bb</td>
+</p:column>
 </p:dataTable>-->
-    </div>
-    </center>
-        
+            </div>
+        </center>
+
     </body>
 </html>

@@ -63,7 +63,7 @@ public class MudancaBean {
         mudanca.setCodGrafo(codGrafo);
         mudanca.setDescricao(descricao);
         mudanca.setIdAdm(ControleUsuario.procuraUsuario(idAdm));
-        mudanca.setIdMudanca(null);
+        mudanca.setIdMudanca(null);        
         ControleMudanca.inserir(mudanca);
     }
 }
