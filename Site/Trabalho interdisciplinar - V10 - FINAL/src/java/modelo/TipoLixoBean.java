@@ -8,6 +8,7 @@ package modelo;
 import controle.ControleTipoLixo;
 import java.util.List;
 import javax.naming.NamingException;
+import controle.TipoLixoDAO;
 
 /**
  *
@@ -53,10 +54,10 @@ public class TipoLixoBean {
     
     public List getTipos() throws NamingException 
     {
-        return ControleTipoLixo.getTipos();
+        return new TipoLixoDAO().buscarTodos();
    
     }
-    public TipoLixo getTipo(Integer index) throws NamingException{
-        return ControleTipoLixo.procuraInstituto(index);
+    public TipoLixoBean getTipo(Integer index) throws NamingException{
+        return new TipoLixoBean().getTipo(index);
     }
 }

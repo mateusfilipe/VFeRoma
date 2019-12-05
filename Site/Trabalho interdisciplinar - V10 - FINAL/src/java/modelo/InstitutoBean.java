@@ -12,6 +12,9 @@ import javax.naming.NamingException;
 import javax.transaction.UserTransaction;
 import controle.ControleBD;
 import controle.ControleInstituto;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
+import controle.InstitutoDAO;
 /**
  *
  * @author marco
@@ -64,19 +67,23 @@ public class InstitutoBean {
         this.campus = campus;
     }
    
-    public List getInstitutos() throws NamingException 
+    public List getInstitutos()  
     {
-        return ControleInstituto.getInstitutos();
-   
-    }
-    public Instituto getInstituto(Integer index) throws NamingException
-    {
-        return ControleInstituto.procuraInstituto(index);
+        return new InstitutoDAO().buscarTodos();
     }
     
-    public void salvarInstituto(Integer index) throws NamingException
+    public InstitutoBean getInstituto(Integer index) 
     {
-        Instituto instituto = ControleInstituto.procuraInstituto(index);
+        return new InstitutoDAO().buscar(index);
+    }
+    
+    public void salvarInstituto(Integer index)
+    {
+        InstitutoBean instituto = getInstituto(index);
+        if(instituto==null){
+            FacesContext context = FacesContext.getCurrentInstance();
+            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Não há o usuário.", ""));
+        }
         this.campus = instituto.getCampus();
         this.codGrafo = instituto.getCodGrafo();
         this.idInstituto = instituto.getIdInstituto();

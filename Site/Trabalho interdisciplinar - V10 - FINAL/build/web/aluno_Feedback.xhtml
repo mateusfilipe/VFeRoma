@@ -10,15 +10,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <meta name="description" content=""/>
         <meta name="author" content=""/>
+        
         <script>
-            function getID()
-            {
-                var y = document.getElementById(loop).value;
-            #{FeedbackBean.setIdInstituto(y.idInstituto)};
-            }
+            
             function enviado()
             {
-                alert("Enviado!\r\nOrigado pela sujestão, analizaremos o mais rápido possível!")
+                alert("Enviado!\r\nOrigado pela sujestão, analizaremos o mais rápido possível!");
             }
 
         </script>
@@ -26,8 +23,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <meta name="description" content=""/>
         <meta name="author" content=""/>
-
-
 
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
@@ -72,7 +67,7 @@
                             <a class="nav-link js-scroll-trigger" href="faces/aluno_ranking.xhtml">Ranking</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="faces/index.xhtml">Logoff</a>
+                            <a class="nav-link js-scroll-trigger" href="index.xhtm">Logoff</a>
                         </li>
                     </ul>
                 </div>
@@ -85,18 +80,23 @@
             <p>
                 Seja claro e tente passar para nós sua sujestão ou reclamação de forma simples, mas completa.
             </p>
-            <textarea name="feedback" id="feedback" placeholder="Digite o feedBack" rows="4" cols="50" value="#{FeedbackBean.feedbackUsuario}"></textarea>
+            <form name="form1" method="GET">
+            <textarea  name="feedback" id="feedback" placeholder="Digite o feedBack" rows="4" cols="50"></textarea>
+            
             <br></br>
-            <h:form>
-                <h:outputText value="Instituto: "></h:outputText>
-                <select name="institutos">
+            <!--<h:form>-->
+                <h:outputText value="Instituto:"></h:outputText>
+                <select name="institutos" id="sel">
+                    <option value=""></option>
                     <c:forEach id="loop" items="#{InstitutoBean.institutos}" var="if">
-                        <option onclick="getID()">${if.campus}</option>
+                        <option value="${if.idInstituto}">${if.campus}</option>
                     </c:forEach>
                 </select>
-            </h:form>
-            <br></br>
-            <input type="submit"  onclick="enviado()"/>
+                <br></br>
+                <h:commandButton id="bot" type="submit" onclick="enviado()"  value="Enviar"/>
+            <!--</h:form>-->
+            </form> 
+            
         </div>
     </body>
 </html>

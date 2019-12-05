@@ -12,7 +12,7 @@
         <meta name="author" content=""/>
 
 
-
+        
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <!--background-color:#000000-->
@@ -62,66 +62,29 @@
                 </div>
             </div>
         </nav>
-        <h1>Ranking</h1>
+        <center><h1>Ranking</h1></center>
+        <br/>
         <center>
             <div>
-                <table class="tg">
-                    <tr>
-
-                        <th class="tg-9ja3">Campus</th>
-                        <th class="tg-nq8y">Papel (Kg)</th>
-                        <th class="tg-nq8y">PET (Kg)</th>
-                        <th class="tg-nq8y">Plástico (Kg)</th>
-                        <th class="tg-nq8y">Vidro (Kg)</th>
-                    </tr>
-                    <tr>
-                        <c:forEach items="#{InstitutoBean.institutos}" var="ins">
-                            <td class="tg-ca27"> ${ins.campus}</td>
-
-                            <tr></tr>
-                        </c:forEach>
-
-                        <!--    <td class="tg-3jdj"> 1,X </td>
-                            <td class="tg-3jdj">X,X</td>
-                            <td class="tg-3jdj">X,X</td>
-                            <td class="tg-3jdj">X,X</td>-->
-                    </tr>
-                    <!--  <tr>
-                        <td class="tg-ca27">Campus 2</td>
-                        <td class="tg-3jdj">2,X</td>
-                        <td class="tg-3jdj">X,X</td>
-                        <td class="tg-3jdj">X,X</td>
-                        <td class="tg-3jdj">X,X</td>
-                      </tr>
-                      <tr>
-                        <td class="tg-ca27">Campus 3</td>
-                        <td class="tg-3jdj">X,X</td>
-                        <td class="tg-3jdj">X,X</td>
-                        <td class="tg-3jdj">X,X</td>
-                        <td class="tg-3jdj">X,X</td>
-                      </tr>
-                      <tr>
-                        <td class="tg-ca27">Campus 4</td>
-                        <td class="tg-3jdj">X,X</td>
-                        <td class="tg-3jdj">X,X</td>
-                        <td class="tg-3jdj">X,X</td>
-                        <td class="tg-3jdj">X,X</td>
-                      </tr>-->
+                <c:forEach var="i" items="#{InstitutoBean.institutos}">
+                <h:outputText value="INSTITUTO #{i.campus}"/>
+                <table class="table" color="blue" style="padding: 15px">
+                    <c:forEach var="j" items="#{TipoLixoBean.tipos}">
+                        <tr>
+                            
+                            <td >${j.tipoDeLixo}</td>
+                            <c:forEach var="k" items="#{LixeiraBean.getLixeiraIFTP(i.idInstituto,j.idTipoLixo)}" id="opa">
+                                <td>${k.qtdColetadaTotal}</td>
+                            </c:forEach>
+                            <c:otherwise>
+                                <td>--</td>
+                            </c:otherwise>
+                        </tr>
+                        
+                    </c:forEach>
                 </table>
-
-<!--<p:dataTable var="inst" value="#{InstitutoBean.institutos}">
-<p:column headerText="Campus">
-    <h:outputText value="${inst.campus}"/>
-</p:column>
-
-<p:column headerText="Tipo">
-<td>a</td>
-</p:column>
-
-<p:column headerText="Color">
-<td>bb</td>
-</p:column>
-</p:dataTable>-->
+                <br/><br/>
+                </c:forEach>
             </div>
         </center>
 

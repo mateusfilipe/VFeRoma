@@ -38,10 +38,26 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div> 
-        <select name="institutos">
-<!--            <c:forEach id="loop" items="#{InstitutoBean.getInstituto(UsuarioBean.instituto).lixeiraCollection}" var="lix">
-                <option onclick="getID()">${lix}</option>
-            </c:forEach>--><!--OLHAR COMO PEGAR LIXEIRA DE DETERMINADO INSTITUTO-->
-        </select>
+        <br/>
+        <h:outputText value="Selecionar a lixeira e o tipo:"></h:outputText>
+        <br/><br/>
+        <h:outputText value="Lixerira:"></h:outputText>
+        <select name="lixeiras">
+            <c:forEach id="loop" items="#{LixeiraBean.lixeiras}" var="lix">
+                <c:if test="${lix.insitutoIdInstituto.idInstituto == UsuarioBean.instituto}">
+                    <option>${lix.idLixeira} - Loc: ${lix.localidadeLixeira}</option>
+                </c:if>
+            </c:forEach>
+            </select>
+        <br/><br/>
+            <h:outputText value="Tipo:"></h:outputText>
+            <select name="tipos">
+                <c:forEach id="loop2" items="#{LixeiraBean.lixeiras}" var="lix">
+                        <c:if test="${tip.idTipoLixo == lix.tipoIdTipoLixo.idTipoLixo}">                 
+                            <option>${tip.tipoDeLixo}</option>
+                        </c:if>
+                </c:forEach>
+            </select>
+        
     </body>
 </html>

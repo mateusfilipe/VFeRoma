@@ -6,14 +6,18 @@
 package modelo;
 
 import controle.ControleFeedback;
-import controle.ControleInstituto;
 import java.util.List;
+import javax.annotation.ManagedBean;
+import javax.inject.Named;
 import javax.naming.NamingException;
+import controle.FeedbackDAO;
 
 /**
  *
  * @author marco
  */
+@Named
+@ManagedBean
 public class FeedbackBean {
 
     private String feedbackUsuario;
@@ -49,10 +53,7 @@ public class FeedbackBean {
     }
 
     public String enviar() throws NamingException {
-        Feedback feedback = new Feedback();
-        feedback.setFeedbackUsuario(feedbackUsuario);
-        feedback.setIdFeedback(null);
-        feedback.setIdInstituto(ControleInstituto.procuraInstituto(idInstituto));
+        new FeedbackDAO().salvar(this);
         return "enviar";
     }
 }

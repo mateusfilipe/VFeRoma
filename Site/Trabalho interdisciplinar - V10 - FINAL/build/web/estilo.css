@@ -20,6 +20,10 @@ body{
     background-color: #000;
     overflow: hidden;
 }
+.table {
+    padding: 10px;
+    border: none;
+}
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;

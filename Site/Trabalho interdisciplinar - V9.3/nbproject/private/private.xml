@@ -3,13 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/src/java/modelo/UsuarioBean.java</file>
-            <file>file:/D:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/src/java/modelo/Usuario.java</file>
-            <file>file:/D:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/src/java/modelo/FeedbackBean.java</file>
-            <file>file:/D:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/web/aluno_ranking.xhtml</file>
-            <file>file:/D:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/web/WEB-INF/faces-config.xml</file>
-            <file>file:/D:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/web/adminstrador_ranking.xhtml</file>
-            <file>file:/D:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/web/administrador_RelatorioColeta.xhtml</file>
+            <file>file:/E:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/web/administrador_RelatorioColeta.xhtml</file>
+            <file>file:/E:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/src/java/modelo/LixeiraBean.java</file>
+            <file>file:/E:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/src/java/modelo/InstitutoBean.java</file>
+            <file>file:/E:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/src/java/modelo/Instituto.java</file>
+            <file>file:/E:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/src/java/modelo/TipoLixoBean.java</file>
+            <file>file:/E:/Trabalho%20interdisciplinar/Trabalho%20interdisciplinar%20-%20V9.3/src/java/modelo/UsuarioBean.java</file>
         </group>
     </open-files>
 </project-private>

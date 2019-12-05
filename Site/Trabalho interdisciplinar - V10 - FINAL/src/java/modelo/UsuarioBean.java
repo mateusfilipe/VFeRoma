@@ -14,10 +14,12 @@ import static java.rmi.Naming.lookup;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.util.List;
+import javax.annotation.ManagedBean;
 import javax.annotation.Resource;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -27,14 +29,20 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import javax.transaction.Transactional;
 import javax.transaction.UserTransaction;
+import javax.ws.rs.BeanParam;
+import controle.InstitutoDAO;
+import controle.UsuarioDAO;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author aluno
  */
-public class UsuarioBean {
 
-    UserTransaction utx;
+@Named
+@ManagedBean
+public class UsuarioBean {
 
     private String nome;
     private String email;
@@ -45,6 +53,9 @@ public class UsuarioBean {
     private Integer instituto;
     private String cpf;
     private String cargo;
+
+    public UsuarioBean() {
+    }
 
     public Integer getInstituto() {
         return instituto;
@@ -64,6 +75,10 @@ public class UsuarioBean {
 
     public void setAdm(boolean adm) {
         this.adm = adm;
+    }
+
+    public boolean isAdm() {
+        return adm;
     }
 
     public String getNome() {
@@ -135,66 +150,34 @@ public class UsuarioBean {
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Senha confirmada incorretamente.", ""));
 
             return "cadastro";
-        }
-        //Context context1 = new InitialContext();
-
-        //UserTransaction utx =    (UserTransaction)   context1.lookup("java:comp/UserTransaction");
-        Instituto u = new Instituto();
-        u.setIdInstituto(null);
-        u.setLocalidade("Sabara");
-        u.setCampus("IFFS");
-        u.setQtdAlunos(20);
-        u.setCodGrafo("Q");
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Trabalho_interdisciplinarPU");
-//        EntityManager emf = Persistence.createEntityManagerFactory("Trabalho_interdisciplinarPU").createEntityManager();
-//        EntityTransaction utx1 = emf.getTransaction();
-        utx = (UserTransaction) new InitialContext().lookup("java:comp/UserTransaction");
-        InstitutoJpaController controlador = new InstitutoJpaController(utx, emf);
-//        InstitutoJpaController controlador = new InstitutoJpaController((UserTransaction)utx1,(EntityManagerFactory)emf);
-
-        try {
-            controlador.create(u);
-            controlador.findInstitutoEntities();
-            List<Instituto> lista = controlador.findInstitutoEntities();
-            for (Instituto usuario : lista) {
-                System.out.println("-----" + usuario.getCodGrafo());
-            }
-//    controlador.destroy(1);
-//    controlador.edit(u);
-//emf1.close();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-        return "sucesso";
+        } 
+        UsuarioDAO u = new UsuarioDAO();
+             return u.salvar(this);
+        
+        
     }
 
     public String logar() {
         FacesContext context = FacesContext.getCurrentInstance();
-        Usuario usuario = null;
-
-        try {
-            usuario = ControleUsuario.procuraUsuario(login);
-
-        } catch (Exception ex) {
-            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Usuário não cadastrado.", ""));
-//             this.login=null;
-//             this.senha=null;
-//             context.release();
-            return "falso";
-        }
+        
+       UsuarioBean usuario = new UsuarioDAO().buscar(this.login);
+       if(usuario == null){
+           context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Usuario/Senha Incorreta.", ""));
+           return "falso";
+       }
         if (!usuario.getSenha().equals(senha)) {
-            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Senha Incorreta.", ""));
+            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Usuario/Senha Incorreta.", ""));
 //             this.login=null;
 //             this.senha=null;
             return "falso";
         }
         this.email = usuario.getEmail();
-        this.adm = usuario.getAdm();
-        this.instituto = usuario.getInstitutoIdInstituto().getIdInstituto();
-        this.login = usuario.getUsuario();
+        this.adm = usuario.isAdm();
+        this.instituto = usuario.getInstituto();
+        this.login = usuario.getLogin();
         this.nome = usuario.getNome();
         this.cpf = usuario.getCpf();
         this.cargo = usuario.getCargo();
-        return usuario.getAdm() ? "administrador" : "usuario";
+        return usuario.isAdm() ? "administrador" : "usuario";
     }
 }

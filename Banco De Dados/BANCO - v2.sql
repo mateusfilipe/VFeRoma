@@ -1,4 +1,4 @@
-create database if not exists VFEROMA;
+create database VFEROMA;
 use VFEROMA;
 
 #GRANT SELECT, INSERT, UPDATE, DELETE ON * TO 'UsuarioBean'@'localhost';
@@ -13,8 +13,6 @@ create table Instituto(
 	primary key (id_Instituto)
 );
 
-
-
 create table Usuario(
 	usuario varchar(15) not null  primary key,
     email varchar(50) not null,
@@ -27,9 +25,6 @@ create table Usuario(
     instituto_Id_Instituto int,
     foreign key (instituto_Id_Instituto) references Instituto (id_Instituto) on delete cascade on update cascade
 );
-
-
-
 
 create table Tipo_Lixo(
 	id_Tipo_Lixo int not null auto_increment,
@@ -97,6 +92,5 @@ select * from Instituto;
 select * from Lixeira;
 select * from Feedback;
 select * from Tipo_Lixo;
-#desc feedback;
-#drop table feedback;
+
 show tables;

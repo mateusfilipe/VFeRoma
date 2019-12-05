@@ -10,7 +10,14 @@
         <meta name="description" content=""/>
         <meta name="author" content=""/>
 
+        <script>
 
+            function enviado()
+            {
+                alert("Enviado!\r\nOrigado pela sujestão, analizaremos o mais rápido possível!");
+            }
+
+        </script>
 
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
@@ -89,11 +96,9 @@
                                 </p> 
                             </div>-->
                 <br></br>
-                #{MudancaBean.setIdAdm(UsuarioBean.login)}
-                #{MudancaBean.setIdMudanca(null)}
-                #{MudancaBean.setCodGrafo(null)}
+
                 <br></br>
-                <input type="submit" value="Enviar" onclick="#{MudancaBean.inserirMudanca()}"/>
+                <input type="submit" value="Enviar" onclick="enviado()"/>
                 <center>
                     <h2>FEEDBACK ALUNOS</h2>
                     <c:forEach  items="#{FeedbackBean.feedbacks}" var="feed">

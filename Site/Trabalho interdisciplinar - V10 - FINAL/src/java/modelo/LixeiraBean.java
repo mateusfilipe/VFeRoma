@@ -8,18 +8,20 @@ package modelo;
 import controle.ControleLixeira;
 import java.util.List;
 import javax.naming.NamingException;
+import controle.LixeiraDAO;
 
 /**
  *
  * @author marco
  */
 public class LixeiraBean {
+
     private Integer idLixeira;
     private double qtdColetada;
     private String localidadeLixeira;
     private double qtdColetadaTotal;
-    private Instituto insitutoIdInstituto;
-   private TipoLixo tipoIdTipoLixo;
+    private Integer insitutoIdInstituto;
+    private Integer tipoIdTipoLixo;
 
     public Integer getIdLixeira() {
         return idLixeira;
@@ -53,29 +55,31 @@ public class LixeiraBean {
         this.qtdColetadaTotal = qtdColetadaTotal;
     }
 
-    public Instituto getInsitutoIdInstituto() {
+    public Integer getInsitutoIdInstituto() {
         return insitutoIdInstituto;
     }
 
-    public void setInsitutoIdInstituto(Instituto insitutoIdInstituto) {
+    public void setInsitutoIdInstituto(Integer insitutoIdInstituto) {
         this.insitutoIdInstituto = insitutoIdInstituto;
     }
 
-    public TipoLixo getTipoIdTipoLixo() {
+    public Integer getTipoIdTipoLixo() {
         return tipoIdTipoLixo;
     }
 
-    public void setTipoIdTipoLixo(TipoLixo tipoIdTipoLixo) {
+    public void setTipoIdTipoLixo(Integer tipoIdTipoLixo) {
         this.tipoIdTipoLixo = tipoIdTipoLixo;
     }
-   
-   public List getLixeiras() throws NamingException 
-    {
-        return ControleLixeira.getLixeiras();
+
+    public List getLixeiras() throws NamingException {
+        return new LixeiraDAO().buscarTodos();
     }
-   
-   public Lixeira procuraLixeira (Integer index) throws NamingException
-   {
-       return ControleLixeira.procuraLixeira(index);
-   }
+
+    public LixeiraBean procuraLixeira(Integer index) throws NamingException {
+        return new LixeiraDAO().buscar(index);
+    }
+
+    public List getLixeiraIFTP(Integer idIF, Integer idTL) {
+        return new LixeiraDAO().buscarIFTP(idIF, idTL);
+    }
 }

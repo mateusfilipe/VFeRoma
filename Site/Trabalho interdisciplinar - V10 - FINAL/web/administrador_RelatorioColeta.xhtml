@@ -11,9 +11,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <meta name="description" content=""/>
         <meta name="author" content=""/>
+        <script>
 
+            function enviado()
+            {
+                alert("Enviado!\r\nOrigado pela sujestão, analizaremos o mais rápido possível!");
+            }
 
-
+        </script>
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
         <!--background-color:#000000-->
@@ -76,22 +81,37 @@
         <h:outputText value="Selecionar a lixeira e o tipo:"></h:outputText>
         <br/><br/>
         <h:outputText value="Lixerira:"></h:outputText>
-        <select name="lixeiras">
-            <c:forEach id="loop" items="#{LixeiraBean.lixeiras}" var="lix">
-                <!--<c:if test="${lix.insitutoIdInstituto.idInstituto == UsuarioBean.instituto}">-->
-                <option>${lix.idLixeira} - Loc: ${lix.localidadeLixeira}</option>
-                <!--</c:if>-->
+            #{Juncao.pegaJuncao()}
+        <select id="lixeiras">
+            <option value=""></option>
+            <c:forEach id="loop" items="#{Juncao.juncao}" var="lix">
+                <c:if test="${UsuarioBean.instituto == lix.instituto.idInstituto}">
+                    <option>${lix.lixeira.idLixeira} - Loc: ${lix.lixeira.localidadeLixeira}</option>
+                </c:if>
+
             </c:forEach>
         </select>
         <br/><br/>
         <h:outputText value="Tipo:"></h:outputText>
         <select name="tipos">
-            <c:forEach id="loop2" items="#{LixeiraBean.lixeiras}" var="lix">
-                <c:if test="${tip.idTipoLixo == lix.tipoIdTipoLixo.idTipoLixo}">                 
-                    <option>${tip.tipoDeLixo}</option>
+            <option vaalue=""></option>
+            <c:forEach id="loop2" items="#{Juncao.juncao}" var="lix1">
+                <c:if test="${UsuarioBean.instituto == lix1.instituto.idInstituto}">
+                    <option>${lix1.tipo.tipoDeLixo}</option>
                 </c:if>
             </c:forEach>
         </select>
+
+        <h:form>
+            <h:messages />
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Quantidade Coletada" for="qtdColetado" />
+                <h:inputText id="qtdColetado" label="Quantidade Coletada" value="#{LixeiraBean.qtdColetada}" required="true" />
+
+
+                <h:commandButton onclick="enviado()" value="Enviar"/>
+            </h:panelGrid>
+        </h:form>
 
     </body>
 </html>

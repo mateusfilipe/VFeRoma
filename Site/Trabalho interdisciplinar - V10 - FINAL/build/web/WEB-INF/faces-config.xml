@@ -8,7 +8,11 @@
         <managed-bean-class>modelo.UsuarioBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
-    
+    <managed-bean>
+        <managed-bean-name>Juncao</managed-bean-name>
+        <managed-bean-class>modelo.Juncao</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
     <managed-bean>
         <managed-bean-name>LixeiraBean</managed-bean-name>
         <managed-bean-class>modelo.LixeiraBean</managed-bean-class>
@@ -96,5 +100,12 @@
             <to-view-id>/login.xhtml</to-view-id>
         </navigation-case>
     </navigation-rule>
-    
+    <navigation-rule>
+        
+        <from-view-id>/aluno_Feedback.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>enviar</from-outcome>
+            <to-view-id>/aluno_Feedback.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
 </faces-config>
