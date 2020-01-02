@@ -1,0 +1,13 @@
+https://www.portaleducacao.com.br/conteudo/artigos/informatica/entendendo-os-escopos-no-jsf-(javaserver-faces)/56539
+https://github.com/mateusfilipe/VFeRoma
+
+https://www.portaleducacao.com.br/conteudo/artigos/informatica/entendendo-os-escopos-no-jsf-(javaserver-faces)/56539
+https://www.guj.com.br/t/o-que-significa-detached-entity-passed-to-persist/284249/15
+
+https://www.guj.com.br/t/resolvido-jpa-nao-insere-entity-no-banco/276417/28
+https://cursos.alura.com.br/forum/topico-arquivo-persistence-xml-27553
+
+https://github.com/primefaces/primefaces/issues/2154
+https://www.tutorialspoint.com/jsp/jstl_core_foreach_tag.htm
+www.luv2code.com/2015/10/13/jsf-setting-itemlabel-with-selectitems/
+
