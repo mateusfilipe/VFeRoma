@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  */
 public class Conexao {
     private static Connection conexao;
-    private static final String URL_CONEXAO = "jdbc:mysql://localhost:3306/vferoma";
+    private static final String URL_CONEXAO = "jdbc:mysql://localhost:8111/vferom";
     private static final String USUARIO = "root";
     private static final String SENHA = "";
 
