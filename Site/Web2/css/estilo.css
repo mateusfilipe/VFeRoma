@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+#mainNav{
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    font-size: xx-large;
+}
+
+#mainNav #navbarResponsive .nav-item .btn{
+     border: solid white;
+     background-color: white;  
+     color: black; 
+     font-size: large;
+}
+
+#mainNav #navbarResponsive .nav-item .btn:hover{
+    background-color: #005FF9 !important; 
+    color: white; 
+    border: #005FF9 solid; 
+}
+
+#mainNav ul li a, #mainNav div a{
+    color: white;
+    font-size: x-large;
+}
+
+#img_1{
+    background-image: url("/image/if_sabara.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 100%;
+    filter: contrast(110%) saturate(2) opacity(70%) brightness(70%); 
+    height: 50rem;
+    width: 100%;
+}
+#nameproj{
+    font-family: 'Rubik',sans-serif,Arial;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+#text_proj{
+    position: absolute;
+    padding-left: 5rem;
+    padding-top: 20rem;
+    top: 5px;
+    align-items: center;
+    color: white;
+    max-width: 42rem;
+}
+.text{
+    font-family: Inter,sans-serif,Arial;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+h2{
+    font-family: 'Rubik',sans-serif,Arial;
+    font-weight: 700;
+}
+
+.h2_blue{
+    color: #005FF9;
+}
+.h2_white{
+    color: white;
+}
+
+#mid_1{
+    background-color: white;
+}
+
+#mid_1 .btn{
+    background-color: #005FF9;
+    color: white;
+}
+
+#mid_1 .btn:hover{
+    background-color: white;
+    color: #005FF9;
+}
+
+#text_black{
+    color: black;
+    font-family: Inter,sans-serif,Arial;
+    font-weight: 500;
+}
+
+#text_white{
+    color: white;
+    font-family: Inter,sans-serif,Arial;
+    font-weight: 500;
+}
+
+#mid_2{
+    background-color: #005FF9;
+    color: white;
+}
+
+
+/* //Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* //Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    #nameproj{ 
+        font-size: x-large;
+    }
+    
+    #img_1{
+        height: 70vh;
+        width: 100%;
+    }
+
+ #mainNav ul li a, #mainNav div a{
+    font-size: large;
+}
+#mainNav #navbarResponsive .nav-item .btn{
+    font-size: small;
+}
+.text{
+    font-size: x-large;
+}
+
+}
+
+ /* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   
+}

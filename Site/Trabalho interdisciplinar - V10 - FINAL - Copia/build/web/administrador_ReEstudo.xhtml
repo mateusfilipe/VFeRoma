@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <head>
+        <title>Adiministrador: Re-Estudo</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+
+        <script>
+
+            function enviado()
+            {
+                alert("Enviado!\r\nOrigado pela sujestão, analizaremos o mais rápido possível!");
+            }
+
+        </script>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <!--background-color:#000000-->
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+
+        <!-- Custom styles for this template -->
+        <link href="css/grayscale.min1.css" rel="stylesheet"/>
+        <link rel="icon" href="favicon.ico"/>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/grayscale.min1.js"></script>
+
+    </head>
+
+    <body class="projects-section bg-light">
+        <!-- NAVIGATION-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white" id="mainNav1">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="faces/administrador_index.xhtml">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger " href="faces/administrador_IF.xhtml">Informações IF</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="faces/administrador_infoConta.xhtml">Informações conta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger active bg-light">Re-Estudo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="faces/administrador_RelatorioColeta.xhtml">Relatório Coleta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="faces/adminstrador_ranking.xhtml">Ranking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="faces/index.xhtml">Logoff</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <form method="post">
+            <div>
+                <center>
+                    <h2>DESCRIÇÃO DA MUDANÇA</h2>
+                </center>
+
+                <textarea name="Descricao mudanca"  rows="4" cols="50" placeholder="Digite aqui a mudança" value="#{MudancaBean.descricao}"/>
+
+                <br></br>
+                <h4>Modificação Grafo</h4>
+                <input type="file" name="mapa" value=""/>
+
+                <!--            <div>
+                                <p class="round1"> <br/>&nbsp;&nbsp;&nbsp;Para qualquer alteração no mapa mandar e-mail para a equipe com o novo mapa
+                                    <a href="mailto:veferoma@gmail.com?Subject=Alteração%20nos%20dados%20do%20IF" target="_top">veferoma@gmail.com</a>
+                                    .<br/>&nbsp;
+                                </p> 
+                            </div>-->
+                <br></br>
+
+                <br></br>
+                <input type="submit" value="Enviar" onclick="enviado()"/>
+                <center>
+                    <h2>FEEDBACK ALUNOS</h2>
+                    <c:forEach  items="#{FeedbackBean.feedbacks}" var="feed">
+                        <c:if test="${feed.idInstituto.idInstituto == UsuarioBean.instituto}">
+                            <h:outputText value="${feed.feedbackUsuario}"/>
+                            <br/>
+                        </c:if>
+                    </c:forEach>
+                </center>
+            </div>
+        </form>
+
+    </body>
+</html>

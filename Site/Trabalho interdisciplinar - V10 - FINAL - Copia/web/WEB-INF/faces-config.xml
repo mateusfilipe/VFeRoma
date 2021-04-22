@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <managed-bean>
+        <managed-bean-name>UsuarioBean</managed-bean-name>
+        <managed-bean-class>modelo.UsuarioBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>Juncao</managed-bean-name>
+        <managed-bean-class>modelo.Juncao</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>LixeiraBean</managed-bean-name>
+        <managed-bean-class>modelo.LixeiraBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>TipoLixoBean</managed-bean-name>
+        <managed-bean-class>modelo.TipoLixoBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>InstitutoBean</managed-bean-name>
+        <managed-bean-class>modelo.InstitutoBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>MudancaBean</managed-bean-name>
+        <managed-bean-class>modelo.MudancaBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>FeedbackBean</managed-bean-name>
+        <managed-bean-class>modelo.FeedbackBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+    <navigation-rule>
+
+        <from-view-id>*</from-view-id>
+
+        <navigation-case>
+
+            <from-outcome>inicio</from-outcome>
+
+            <to-view-id>faces/index.xhtml</to-view-id>
+
+        </navigation-case>
+
+        <navigation-case>
+
+            <from-outcome>cadastro</from-outcome>
+
+            <to-view-id>faces/cadastro.xhtml</to-view-id>
+
+        </navigation-case>
+        
+        <navigation-case>
+
+            <!--<from-view-id>faces/index.xhtml</from-view-id>-->
+            <from-outcome>login</from-outcome>
+
+            <to-view-id>/login.xhtml</to-view-id>
+            
+        </navigation-case>
+    </navigation-rule>
+
+
+
+    <navigation-rule>
+
+        <from-view-id>/cadastro.xhtml</from-view-id>
+
+        <navigation-case>
+
+            <from-outcome>sucesso</from-outcome>
+
+            <to-view-id>/aluno_index.xhtml</to-view-id>
+
+        </navigation-case>
+
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>/login.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>administrador</from-outcome>
+            <to-view-id>/administrador_index.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>usuario</from-outcome>
+            <to-view-id>/aluno_index.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>falso</from-outcome>
+            <to-view-id>/login.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        
+        <from-view-id>/aluno_Feedback.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>enviar</from-outcome>
+            <to-view-id>/aluno_Feedback.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>
