@@ -1,0 +1,17 @@
+#subNav #navbarResponsive .nav-item .btn{
+    border: solid white;
+    background-color: white;  
+    color: black; 
+    font-size: large;
+}
+
+#subNav #navbarResponsive .nav-item .btn:hover{
+   background-color: #005FF9 !important; 
+   color: white; 
+   border: #005FF9 solid; 
+}
+
+#subNav ul li a, #subNav div a{
+   color: #005FF9;
+   font-size: x-large;
+}
