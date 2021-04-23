@@ -52,6 +52,23 @@ h2{
     color: #005FF9;
 }
 
+#subNav #navbarResponsive .nav-item a{
+    /* border: solid white; */
+    /* background-color: white;   */
+    color: #005FF9; 
+    font-size: large;
+}
+
+#subNav #navbarResponsive .nav-item a:hover{
+   /* background-color: #005FF9 !important;  */
+   /* color: white;  */
+   border-bottom: #005FF9 solid ; 
+}
+
+/* #subNav ul li a, #subNav div a{
+   color: #005FF9;
+   font-size: x-large;
+} */
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {}
