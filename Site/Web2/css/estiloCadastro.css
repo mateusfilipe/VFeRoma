@@ -16,22 +16,8 @@
    font-size: x-large;
 }
 
-
-.col{
-    color: #005FF9;
-}
-
 .form , h1{
     text-align: center;
-}
-
-
-a:hover {
-    text-decoration: none;
-}
-
-.media_social{
-    margin: 1rem;
 }
 
 span{
@@ -60,6 +46,3 @@ body{
     border-color: #c0c0c0;
 }
 
-#rodape{
-    bottom: 0;
-}

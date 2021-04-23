@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 
-
-
-
 .text{
     font-family: Inter,sans-serif,Arial;
     font-weight: 500;
@@ -41,6 +38,18 @@ h2{
 #c_blue{
     background-color: #005FF9;
     color: white;
+}
+
+#rodape{
+    bottom: 0;
+}
+
+.media_social{
+    margin: 1rem;
+}
+
+.col{
+    color: #005FF9;
 }
 
 
