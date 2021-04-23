@@ -16,6 +16,50 @@
    font-size: x-large;
 }
 
+
 .col{
     color: #005FF9;
+}
+
+.form , h1{
+    text-align: center;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+.media_social{
+    margin: 1rem;
+}
+
+span{
+    padding: auto;
+}
+
+body{
+    height: 100vh !important;
+}
+
+.criarAlun{
+    text-align: center;
+    padding: 20px;
+}
+
+#criar.btn{
+    background-color: white;
+    color: #005FF9;
+    border-radius: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#criar.btn:hover{
+    background-color: #c0c0c0;
+    color: #005FF9;
+    border-color: #c0c0c0;
+}
+
+#rodape{
+    bottom: 0;
 }
