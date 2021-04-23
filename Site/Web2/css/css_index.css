@@ -12,11 +12,26 @@
     font-size: large;
 }
 
-#mainNav #navbarResponsive .nav-item a:hover {
-    /* background-color: #005FF9 !important; */
-    /* color: white; */
+/* #mainNav #navbarResponsive .nav-item a:hover {
+     background-color: #005FF9 !important;
+     color: white; 
     border-bottom: #005FF9 solid;
+}*/
+
+#mainNav #navbarResponsive .nav-item a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #005FF9;
+    transition: width .3s;
 }
+
+#mainNav #navbarResponsive .nav-item a:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
 
 #mainNav ul li a,
 #mainNav div a {
