@@ -1,0 +1,100 @@
+#mainNav{
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    font-size: xx-large;
+}
+
+#mainNav #navbarResponsive .nav-item .btn{
+     border: solid white;
+     background-color: white;  
+     color: black; 
+     font-size: large;
+}
+
+#mainNav #navbarResponsive .nav-item .btn:hover{
+    background-color: #005FF9 !important; 
+    color: white; 
+    border: #005FF9 solid; 
+}
+
+#mainNav ul li a, #mainNav div a{
+    color: white;
+    font-size: x-large;
+}
+
+#img_1{
+    background-image: url("/image/if_sabara.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 100%;
+    filter: contrast(110%) saturate(2) opacity(70%) brightness(70%); 
+    height: 50rem;
+    width: 100%;
+}
+
+#nameproj{
+    font-family: 'Rubik',sans-serif,Arial;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+#text_proj{
+    position: absolute;
+    padding-left: 5rem;
+    padding-top: 20rem;
+    top: 5px;
+    align-items: center;
+    color: white;
+    max-width: 42rem;
+}
+
+#c_white .btn{
+    background-color: #005FF9;
+    color: white;
+}
+
+#c_white .btn:hover{
+    background-color: white;
+    color: #005FF9;
+}
+
+
+/* //Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* //Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    #nameproj{ 
+        font-size: x-large;
+    }
+    
+    #img_1{
+        height: 70vh;
+        width: 100%;
+    }
+
+ #mainNav ul li a, #mainNav div a{
+    font-size: large;
+}
+#mainNav #navbarResponsive .nav-item .btn{
+    font-size: small;
+}
+.text{
+    font-size: x-large;
+}
+
+}
+
+ /* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   
+}
