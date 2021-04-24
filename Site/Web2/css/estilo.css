@@ -7,11 +7,6 @@
     font-size: xx-large;
 }
 
-h2{
-    font-family: 'Rubik',sans-serif,Arial;
-    font-weight: 700;
-}
-
 .h2_blue{
     color: #005FF9;
 }
@@ -43,12 +38,30 @@ h2{
 #rodape{
     bottom: 0;
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Rubik',sans-serif,Arial;
+    font-weight: 700;
+}
 
+p, label, input,small{
+    font-family: Inter,sans-serif,Arial;
+    font-weight: 500;
+}
 .media_social{
     margin: 1rem;
 }
 
 .col{
+    color: #005FF9;
+}
+#subNav{
+    z-index: 99;
+    width: 100%;
+    font-family: 'Rubik', sans-serif, Arial;
+    font-weight: 700;
+
+}
+#nameproj{
     color: #005FF9;
 }
 
@@ -59,10 +72,18 @@ h2{
     font-size: large;
 }
 
-#subNav #navbarResponsive .nav-item a:hover{
-   /* background-color: #005FF9 !important;  */
-   /* color: white;  */
-   border-bottom: #005FF9 solid ; 
+#subNav #navbarResponsive .nav-item a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #005FF9;
+    transition: width .3s;
+}
+
+#subNav #navbarResponsive .nav-item a:hover::after {
+    width: 100%;
+    transition: width .3s;
 }
 
 
