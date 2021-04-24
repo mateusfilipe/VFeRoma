@@ -29,7 +29,7 @@
 
 #mainNav #navbarResponsive .nav-item a:hover::after {
     width: 100%;
-    //transition: width .3s;
+    transition: width .3s;
 }
 
 
