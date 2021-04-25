@@ -17,6 +17,17 @@ body{
     padding: 20px;
 }
 
+.modal_ok{
+    background-color: #005FF9 !important;
+    color: #005FF9;
+}
+
+.modal_ok:hover{
+    background-color:  white !important;
+    border-color: #005FF9 !important;
+    color: #005FF9 !important;
+}
+
 #criar.btn{
     background-color: white;
     color: #005FF9;
@@ -25,9 +36,34 @@ body{
     padding-right: 50px;
 }
 #criar.btn:hover{
-    background-color: #c0c0c0;
+    background-color: #E6E6FA ;
     color: #005FF9;
-    border-color: #c0c0c0;
+    
 }
 
+.indiciplina{
+    height: auto
+}
 
+/* //Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* //Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .indiciplina{
+        height: 83vh;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .indiciplina{
+        height: 83vh;
+    }
+}
