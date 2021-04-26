@@ -28,6 +28,9 @@ body{
     color: #005FF9 !important;
 }
 
+svg{
+    color: #005FF9;
+}
 /* #criar.btn{
     background-color: white;
     color: #005FF9;
