@@ -39,8 +39,6 @@
     background-repeat: no-repeat;
     opacity: 100%;
     filter: contrast(110%) saturate(2) opacity(70%) brightness(70%);
-    height: 50rem;
-    width: 100%;
 }
 
 #nameproj {
@@ -78,14 +76,43 @@
 }
 
 /* //Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    #img_1 {
+        height: 50rem;
+        width: 100%;
+    }
+}
 
 /* //Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #img_1 {
+        height: 50rem;
+        width: 100%;
+    }
+}
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    
+    #img_1 {
+        height: 50rem;
+        width: 100%;
+    }
+    #i_img1{
+        height: 15rem;
+        width: auto;
+    }
+    #i_img2{
+        height: 14rem;
+        width: auto;
+    }
+    #i_img3{
+        height: 15rem;
+        width: auto;
+    }
+    #i_img4{
+        height: 15rem;
+        width: auto;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -112,7 +139,97 @@
         font-size: x-large;
     }
 
+    #i_img1{
+        height: 20rem;
+        width: auto;
+    }
+    #i_img2{
+        height: 18rem;
+        width: auto;
+    }
+    #i_img3{
+        height: 20rem;
+        width: auto;
+    }
+    #i_img4{
+        height: 20rem;
+        width: auto;
+    }
+
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) and (max-width: 2559.98px) {
+    #img_1 {
+        height: 50rem;
+        width: 100%;
+    }
+    #i_img1{
+        height: 20rem;
+        width: auto;
+    }
+    #i_img2{
+        height: 20rem;
+        width: auto;
+    }
+    #i_img3{
+        height: 20rem;
+        width: auto;
+    }
+    #i_img4{
+        height: 20rem;
+        width: auto;
+    }
+}
+
+@media (min-width: 2560px) {
+    #img_1 {
+        height: 50rem;
+        width: 100%;
+    }
+    #i_img1{
+        height: 20rem;
+        width: auto;
+    }
+    #i_img2{
+        height: 20rem;
+        width: auto;
+    }
+    #i_img3{
+        height: 25rem;
+        width: auto;
+    }
+    #i_img4{
+        height: 25rem;
+        width: auto;
+    }
+    
+    #nameproj {
+        font-size: 5vh !important;
+    }
+
+    #img_1 {
+        height: 80vh;
+        width: 100%;
+    }
+
+    #mainNav ul li a,
+    #mainNav div a {
+        font-size: 2.5vh !important;
+    }
+
+
+    .text {
+        font-size: 5vh !important ;
+    }
+
+    #text_proj{
+        max-width: 100rem!important;
+    }
+    h2{
+        font-size: 5vh!important;
+    }
+    p{
+        font-size: 2vh!important;
+    }
+}
