@@ -100,7 +100,7 @@ p, label, input,small{
 }
 
 #rodape{
-    position: relative; /* ou fixed */
+    position: relative; 
     width: 100%;
     bottom: 0;
 }

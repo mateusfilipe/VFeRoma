@@ -43,7 +43,7 @@ svg{
 
 
 .indiciplina{
-    height:min-content;
+    height: auto;
 }
 
 /* //Extra small devices (portrait phones, less than 576px) */
