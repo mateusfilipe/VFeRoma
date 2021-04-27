@@ -7,6 +7,10 @@
 span{
     padding: auto;
 }
+input, select{
+    box-shadow: 0px 1px 2px rgba(50, 43, 95, 0.08);
+border-radius: 4px;
+}
 
 
 .criarAlun{
@@ -32,7 +36,7 @@ svg{
 #criar{
     background-color: white !important;
     color: #005FF9;
-    border-radius: 100px;
+    border-radius: 10px;
     padding-left: 50px;
     padding-right: 50px;
 }

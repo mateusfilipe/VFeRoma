@@ -1,35 +1,166 @@
-#barraInput{
-    padding-top: 2rem;
+#logar{
+    background-color: white !important;
+    color: #005FF9;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-#login{
-    padding-top: 2rem;
+#logar:hover{
+    /* background-color: #d3d3d3 !important; */
+    color: #005FF9;
+    font-style: italic;
 }
 
-span{
-    padding-top: 1rem;
+#crie{
+    color: white;
 }
 
+#crie:hover{
+    font-style: italic;
+}
+
+input, select{
+    box-shadow: 0px 1px 2px rgba(50, 43, 95, 0.08);
+border-radius: 4px;
+}
 
 /* //Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    #rodape{
+        bottom: unset;
+    }
+    .indiciplina{
+        height: 75vh;
+        padding-top: 10vh;
+    }
+}
 
 /* //Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #rodape{
+        bottom: unset;
+    }
+    .indiciplina{
+        height: 85vh;
+        padding-top: 5vh;
+    }
+    h1{
+        font-size: 5vh !important;
+    }
+    label{
+        font-size: 3vh !important;
+    }
+    input,select{
+        font-size: 2.5vh !important;
+    }
+    .btn{
+        font-size: 3vh !important;
+    }
+    span{
+        font-size: 3vh;
+    }
+
+}
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {}
+/* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .indiciplina{
+        height: 85vh;
+        padding-top: 10vh;
+    }
+    #rodape{
+        bottom: unset;
+    }
+    h1{
+        font-size: 5vh !important;
+    }
+    label{
+        font-size: 3vh !important;
+    }
+    input,select{
+        font-size: 2.5vh !important;
+    }
+    .btn{
+        font-size: 3vh !important;
+    }
+    span{
+        font-size: 3vh;
+    }
+
+}
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .indiciplina{
-        height: 83vh;
+        height: 86vh;
+        padding-top: 10vh;
+    }
+    h1{
+        font-size: 5vh !important;
+    }
+    label{
+        font-size: 3vh !important;
+    }
+    input,select{
+        font-size: 2.5vh !important;
+    }
+    .btn{
+        font-size: 3vh !important;
+    }
+    span{
+        font-size: 3vh;
     }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 2559.98px){
     .indiciplina{
         height: 83vh;
+        padding-top: 8vh;
     }
+    h1{
+        font-size: 5vh !important;
+    }
+    label{
+        font-size: 3vh !important;
+    }
+    input,select{
+        font-size: 2.5vh !important;
+    }
+    .btn{
+        font-size: 3vh !important;
+    }
+    span{
+        font-size: 3vh;
+    }
+    
+}
+
+@media (min-width: 2560px) {
+    .indiciplina{
+        height: 85vh;
+        padding-top: 10vh;
+    }
+    h1{
+        font-size: 5vh !important;
+    }
+    label{
+        font-size: 3vh !important;
+    }
+    input,select{
+        font-size: 2.5vh !important;
+    }
+    .btn{
+        font-size: 3vh !important;
+    }
+    .criarAlun{
+        padding: 5rem;
+    }
+    span{
+        font-size: 3vh;
+    }
+    
 }

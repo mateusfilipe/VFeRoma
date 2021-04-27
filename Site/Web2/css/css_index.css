@@ -58,6 +58,7 @@
 #c_white .btn {
     background-color: #005FF9;
     color: white;
+    border-radius: 10px;
 }
 
 #c_white .btn:hover {

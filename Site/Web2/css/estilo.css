@@ -129,6 +129,17 @@ p, label, input,small{
         width: 3vh;
         height: 3vh;
     }
+    footer div .media_social svg{
+        width: 3vh;
+        height: 5vh;
+    }
+    footer #nameproj {
+        font-size: 3vh !important;
+    }
+    footer a svg{
+        width: 4vh;
+        height: 5vh;
+    }
 }
 
  /* // Extra large devices (large desktops, 1200px and up) */
