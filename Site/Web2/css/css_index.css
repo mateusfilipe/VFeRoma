@@ -74,6 +74,10 @@
 #text_white {
     font-size: large;
 }
+.navbar div #nameproj, .navbar div #navbarResponsive{
+    background-color: transparent;
+    filter: drop-shadow(8px 8px 10px gray);
+}
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -113,11 +117,20 @@
         height: 15rem;
         width: auto;
     }
+    footer #nameproj {
+        font-size: large;
+    }
+    .navbar div #nameproj {
+        font-size: x-large;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    #nameproj {
+    footer #nameproj {
+        font-size: x-large;
+    }
+    .navbar div #nameproj {
         font-size: x-large;
     }
 
@@ -180,6 +193,7 @@
         height: 20rem;
         width: auto;
     }
+    
 }
 
 @media (min-width: 2560px) {
