@@ -38,7 +38,10 @@ html,body {
 
 #c_blue{
     background-color: #005FF9;
-    color: white;
+    color: white;   
+}
+
+.format{
     position: relative; /* faz o footer fica com o absolute relativo ao #c_blue - a mágica é esta */
     min-height: 100%; /* altura minima */
 }
