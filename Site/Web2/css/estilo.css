@@ -30,14 +30,23 @@
     font-weight: 500;
 }
 
+html,body {
+    height: 100%; /* é necessário definir o height 100% no html, body ou qualquer elemento que estiver entre o body e o .container */
+    padding: 0;
+    margin: 0;
+}
+
 #c_blue{
     background-color: #005FF9;
     color: white;
+    position: relative; /* faz o footer fica com o absolute relativo ao #c_blue - a mágica é esta */
+    min-height: 100%; /* altura minima */
 }
 
 #rodape{
-    bottom: 0;
-    background-color: white;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Rubik',sans-serif,Arial;
@@ -88,7 +97,9 @@ p, label, input,small{
 }
 
 #rodape{
-    
+    position: relative; /* ou fixed */
+    width: 100%;
+    bottom: 0;
 }
 
 
