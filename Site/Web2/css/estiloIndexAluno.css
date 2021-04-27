@@ -1,9 +1,7 @@
 .dropdown-menu {
-    background-color: #2e3340;
     margin: 0px -3px;
     padding: 0px;
-    -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0,0,0,0.4);
-    box-shadow: inset 0px 2px 3px 0px rgba(0,0,0,0.4);
+    
 }
 
 h1{
@@ -14,4 +12,84 @@ h1{
 #content{
     text-align: center;
     margin: 2rem;
+}
+
+.dropdown-item:hover{
+    background-color: unset !important;
+}
+
+
+/* //Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #rodape{
+        bottom: unset;
+    }
+    .indiciplina{
+        height: 75vh;
+        padding-top: 10vh;
+    }
+}
+
+/* //Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #rodape{
+        bottom: unset;
+    }
+    .indiciplina{
+        height: 85vh;
+        padding-top: 5vh;
+    }
+   
+}
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .indiciplina{
+        height: 85vh;
+        padding-top: 10vh;
+    }
+    #rodape{
+        bottom: unset;
+    }
+    
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .indiciplina{
+        height: 86vh;
+        padding-top: 10vh;
+    }
+    h1{
+        font-size: 5vh !important;
+    }
+    
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 2559.98px){
+    .indiciplina{
+        height: 83vh;
+        padding-top: 8vh;
+    }
+    h1{
+        font-size: 5vh !important;
+    }
+    
+    
+}
+
+@media (min-width: 2560px) {
+    .indiciplina{
+        height: 85vh;
+        padding-top: 10vh;
+    }
+    h1{
+        font-size: 5vh !important;
+    }
+   
+    
 }

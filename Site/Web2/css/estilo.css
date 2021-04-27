@@ -74,7 +74,15 @@ p, label, input,small{
     color: #005FF9; 
     font-size: large;
 }
+#subNav #navbarResponsive .nav-item #menuD:after{
+    content: '';
+    display: block;
+    width: 0;
+    background: black;
+    transition: width .3s;
+}
 
+ 
 #subNav #navbarResponsive .nav-item a:after {
     content: '';
     display: block;
