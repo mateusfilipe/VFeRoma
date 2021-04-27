@@ -30,27 +30,17 @@
     font-weight: 500;
 }
 
-html,body {
-    height: 100%; /* é necessário definir o height 100% no html, body ou qualquer elemento que estiver entre o body e o .container */
+/* html,body {
+    height: 100%; 
     padding: 0;
     margin: 0;
-}
+} */
 
 #c_blue{
     background-color: #005FF9;
     color: white;   
 }
 
-.format{
-    position: relative; /* faz o footer fica com o absolute relativo ao #c_blue - a mágica é esta */
-    min-height: 100%; /* altura minima */
-}
-
-#rodape{
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Rubik',sans-serif,Arial;
     font-weight: 700;
@@ -100,9 +90,15 @@ p, label, input,small{
 }
 
 #rodape{
-    position: relative; 
+    position: absolute;
     width: 100%;
-    bottom: 0;
+    /* bottom: 0; */
+}
+
+#nameproj {
+    font-family: 'Rubik', sans-serif, Arial !important;
+    font-weight: 700 !important;
+    font-size: x-large;
 }
 
 
@@ -119,16 +115,74 @@ p, label, input,small{
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-   
+    footer #nameproj {
+        font-size: large;
+    }
  }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
- 
-
+    footer #nameproj {
+        font-size: x-large;
+    } 
+    #subNav svg{
+        width: 3vh;
+        height: 3vh;
+    }
 }
 
  /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-   
+@media (min-width: 1200px) and (max-width: 2559.98px){
+    footer div .media_social svg{
+        width: 3vh;
+        height: 5vh;
+    }
+    footer a svg{
+        width: 4vh;
+        height: 5vh;
+    }
+    footer #nameproj {
+        font-size: 3vh !important;
+    }
+    .navbar div #nameproj {
+        font-size: 3vh !important;
+    }
+    #subNav svg{
+        width: 3vh;
+        height: 3vh;
+    }
+}
+
+@media (min-width: 2560px) {
+    #mainNav ul li a,
+    #mainNav div a {
+        font-size: 3vh !important;
+    }
+    .subNav div #nameproj svg {
+        width: 4vh;
+        height: 5vh;
+    }
+
+    #subNav ul li a,
+    #subNav div a {
+        font-size: 3vh !important;
+    }
+    
+    #subNav svg{
+        width: 3vh;
+        height: 4vh;
+    }
+
+    footer div .media_social svg{
+        width: 3vh;
+        height: 5vh;
+    }
+    footer a svg{
+        width: 4vh;
+        height: 5vh;
+    }
+    footer #nameproj {
+        font-size: 3vh !important;
+    }
+    
 }

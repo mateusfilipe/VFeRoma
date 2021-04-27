@@ -14,7 +14,7 @@ span{
     padding: 20px;
 }
 
-.modal_ok{
+/* .modal_ok{
     background-color: #005FF9 !important;
     color: #005FF9;
 }
@@ -23,59 +23,99 @@ span{
     background-color:  white !important;
     border-color: #005FF9 !important;
     color: #005FF9 !important;
-}
+} */
 
 svg{
     color: #005FF9;
 }
-/* #criar.btn{
-    background-color: white;
+
+#criar{
+    background-color: white !important;
     color: #005FF9;
     border-radius: 100px;
     padding-left: 50px;
     padding-right: 50px;
 }
-#criar.btn:hover{
-    background-color: #E6E6FA ;
-    color: #005FF9;
-    
-} */
 
+#criar:hover{
+    background-color: #d3d3d3 !important;
+    color: #005FF9;
+    font-style: italic;
+}
 
 .indiciplina{
-    height: auto;
+    height: 83vh;
+    background-color: #005FF9; 
+}
+#rodape{
+    bottom: 0;
+}
+
+body {
+    height: 100%;
+    
 }
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .indiciplina{
-        height: 83vh;
+    #rodape{
+        bottom: unset;
     }
 }
 
 /* //Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .indiciplina{
-        height: 83vh;
+    #rodape{
+        bottom: unset;
     }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .indiciplina{
-    height: 83vh;
-}}
+    #rodape{
+        bottom: unset;
+    }
+
+}
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .indiciplina{
         height: 83vh;
+        
     }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 2559.98px){
     .indiciplina{
-        height: 83vh;
+        height: 80vh;
     }
+    
+}
+
+@media (min-width: 2560px) {
+    .indiciplina{
+        height: 85vh;
+        padding-top: 8rem;
+    }
+    h1{
+        font-size: 5vh !important;
+    }
+    label{
+        font-size: 3vh !important;
+    }
+    input,select{
+        font-size: 2.5vh !important;
+    }
+    small{
+        font-size: 1.5vh !important;
+    }
+    .btn{
+        font-size: 2.5vh !important;
+    }
+    .criarAlun{
+        padding: 5rem;
+    }
+    
 }

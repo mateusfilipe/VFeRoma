@@ -3,6 +3,7 @@
     position: absolute;
     z-index: 99;
     font-size: xx-large;
+    
 }
 
 #mainNav #navbarResponsive .nav-item .btn {
@@ -31,6 +32,7 @@
 #mainNav div a {
     color: white;
     font-size: x-large;
+    font-family: Inter,sans-serif,Arial;
 }
 
 #img_1 {
@@ -41,11 +43,7 @@
     filter: contrast(110%) saturate(2) opacity(70%) brightness(70%);
 }
 
-#nameproj {
-    font-family: 'Rubik', sans-serif, Arial;
-    font-weight: 700;
-    font-size: x-large;
-}
+
 
 #text_proj {
     position: absolute;
@@ -117,9 +115,7 @@
         height: 15rem;
         width: auto;
     }
-    footer #nameproj {
-        font-size: large;
-    }
+    
     .navbar div #nameproj {
         font-size: x-large;
     }
@@ -127,9 +123,7 @@
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    footer #nameproj {
-        font-size: x-large;
-    }
+    
     .navbar div #nameproj {
         font-size: x-large;
     }
@@ -202,26 +196,22 @@
         width: 100%;
     }
     #i_img1{
-        height: 20rem;
+        height: 30rem;
         width: auto;
     }
     #i_img2{
-        height: 20rem;
+        height: 23rem;
         width: auto;
     }
     #i_img3{
-        height: 25rem;
+        height: 27rem;
         width: auto;
     }
     #i_img4{
-        height: 25rem;
+        height: 27rem;
         width: auto;
     }
     
-    #nameproj {
-        font-size: 5vh !important;
-    }
-
     #img_1 {
         height: 80vh;
         width: 100%;
@@ -229,21 +219,32 @@
 
     #mainNav ul li a,
     #mainNav div a {
-        font-size: 2.5vh !important;
+        font-size: 3vh !important;
     }
 
-
-    .text {
-        font-size: 5vh !important ;
+    .text p{
+        font-size: 4vh !important;
     }
 
     #text_proj{
-        max-width: 100rem!important;
+        max-width: 100rem !important;
     }
+    
     h2{
-        font-size: 5vh!important;
+        font-size: 4vh !important;
     }
     p{
-        font-size: 2vh!important;
+        font-size: 2vh !important;
     }
+    
+    .navbar div #nameproj svg {
+        width: 4vh;
+        height: 5vh;
+    }
+    
+    #btn_git{
+        font-size: 2.5vh;
+        padding: 1vh;
+    }
+    
 }
