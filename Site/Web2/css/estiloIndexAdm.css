@@ -29,6 +29,10 @@ h1 {
     color: black;
 }
 
+.text_col {
+    text-align: right;
+}
+
 p1 {
     font-size:larger;
 }
