@@ -3,7 +3,12 @@
     padding: 0px;
 }
 
+p{
+    font-size: 3vh;
+}
+
 h1 {
+    font-size: 5vh !important;
     text-align: center;
 }
 
@@ -18,7 +23,7 @@ h1 {
 
 #text_white {
     width:30% ;
-    height: 30% ;
+    height: 25% ;
     background-color: white;
     border-radius: 4px;
     color: black;
