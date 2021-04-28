@@ -30,7 +30,8 @@ h1 {
 }
 
 .text_col {
-    text-align: right;
+    text-align: center;
+    margin-left: 60%;
 }
 
 p1 {
