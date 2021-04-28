@@ -1,30 +1,35 @@
 .dropdown-menu {
     margin: 0px -3px;
     padding: 0px;
-    
 }
 
-h1{
-    padding: 2.5rem;
+h1 {
     text-align: center;
 }
 
-#content{
+/* #content {
     text-align: center;
     margin: 2rem;
-}
+} */
 
-.dropdown-item:hover{
+.dropdown-menu{
+    color: black;
+    filter: drop-shadow(4px 4px 4px black);
+}
+.dropdown-item:hover {
     background-color: unset !important;
 }
 
 
+
+
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    #rodape{
+    #rodape {
         bottom: unset;
     }
-    .indiciplina{
+
+    .indiciplina {
         height: 75vh;
         padding-top: 10vh;
     }
@@ -32,64 +37,90 @@ h1{
 
 /* //Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    #rodape{
+    #rodape {
         bottom: unset;
     }
-    .indiciplina{
+
+    .indiciplina {
         height: 85vh;
         padding-top: 5vh;
     }
-   
+    
 }
+
 
 /* // Medium devices (tablets, 768px and up) */
 /* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) */
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .indiciplina{
+    .indiciplina {
         height: 85vh;
         padding-top: 10vh;
     }
-    #rodape{
+
+    #rodape {
         bottom: unset;
     }
-    
+
+    #sair svg {
+        width: 5vh;
+        height: 5vh;
+    }
+    #sai{
+        display: none;
+    }
+    #clica{
+        width: 5vh;
+        height: 5vh;
+    }
+
 
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .indiciplina{
+    .indiciplina {
         height: 86vh;
         padding-top: 10vh;
     }
-    h1{
+
+    h1 {
         font-size: 5vh !important;
     }
-    
+    #sair{
+        display: none;
+    }
+
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 2559.98px){
-    .indiciplina{
+@media (min-width: 1200px) and (max-width: 2559.98px) {
+    .indiciplina {
         height: 83vh;
         padding-top: 8vh;
     }
-    h1{
+
+    h1 {
         font-size: 5vh !important;
     }
-    
-    
+    #sair{
+        display: none;
+    }
+
+
 }
 
 @media (min-width: 2560px) {
-    .indiciplina{
+    .indiciplina {
         height: 85vh;
         padding-top: 10vh;
     }
-    h1{
+
+    h1 {
         font-size: 5vh !important;
     }
-   
-    
+    #sair{
+        display: none;
+    }
+
 }

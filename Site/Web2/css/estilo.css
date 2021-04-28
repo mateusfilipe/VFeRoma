@@ -30,12 +30,6 @@
     font-weight: 500;
 }
 
-/* html,body {
-    height: 100%; 
-    padding: 0;
-    margin: 0;
-} */
-
 #c_blue{
     background-color: #005FF9;
     color: white;   
@@ -54,9 +48,10 @@ p, label, input,small{
     margin: 1rem;
 }
 
-.col{
-    color: #005FF9;
+.cor{
+    color: #005FF9 !important;
 }
+
 #subNav{
     z-index: 99;
     width: 100%;
@@ -65,7 +60,7 @@ p, label, input,small{
 
 }
 #nameproj{
-    color: #005FF9;
+    color: #005FF9 !important;
 }
 
 #subNav #navbarResponsive .nav-item a{
