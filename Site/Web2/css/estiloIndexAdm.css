@@ -17,10 +17,11 @@ h1 {
 }
 
 #text_white {
-    width: fit-content;
-    height: fit-content;
+    width:30% ;
+    height: 30% ;
     background-color: white;
-    border-radius: 5%;
+    border-radius: 10%;
+    color: black;
 }
 
 p1 {
@@ -32,7 +33,7 @@ p2 {
 }
 
 p1, p2{
-text-align: center;
+    text-align: center;
 }
 
 #clica{
