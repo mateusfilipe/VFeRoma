@@ -70,6 +70,10 @@
     font-size: large;
 }
 
+.navbar #nameproj{
+    color: white !important;
+}
+
 #text_white {
     font-size: large;
 }
