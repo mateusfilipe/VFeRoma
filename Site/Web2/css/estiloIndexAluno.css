@@ -45,10 +45,11 @@ h1 {
 @media (max-width: 575.98px) {
     #rodape {
         bottom: unset;
+        height: 2rem !important;
     }
 
     .indiciplina {
-        height: 85vh;
+        height: 80vh;
         padding-top: 10vh;
     }
     #sai{
@@ -59,22 +60,74 @@ h1 {
         width: 3vh;
     }
     .navbar button{
-        font-size: 2vh;
+        font-size: 3vh;
     }
-    
+    #rodape .col {
+        margin-top: 0 !important;
+    }
+    #rodape svg {
+        height: 4vh;
+        width: 3vh;
+    }
+    #subNav ul li a,
+    #subNav div a {
+        font-size: 3vh !important;
+    }
 }
 
-/* //Small devices (landscape phones, 576px and up) //AQUI*/
+/* //Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #rodape{
+        bottom: unset;
+    }
+    #rodape .col {
+        margin-top: 0 !important;
+    }
+    
+    #rodape svg {
+        height: 3vh;
+        width: 3vh;
+    }
+    .indiciplina {
+        height: 83vh;
+        padding-top: 5vh;
+    }
+    #sai{
+        display: none;
+    }
+    #sair svg{
+        height: 5vh;
+        width: 3vh;
+    }
+    .navbar button{
+        font-size: 2vh;
+    }
+    #clica{
+        width: 4vh !important;
+        height: 4vh !important;
+    }
+}
+
+
+/* //Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     #rodape {
         bottom: unset;
-        margin-top: none;
+        height: 2rem !important;
     }
 
+    #rodape .col {
+        margin-top: 0 !important;
+    }
+    
+    #rodape svg {
+        height: 5vh;
+        width: 5vh;
+    }
     .indiciplina {
         height: 75vh;
         padding-top: 5vh;
-        background-color: yellow !important;
+        
     }
     #sai{
         display: none;
