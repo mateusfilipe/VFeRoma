@@ -63,27 +63,43 @@ tbody tr:hover{
 }
 
 #text_white {
-    width:40vh ;
+    width: 60vh ;
     height: 20vh ;
     background-color: white;
     border-radius: 4px;
     color: black;
 }
 
-#card1{
+/* #card1{
     background-color: #FFFFCC;
-    height: 15vh !important;
+    height: vh !important;
     border-radius: 50%;
-}
+} */
 
 #trp{
-    margin-left: 5.5vh;
-    margin-top: 6vh;
+    margin-left: 8vh;
+    margin-top: 1vh;
     color: gold;
+}
+#ran{
+    margin-top: 4vh !important;
 }
 #ran p{
     font-size: 3vh !important;
 }
+.table-responsive{
+    font-size: 3vh !important;
+}
+thead th{
+    border-width: 0.5vh !important; 
+}
+td,tr,th{
+    border-width: 0.3vh !important; 
+}
+label{
+    font-size: 3vh !important;
+}
+
 
 
 /* //Extra small devices (portrait phones, less than 576px) */
@@ -134,8 +150,9 @@ tbody tr:hover{
         width: 3vh;
     }
     .indiciplina {
-        height: 83vh;
+        height: 130vh;
         padding-top: 5vh;
+        background-color: gold !important; 
     }
     #sai{
         display: none;
@@ -151,6 +168,23 @@ tbody tr:hover{
         width: 4vh !important;
         height: 4vh !important;
     }
+    #text_white {
+        width: 100%;
+        height: 20vh ;
+    }
+    #tipoLixo{
+        border-right: none !important;
+    }
+    
+    #trp{
+        margin-left: 4vh;
+        margin-top: 1vh;
+        height: 5vh !important;
+        width: 5vh !important;
+    }
+    h2 {
+        font-size: 5vh !important;
+    }
 }
 
 
@@ -164,15 +198,14 @@ tbody tr:hover{
     #rodape .col {
         margin-top: 0 !important;
     }
-    
     #rodape svg {
         height: 5vh;
         width: 5vh;
     }
     .indiciplina {
-        height: 75vh;
+        height: 150vh;
         padding-top: 5vh;
-        
+        background-color: gold !important;
     }
     #sai{
         display: none;
@@ -181,10 +214,26 @@ tbody tr:hover{
         height: 6vh;
         width: 8vh;
     }
-
     #clica{
         width: 6vh;
         height: 8vh;
+    }
+    #text_white {
+        width: 100%;
+        height: 20vh ;
+    }
+    #tipoLixo{
+        border-right: none !important;
+    }
+    
+    #trp{
+        margin-left: 4vh;
+        margin-top: 1vh;
+        height: 5vh !important;
+        width: 5vh !important;
+    }
+    h2 {
+        font-size: 5vh !important;
     }
     
 }
@@ -195,21 +244,37 @@ tbody tr:hover{
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .indiciplina {
-        height: 73vh;
-        padding-top: 10vh;
+        height: 90vh;
+        padding-top: 5vh;
+        
     }
 
     #rodape {
         bottom: unset;
     }
 
-   
     #sai{
         display: none;
     }
     
+    #text_white {
+        width: 40vh ;
+        height: 20vh ;
+    }
+    #trp{
+        margin-left: 4vh;
+        margin-top: 1vh;
+    }
 
-
+    #subNav svg{
+        width: 4vh !important;
+        height: 4vh !important;
+    }
+    #sair svg{
+        height: 6vh !important;
+        width: 8vh !important;
+    }
+    
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -224,6 +289,14 @@ tbody tr:hover{
     }
     #sair{
         display: none;
+    }
+    #text_white {
+        width: 40vh ;
+        height: 20vh ;
+    }
+    #trp{
+        margin-left: 4vh;
+        margin-top: 1vh;
     }
     
 
@@ -242,6 +315,11 @@ tbody tr:hover{
     #sair{
         display: none;
     }
+    
+    #trp{
+        height: 6vh !important;
+        width: 6vh !important;
+    }
 
 }
 
@@ -257,7 +335,16 @@ tbody tr:hover{
     #subNav a{
         padding-right: 5rem;
     }
+
+    select{
+        height: auto !important;
+        font-size: 2vh !important;
+    }
+
+    #trp{
+        height: 6vh !important;
+        width: 6vh !important;
+    }
     
-   
-    
+
 }

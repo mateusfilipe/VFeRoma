@@ -124,8 +124,8 @@ p, label, input,small{
         font-size: large;
     }
     #subNav svg{
-        width: 3vh;
-        height: 3vh;
+        width: 3vh !important;
+        height: 3vh !important;
     }
  }
 
