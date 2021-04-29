@@ -57,6 +57,28 @@ input, select, textarea{
     width: 90vh !important;
 }
 
+#btnp{
+    background-color: transparent !important;
+    border: unset;
+    color: white;
+}
+
+#btnp:active{
+    background-color: transparent !important;
+    border: none;
+}
+
+#pos1{
+    display: block ;
+}
+#pos2{
+    display: none ;
+}
+
+/* #btnp svg{
+    
+} */
+
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     #rodape {
