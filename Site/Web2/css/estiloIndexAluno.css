@@ -41,44 +41,11 @@ h1 {
 }
 
 
-/* //Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-    #rodape {
-        bottom: unset;
-        height: 2rem !important;
-    }
-
-    .indiciplina {
-        height: 80vh;
-        padding-top: 10vh;
-    }
-    #sai{
-        display: none;
-    }
-    #sair svg{
-        height: 3vh;
-        width: 3vh;
-    }
-    .navbar button{
-        font-size: 3vh;
-    }
-    #rodape .col {
-        margin-top: 0 !important;
-    }
-    #rodape svg {
-        height: 4vh;
-        width: 3vh;
-    }
-    #subNav ul li a,
-    #subNav div a {
-        font-size: 3vh !important;
-    }
-}
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    #rodape{
-        bottom: unset;
+     #rodape div{
+        padding-top: 2vh;
     }
     #rodape .col {
         margin-top: 0 !important;
@@ -89,7 +56,7 @@ h1 {
         width: 3vh;
     }
     .indiciplina {
-        height: 83vh;
+        height: 80vh;
         padding-top: 5vh;
     }
     #sai{
@@ -106,6 +73,13 @@ h1 {
         width: 4vh !important;
         height: 4vh !important;
     }
+    #rodape {
+        bottom: unset;
+        height: 3vh !important;
+        margin: unset;
+    }
+
+    
 }
 
 
@@ -113,7 +87,15 @@ h1 {
 @media (min-width: 576px) and (max-width: 767.98px) {
     #rodape {
         bottom: unset;
-        height: 2rem !important;
+        height: 2vh !important;
+        margin: unset;
+    }
+    #rodape div{
+        padding-top: 2vh;
+    }
+    p{
+        padding: 0rem !important;
+        padding-top: 0rem;
     }
 
     #rodape .col {
@@ -125,7 +107,7 @@ h1 {
         width: 5vh;
     }
     .indiciplina {
-        height: 75vh;
+        height: 70vh !important;
         padding-top: 5vh;
         
     }
@@ -142,26 +124,43 @@ h1 {
         height: 8vh;
     }
     
+    
 }
 
 
 /* // Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) */
-
-@media (min-width: 768px) and (max-width: 991.98px) {
+ /* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
     .indiciplina {
-        height: 73vh;
+        height: 85vh;
+        padding-top: 10vh;
+        background-color: red !important;
+    }
+} */
+
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape){
+    .indiciplina {
+        height: 85vh;
         padding-top: 10vh;
     }
 
     #rodape {
         bottom: unset;
     }
-
+    
+    #subNav svg{
+        width: 5vh !important;
+        height: 5vh !important;
+    }
+    
+    #sair svg{
+        height: 5vh !important;
+        width: 5vh !important;
+    }
    
     #sai{
         display: none;
     }
+    
     
 }
 

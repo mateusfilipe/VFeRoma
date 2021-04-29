@@ -64,8 +64,6 @@ p, label, input,small{
 }
 
 #subNav #navbarResponsive .nav-item a{
-    /* border: solid white; */
-    /* background-color: white;   */
     color: #005FF9; 
     font-size: large;
 }
@@ -112,11 +110,25 @@ p, label, input,small{
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+    #subNav svg{
+        width: 4vh !important;
+        height: 4vh !important;
+    }
+    #nameproj {
+        font-size: 3vh;
+    }
 }
 
 /* //Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #subNav svg{
+        width: 5vh !important;
+        height: 5vh !important;
+    }
+    #nameproj {
+        font-size: 5vh;
+    }
+}
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -124,8 +136,11 @@ p, label, input,small{
         font-size: large;
     }
     #subNav svg{
-        width: 3vh !important;
-        height: 3vh !important;
+        width: 5vh !important;
+        height: 5vh !important;
+    }
+    #nameproj {
+        font-size: 4vh;
     }
  }
 
@@ -168,9 +183,13 @@ p, label, input,small{
         font-size: 3vh !important;
     }
     #subNav svg{
-        width: 3vh;
-        height: 3vh;
+        width: 4vh;
+        height: 4vh;
     }
+    #subNav #navbarResponsive .nav-item a{ 
+        font-size: 3vh;
+    }
+    
 }
 
 @media (min-width: 2560px) {

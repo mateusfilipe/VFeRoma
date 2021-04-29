@@ -79,14 +79,18 @@ body {
     #rodape{
         bottom: unset;
     }
+    
+    #sair svg{
+        height: 5vh !important;
+        width: 5vh !important;
+    }
 
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .indiciplina{
-        height: 83vh;
-        
+        height: 80vh;
     }
 }
 

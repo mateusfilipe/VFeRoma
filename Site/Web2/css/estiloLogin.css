@@ -69,25 +69,26 @@ border-radius: 4px;
 @media (min-width: 768px) and (max-width: 991.98px) {
     .indiciplina{
         height: 85vh;
-        padding-top: 10vh;
+        padding-top: 5vh;
     }
     #rodape{
         bottom: unset;
     }
     h1{
-        font-size: 5vh !important;
+        font-size: 6vh !important;
     }
     label{
-        font-size: 3vh !important;
+        font-size: 4vh !important;
     }
     input,select{
-        font-size: 2.5vh !important;
+        font-size: 3vh !important;
     }
     .btn{
         font-size: 3vh !important;
     }
     span{
         font-size: 3vh;
+        padding-bottom: vh;
     }
 
 }
@@ -95,7 +96,7 @@ border-radius: 4px;
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .indiciplina{
-        height: 86vh;
+        height: 80vh;
         padding-top: 10vh;
     }
     h1{
@@ -118,7 +119,7 @@ border-radius: 4px;
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px){
     .indiciplina{
-        height: 83vh;
+        height: 80vh;
         padding-top: 8vh;
     }
     h1{

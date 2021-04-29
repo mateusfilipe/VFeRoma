@@ -103,7 +103,7 @@ label{
 
 
 /* //Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+/* @media (max-width: 575.98px) {
     #rodape {
         bottom: unset;
         height: 2rem !important;
@@ -134,12 +134,15 @@ label{
     #subNav div a {
         font-size: 3vh !important;
     }
-}
+} */
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    #rodape{
+    #rodape {
         bottom: unset;
+        height: 3vh !important;
+        margin: unset;
+        padding-bottom: 2rem !important;
     }
     #rodape .col {
         margin-top: 0 !important;
@@ -152,7 +155,7 @@ label{
     .indiciplina {
         height: 130vh;
         padding-top: 5vh;
-        background-color: gold !important; 
+       
     }
     #sai{
         display: none;
@@ -185,6 +188,7 @@ label{
     h2 {
         font-size: 5vh !important;
     }
+    
 }
 
 
@@ -261,17 +265,19 @@ label{
         height: 20vh ;
     }
     #trp{
-        margin-left: 4vh;
-        margin-top: 1vh;
+        /* margin-left: 1vh; */
+        /* margin-top: 1vh; */
+        margin: auto;
     }
 
     #subNav svg{
-        width: 4vh !important;
-        height: 4vh !important;
+        width: 5vh !important;
+        height: 5vh !important;
     }
+    
     #sair svg{
-        height: 6vh !important;
-        width: 8vh !important;
+        height: 5vh !important;
+        width: 5vh !important;
     }
     
 }
