@@ -3,12 +3,7 @@
     padding: 0px;
 }
 
-p{
-    font-size: 3vh;
-}
-
 h1 {
-    font-size: 5vh !important;
     text-align: center;
 }
 
@@ -16,120 +11,125 @@ h1 {
     color: black;
     filter: drop-shadow(4px 4px 4px black);
 }
-
 .dropdown-item:hover {
     background-color: unset !important;
 }
 
-#text_white {
-    width:30% ;
-    height: 25% ;
-    background-color: white;
-    border-radius: 4px;
-    color: black;
+p{
+    font-size: 3vh;
 }
 
-.text_col {
-    text-align: center;
-    margin-left: 60%;
+h1 {
+    font-size: 5vh !important;
 }
-
-p1 {
-    font-size:larger;
-}
-
-p2 {
-    font-size: small;
-}
-
-p1, p2{
-    text-align: center;
-}
-
 #clica{
     width: 5vh;
     height: 5vh;
 }
-
-#sai svg{
-    height: 5vh;
-    width: 4vh;
+#trp{
+    margin-left: 8vh;
+    margin-top: 1vh;
+    color: #ffd900;
 }
-#sair svg{
-    height: 5vh;
-    width: 4vh;
+#text_white {
+    width: 25rem !important;
+    height: 10rem !important;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
 }
 
+span{
+    font-size: 3vh;
+}
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    #rodape {
-        bottom: unset;
+     #rodape div{
+        padding-top: 0vh !important;
     }
-
-    .indiciplina {
-        height: 85vh;
-        padding-top: 10vh;
+    #rodape .col {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
     }
-    #sai{
-        display: none;
-    }
-    #sair svg{
+    
+    #rodape svg {
         height: 3vh;
         width: 3vh;
     }
-    .navbar button{
-        font-size: 2vh;
-    }
-    
-}
-
-/* //Small devices (landscape phones, 576px and up) //AQUI*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-    #rodape {
-        bottom: unset;
-        margin-top: none;
-    }
-
     .indiciplina {
-        height: 75vh;
+        height: max-content;
         padding-top: 5vh;
-        background-color: yellow !important;
+        padding-bottom: 12vh;
     }
     #sai{
         display: none;
     }
-    #sair svg{
-        height: 6vh;
-        width: 8vh;
+    #clica{
+        width: 4vh !important;
+        height: 4vh !important;
+    }
+    #rodape {
+        bottom: unset;
+        height: max-content !important;
+        margin: unset;
+    }
+}
+
+
+/* //Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #rodape {
+        bottom: unset;
+        height: 2vh !important;
+        margin: unset;
+    }
+    #rodape div{
+        padding-top: 2vh;
+    }
+    p{
+        padding: 0rem !important;
+        padding-top: 0rem;
     }
 
+    #rodape .col {
+        margin-top: 0 !important;
+    }
+    
+    #rodape svg {
+        height: 5vh;
+        width: 5vh;
+    }
+    .indiciplina {
+        height: 70vh !important;
+        padding-top: 5vh;
+        
+    }
+    #sai{
+        display: none;
+    }
     #clica{
         width: 6vh;
         height: 8vh;
     }
-    
 }
 
 
 /* // Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) */
-
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape){
     .indiciplina {
-        height: 73vh;
+        height: 85vh;
         padding-top: 10vh;
     }
 
     #rodape {
         bottom: unset;
     }
-
-   
     #sai{
         display: none;
     }
-
+    
+    
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -146,22 +146,21 @@ p1, p2{
         display: none;
     }
     
+
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px) {
     .indiciplina {
-        height: 82vh;
+        height: 80vh;
         padding-top: 8vh;
     }
     
-    #subNav svg{
-        height: 4vh !important;
-    }
+    
     #sair{
         display: none;
     }
-
+    
 }
 
 @media (min-width: 2560px) {
@@ -176,4 +175,6 @@ p1, p2{
     #subNav a{
         padding-right: 5rem;
     }
+    
+    
 }

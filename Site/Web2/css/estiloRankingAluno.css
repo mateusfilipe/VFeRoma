@@ -7,11 +7,6 @@ h1 {
     text-align: center;
 }
 
-/* #content {
-    text-align: center;
-    margin: 2rem;
-} */
-
 .dropdown-menu{
     color: black;
     filter: drop-shadow(4px 4px 4px black);
@@ -36,14 +31,7 @@ h2 {
     width: 5vh;
     height: 5vh;
 }
-#sai svg{
-    height: 5vh;
-    width: 4vh;
-}
-#sair svg{
-    height: 5vh;
-    width: 4vh;
-}
+
 
 tr,th {
     color: white;
@@ -66,7 +54,7 @@ tbody tr:hover{
     width: 60vh ;
     height: 20vh ;
     background-color: white;
-    border-radius: 4px;
+    border-radius: 10px;
     color: black;
 }
 
