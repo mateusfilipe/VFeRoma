@@ -52,6 +52,10 @@ p, label, input,small{
     color: #005FF9 !important;
 }
 
+.dropdown-menu{
+    border-radius: 10px !important;
+}
+
 #subNav{
     z-index: 99;
     width: 100%;

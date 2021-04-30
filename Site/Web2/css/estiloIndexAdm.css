@@ -53,10 +53,6 @@ span{
         margin-bottom: 1rem !important;
     }
     
-    #rodape svg {
-        height: 3vh;
-        width: 3vh;
-    }
     .indiciplina {
         height: max-content;
         padding-top: 5vh;
@@ -65,10 +61,10 @@ span{
     #sai{
         display: none;
     }
-    #clica{
+    /* #clica{
         width: 4vh !important;
         height: 4vh !important;
-    }
+    } */
     #rodape {
         bottom: unset;
         height: max-content !important;
@@ -96,10 +92,6 @@ span{
         margin-top: 0 !important;
     }
     
-    #rodape svg {
-        height: 5vh;
-        width: 5vh;
-    }
     .indiciplina {
         height: 70vh !important;
         padding-top: 5vh;
@@ -108,10 +100,10 @@ span{
     #sai{
         display: none;
     }
-    #clica{
+    /* #clica{
         width: 6vh;
         height: 8vh;
-    }
+    } */
 }
 
 
