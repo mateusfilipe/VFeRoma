@@ -49,6 +49,62 @@ h2 {
     max-width: 70vh !important; */
 }
 
+.card-header{
+    color: white;
+}
+.card{
+    border: none !important;
+    background-color: transparent !important;
+    color: #005FF9 !important;
+}
+.card-header{
+    background-color: transparent !important; 
+    color: white !important;
+    border-color: white !important;
+}
+.card-body{
+    background-color: transparent !important;
+    color: white !important;
+    
+}
+.btn-link{
+    color: white !important;
+}
+.btn-link:hover{
+    background-color: transparent !important;
+    color: white !important;
+    font-style: italic !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+.btn-link:focus, .btn:active{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.bt{
+    background-color: white !important;
+    color: #005FF9 !important;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.bt:hover{
+    /* background-color: #d3d3d3 !important; */
+    color: #005FF9 !important;
+    font-style: italic;
+}
+#mailInfo{
+    font-size: 2.5vh !important;
+}
+#emailTo{
+    color: white;
+}
+
+#emailTo:hover{
+    font-style: italic;
+}
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

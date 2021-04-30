@@ -45,7 +45,7 @@ label{
 }
 
 #enviar:hover{
-    background-color: #d3d3d3 !important;
+    /* background-color: #d3d3d3 !important; */
     color: #005FF9;
     font-style: italic;
 }
