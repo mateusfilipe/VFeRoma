@@ -102,7 +102,9 @@ p, label, input,small{
     font-size: x-large;
 }
 
-
+form,input,option,select,label{
+    font-family: Inter,sans-serif,Arial;
+}
 /* #subNav ul li a, #subNav div a{
    color: #005FF9;
    font-size: x-large;
