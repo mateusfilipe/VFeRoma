@@ -63,15 +63,15 @@ input, select, textarea{
     color: white;
 }
 
-#btnp:active{
+#btnp:focus{
     background-color: transparent !important;
-    border: none;
+    box-shadow: none;
 }
 
-#pos1{
+#pos1,#not1{
     display: block ;
 }
-#pos2{
+#pos2,#not2{
     display: none ;
 }
 
@@ -83,7 +83,7 @@ input, select, textarea{
 @media (max-width: 575.98px) {
     #rodape {
         bottom: unset;
-        height: 3vh !important;
+        height: max-content !important;
         margin: unset;
         padding-bottom: 2rem !important;
     }
@@ -96,16 +96,16 @@ input, select, textarea{
         width: 3vh;
     }
     .indiciplina {
-        height: 130vh;
+        height: max-content;
         padding-top: 5vh;
-       
+        padding-bottom: 5vh;
     }
     #sai{
         display: none;
     }
     #sair svg{
-        height: 5vh;
-        width: 3vh;
+        height: 5vh !important;
+        width: 3vh !important;
     }
     .navbar button{
         font-size: 2vh;
@@ -114,6 +114,33 @@ input, select, textarea{
         width: 4vh !important;
         height: 4vh !important;
     }
+    input, select{
+        width: 40vh !important;
+        height: 7vh !important;
+        font-size: 3vh !important;
+    }
+    #inputTema{
+        width: 40vh !important;
+        align-items: center;
+        justify-content: center;
+    }
+    textarea{
+        width: 40vh !important;
+    }
+    #pos1,#not1{
+        height: 3vh !important;
+        width: 5vh !important;
+    }
+    #pos2,#not2{
+        margin: unset !important;
+        height: 3vh !important;
+        width: 5vh !important;
+    }
+    #btnp{
+        width: 5vh;
+        
+    }
+    
     
 }
 
@@ -133,8 +160,9 @@ input, select, textarea{
         width: 5vh;
     }
     .indiciplina {
-        height: 150vh;
+        height: max-content;
         padding-top: 5vh;
+        padding-bottom: 5vh;
     }
     #sai{
         display: none;
@@ -147,19 +175,43 @@ input, select, textarea{
         width: 6vh;
         height: 8vh;
     }
-    
-    
+    input, select{
+        width: 80vh !important;
+        height: 7vh !important;
+        font-size: 3vh !important;
+    }
+    textarea{
+        width: 80vh !important;
+    }
+    #pos1,#not1{
+        height: 5vh !important;
+        width: 4vh !important;
+    }
+    #pos2,#not2{
+        height: 5vh !important;
+        width: 4vh !important;
+    }
+    p{
+        font-size: 4vh;
+    }
+    h1 {
+        font-size: 6vh !important;
+    }
+    label{
+        font-size: 4vh !important;
+    }
 }
 
 
 /* // Medium devices (tablets, 768px and up) */
 /* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) */
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px){
+    
     .indiciplina {
-        height: 90vh;
+        height: max-content;
         padding-top: 5vh;
-        
+        padding-bottom: 5vh;
     }
 
     #rodape {
@@ -178,43 +230,88 @@ input, select, textarea{
         height: 5vh !important;
         width: 5vh !important;
     }
+    #pos1,#not1{
+        height: 5vh !important;
+        width: 4vh !important;
+    }
+    #pos2,#not2{
+        height: 5vh !important;
+        width: 4vh !important;
+    } 
     
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .indiciplina {
-        height: 80vh;
+        height: max-content;
         padding-top: 10vh;
+        padding-bottom: 5vh;
     }
 
     #sair{
         display: none;
-    }    
-
+    } 
+    #pos1,#not1{
+        height: 5vh !important;
+        width: 4vh !important;
+    }
+    #pos2,#not2{
+        height: 5vh !important;
+        width: 4vh !important;
+    } 
+    input, select{
+        width: 90vh !important;
+        height: 6vh !important;
+        font-size: 2vh !important;
+    }
+    #rodape{
+        height: max-content;
+    }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px) {
     .indiciplina {
-        height: 80vh;
+        height: max-content;
         padding-top: 8vh;
+        padding-bottom: 4vh;
     }
-    
+    p{
+        padding-left: 3vh !important;
+    }
     #subNav svg{
         height: 4vh !important;
     }
     #sair{
         display: none;
     }
-    
-
+    input, select{
+        width: 90vh !important;
+        height: 5vh !important;
+        font-size: 2vh !important;
+    }
+    #pos1,#not1{
+        height: 10vh !important;
+        width: 5vh !important;
+    }
+    #pos2,#not2{
+        height: 10vh !important;
+        width: 5vh !important;
+    }
+    #enviar{
+        font-size: 3vh !important;
+    }
+    #rodape{
+        height: max-content;
+    }
 }
 
 @media (min-width: 2560px) {
     .indiciplina {
-        height: 85vh;
-        padding-top: 10vh;
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
 
     #sair{
@@ -224,6 +321,33 @@ input, select, textarea{
         padding-right: 5rem;
     }
 
-    
+    input, select, textarea{
+        width: 90vh !important;
+        height: 5vh !important;
+        font-size: 2vh !important;
+    }
+    p{
+        font-size: 3.5vh;
+        padding-top: 2vh !important;
+        padding-left: 3vh !important;
+    }
+
+    #pos1,#not1{
+        height: 5vh !important;
+        width: 4vh !important;
+    }
+    #pos2,#not2{
+        height: 5vh !important;
+        width: 4vh !important;
+    }
+    #enviar{
+        font-size: 3vh !important;
+    }
+    .form-group{
+        padding-top: 3vh;
+    }
+    #rodape{
+        height: max-content;
+    }
 
 }

@@ -56,15 +56,16 @@ h1 {
         width: 3vh;
     }
     .indiciplina {
-        height: 80vh;
+        height: max-content;
         padding-top: 5vh;
+        padding-bottom: 5vh;
     }
     #sai{
         display: none;
     }
     #sair svg{
-        height: 5vh;
-        width: 3vh;
+        height: 5vh !important;
+        width: 3vh !important;
     }
     .navbar button{
         font-size: 2vh;
@@ -75,7 +76,7 @@ h1 {
     }
     #rodape {
         bottom: unset;
-        height: 3vh !important;
+        height: max-content !important;
         margin: unset;
     }
 

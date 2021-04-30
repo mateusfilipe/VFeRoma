@@ -29,10 +29,13 @@ border-radius: 4px;
 @media (max-width: 575.98px) {
     #rodape{
         bottom: unset;
+        height: max-content;
+        margin-top: unset !important;
     }
-    .indiciplina{
-        height: 75vh;
-        padding-top: 10vh;
+    .indiciplina {
+        height: max-content;
+        padding-bottom: 10vh;
+        padding-top: 15vh;
     }
 }
 
@@ -40,9 +43,12 @@ border-radius: 4px;
 @media (min-width: 576px) and (max-width: 767.98px) {
     #rodape{
         bottom: unset;
+        height: max-content;
+        margin-top: unset !important;
     }
-    .indiciplina{
-        height: 85vh;
+    .indiciplina {
+        height: max-content;
+        padding-bottom: 5vh;
         padding-top: 5vh;
     }
     h1{

@@ -64,13 +64,22 @@ body {
 @media (max-width: 575.98px) {
     #rodape{
         bottom: unset;
+        height: max-content;
     }
+    .indiciplina {
+        height: max-content;
+    }
+
 }
 
 /* //Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     #rodape{
         bottom: unset;
+        height: max-content;
+    }
+    .indiciplina {
+        height: max-content;
     }
 }
 
@@ -78,8 +87,11 @@ body {
 @media (min-width: 768px) and (max-width: 991.98px) {
     #rodape{
         bottom: unset;
+        height: max-content;
     }
-    
+    .indiciplina {
+        height: max-content;
+    }
     #sair svg{
         height: 5vh !important;
         width: 5vh !important;
@@ -89,8 +101,12 @@ body {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .indiciplina{
-        height: 80vh;
+    #rodape{
+        bottom: unset;
+        height: max-content;
+    }
+    .indiciplina {
+        height: max-content;
     }
 }
 
@@ -103,10 +119,14 @@ body {
 }
 
 @media (min-width: 2560px) {
-    .indiciplina{
-        height: 85vh;
-        padding-top: 8rem;
+    #rodape{
+        bottom: unset;
+        height: max-content;
     }
+    .indiciplina {
+        height: max-content;
+    }
+
     h1{
         font-size: 5vh !important;
     }
