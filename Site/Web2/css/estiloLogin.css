@@ -74,26 +74,27 @@ border-radius: 4px;
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .indiciplina{
-        height: 85vh;
+        height: max-content;
         padding-top: 5vh;
+        padding-bottom: 10vh;
     }
     #rodape{
         bottom: unset;
     }
     h1{
-        font-size: 6vh !important;
+        font-size: 2rem !important;
     }
     label{
-        font-size: 4vh !important;
+        font-size: 1.5rem !important;
     }
     input,select{
-        font-size: 3vh !important;
+        font-size: 1rem !important;
     }
     .btn{
-        font-size: 3vh !important;
+        font-size: 1rem !important;
     }
     span{
-        font-size: 3vh;
+        font-size: 1rem;
         padding-bottom: vh;
     }
 
