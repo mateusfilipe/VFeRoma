@@ -203,8 +203,8 @@ form,input,option,select,label{
         width: 3rem !important;
     }
     #subNav svg, footer a svg{
-        width: 2.5rem !important;
-        height: 3rem !important;
+        width: 2rem !important;
+        height: 2rem !important;
     }
     
 }

@@ -113,9 +113,12 @@ body {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px){
     .indiciplina{
-        height: 80vh;
+        height: max-content;
     }
-    
+    #rodape{
+        bottom: unset;
+        height: max-content;
+    }
 }
 
 @media (min-width: 2560px) {
