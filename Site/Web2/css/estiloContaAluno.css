@@ -91,7 +91,7 @@ h2 {
 }
 
 .bt:hover{
-    /* background-color: #d3d3d3 !important; */
+    background-color: white !important; 
     color: #005FF9 !important;
     font-style: italic;
 }
@@ -105,6 +105,11 @@ h2 {
 #emailTo:hover{
     font-style: italic;
 }
+.form-group{
+    padding-left: 2vh !important;
+}
+
+
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -118,31 +123,40 @@ h2 {
         margin-top: 0 !important;
     }
     
-    #rodape svg {
-        height: 3vh;
-        width: 3vh;
-    }
     .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 5vh;
+        width: 100%;
     }
     #sai{
         display: none;
     }
-    #sair svg{
-        height: 5vh !important;
-        width: 3vh !important;
-    }
-    .navbar button{
-        font-size: 2vh;
-    }
+    
     #clica{
         width: 4vh !important;
         height: 4vh !important;
     }
-    h2 {
+    h1{
         font-size: 5vh !important;
+    }
+    h2 {
+        font-size: 3vh !important;
+    }
+    #mailInfo{
+        font-size: 2vh !important;
+    }
+    #info{
+        border: none !important;
+        padding-left: 2vh !important;
+    }
+    .form-group label{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    .form-group input{
+        display: flex !important;
+        flex-direction: row !important;
     }
     
 }
@@ -159,10 +173,7 @@ h2 {
     #rodape .col {
         margin-top: 0 !important;
     }
-    #rodape svg {
-        height: 5vh;
-        width: 5vh;
-    }
+    
     .indiciplina {
         height: max-content;
         padding-top: 5vh;
@@ -171,10 +182,7 @@ h2 {
     #sai{
         display: none;
     }
-    #sair svg{
-        height: 6vh;
-        width: 8vh;
-    }
+    
     #clica{
         width: 6vh;
         height: 8vh;
@@ -182,7 +190,12 @@ h2 {
     h2 {
         font-size: 5vh !important;
     }
-    
+   #info{
+        border-right: unset !important;  
+    }
+    .form-group{
+        padding-top: 0.1rem !important;
+    }
 }
 
 
@@ -204,17 +217,34 @@ h2 {
     #sai{
         display: none;
     }
-
-    #subNav svg{
-        width: 5vh !important;
-        height: 5vh !important;
+   #subnav{
+        font-size: 2rem !important;
     }
-    
-    #sair svg{
-        height: 5vh !important;
-        width: 5vh !important;
+    .form-group #usrl{
+        min-width: 6rem !important;
     }
-    
+    .form-group #maill{
+        min-width: 6rem !important;
+    }
+    .form-group #ral{
+        min-width: 6rem !important;
+    }
+    .form-group #namel{
+        min-width: 6rem !important;
+    }
+    h1{
+        font-size: 3rem !important;
+    }
+    #mailInfo{
+        font-size: 1rem !important;
+        padding-top: 8vh !important;
+    }
+    .col-form-label{
+        font-size: 1rem!important;
+    }
+    h2{
+        font-size: 1.5rem !important;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -226,7 +256,7 @@ h2 {
     }
 
     h1 {
-        font-size: 5vh !important;
+        font-size: 7vh !important;
     }
     #sair{
         display: none;
@@ -234,7 +264,13 @@ h2 {
     #rodape{
         height: max-content;
     }
-
+    h2 .btn-link{
+        font-size: 3vh !important;
+    }
+    #mailInfo{
+        font-size: 3vh !important;
+        padding-top: 8vh !important;
+    }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -242,7 +278,7 @@ h2 {
     .indiciplina {
         height: max-content;
         padding-top: 8vh;
-        padding-bottom: 10vh;
+        padding-bottom: 15vh;
     }
     
     #subNav svg{
@@ -251,12 +287,29 @@ h2 {
     #sair{
         display: none;
     }
+    h2 .btn-link{
+        font-size: 3vh !important;
+    }
+    .card-body{
+        font-size: 3vh !important;
+    }
+    .card-body small, .card-body .btn{
+        font-size: 2vh !important;
+    }
+    #mailInfo{
+        font-size: 3vh !important;
+        padding-top: 8vh !important;
+    }
+    label, input{
+        font-size: 3vh !important;
+        border-radius: 5px !important; 
+    }
 }
 
 @media (min-width: 2560px) {
     .indiciplina {
         height: max-content;
-        padding-top: 13vh;
+        padding-top: 18vh;
         padding-bottom: 18vh;
     }
 
@@ -271,4 +324,26 @@ h2 {
         height: auto !important;
         font-size: 2vh !important;
     }
+    h2 .btn-link{
+        font-size: 3vh !important;
+    }
+    .card-body{
+        font-size: 3vh !important;
+    }
+    .card-body small{
+        font-size: 2vh !important;
+    }
+    .card-body .btn{
+        font-size: 3vh !important;
+        margin-left: 1vh;
+    }
+    label, input{
+        font-size: 3vh !important;
+        border-radius: 10px !important; 
+    }
+    #mailInfo{
+        font-size: 3vh !important;
+        padding-top: 8vh !important;
+    }
+    
 }

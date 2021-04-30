@@ -113,10 +113,6 @@ label{
         margin-top: 0 !important;
     }
     
-    #rodape svg {
-        height: 3vh;
-        width: 3vh;
-    }
     .indiciplina {
         height: max-content;
         padding-top: 5vh;
@@ -125,13 +121,7 @@ label{
     #sai{
         display: none;
     }
-    #sair svg{
-        height: 5vh !important;
-        width: 3vh !important;
-    }
-    .navbar button{
-        font-size: 2vh;
-    }
+    
     #clica{
         width: 4vh !important;
         height: 4vh !important;
@@ -162,27 +152,20 @@ label{
     #rodape {
         bottom: unset;
         height: max-content !important;
-        margin-top: 2vh !important;
+        margin-top: 4vh !important;
     }
 
     #rodape .col {
         margin-top: 0 !important;
     }
-    #rodape svg {
-        height: 5vh;
-        width: 5vh;
-    }
+    
     .indiciplina {
         height: max-content;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
     }
     #sai{
         display: none;
-    }
-    #sair svg{
-        height: 6vh;
-        width: 8vh;
     }
     #clica{
         width: 6vh;
@@ -203,7 +186,20 @@ label{
         width: 5vh !important;
     }
     h2 {
+        font-size: 7vh !important;
+    }
+    #c_blue h1{
+        font-size: 10vh !important;
+    }
+    .table-responsive{
         font-size: 5vh !important;
+    }
+    thead th{
+        border-width: 1vh !important; 
+    }
+    
+    label{
+        font-size: 4vh !important;
     }
     
 }
@@ -236,16 +232,6 @@ label{
         /* margin-left: 1vh; */
         /* margin-top: 1vh; */
         margin: auto;
-    }
-
-    #subNav svg{
-        width: 5vh !important;
-        height: 5vh !important;
-    }
-    
-    #sair svg{
-        height: 5vh !important;
-        width: 5vh !important;
     }
     
 }
@@ -283,12 +269,9 @@ label{
     .indiciplina {
         height: max-content;
         padding-top: 8vh;
-        padding-bottom: 10vh;
+        padding-bottom: 13vh;
     }
     
-    #subNav svg{
-        height: 4vh !important;
-    }
     #sair{
         display: none;
     }
@@ -323,6 +306,8 @@ label{
         height: 6vh !important;
         width: 6vh !important;
     }
-    
+    #inputIF{
+        font-size: 3rem !important;
+    }
 
 }

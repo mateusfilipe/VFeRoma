@@ -84,17 +84,14 @@ input, select, textarea{
     #rodape {
         bottom: unset;
         height: max-content !important;
-        margin: unset;
-        padding-bottom: 2rem !important;
+        margin-bottom: 2rem !important;
+        margin-top: 2rem !important;
+
     }
     #rodape .col {
         margin-top: 0 !important;
     }
-    
-    #rodape svg {
-        height: 3vh;
-        width: 3vh;
-    }
+   
     .indiciplina {
         height: max-content;
         padding-top: 5vh;
@@ -103,13 +100,7 @@ input, select, textarea{
     #sai{
         display: none;
     }
-    #sair svg{
-        height: 5vh !important;
-        width: 3vh !important;
-    }
-    .navbar button{
-        font-size: 2vh;
-    }
+    
     #clica{
         width: 4vh !important;
         height: 4vh !important;
@@ -136,10 +127,7 @@ input, select, textarea{
         height: 3vh !important;
         width: 5vh !important;
     }
-    #btnp{
-        width: 5vh;
-        
-    }
+   
     
     
 }
@@ -149,16 +137,14 @@ input, select, textarea{
 @media (min-width: 576px) and (max-width: 767.98px) {
     #rodape {
         bottom: unset;
-        height: 2rem !important;
+        margin-bottom: 2rem !important;
+        margin-top: 1rem !important;
     }
 
     #rodape .col {
         margin-top: 0 !important;
     }
-    #rodape svg {
-        height: 5vh;
-        width: 5vh;
-    }
+   
     .indiciplina {
         height: max-content;
         padding-top: 5vh;
@@ -167,10 +153,7 @@ input, select, textarea{
     #sai{
         display: none;
     }
-    #sair svg{
-        height: 6vh;
-        width: 8vh;
-    }
+    
     #clica{
         width: 6vh;
         height: 8vh;
@@ -220,15 +203,6 @@ input, select, textarea{
 
     #sai{
         display: none;
-    }
-    #subNav svg{
-        width: 5vh !important;
-        height: 5vh !important;
-    }
-    
-    #sair svg{
-        height: 5vh !important;
-        width: 5vh !important;
     }
     #pos1,#not1{
         height: 5vh !important;
@@ -280,9 +254,7 @@ input, select, textarea{
     p{
         padding-left: 3vh !important;
     }
-    #subNav svg{
-        height: 4vh !important;
-    }
+   
     #sair{
         display: none;
     }
@@ -349,5 +321,6 @@ input, select, textarea{
     #rodape{
         height: max-content;
     }
+    
 
 }

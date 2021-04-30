@@ -105,30 +105,45 @@ p, label, input,small{
 form,input,option,select,label{
     font-family: Inter,sans-serif,Arial;
 }
-/* #subNav ul li a, #subNav div a{
-   color: #005FF9;
-   font-size: x-large;
-} */
+#subNav svg{
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    #subNav svg{
-        width: 4vh !important;
-        height: 4vh !important;
-    }
     #nameproj {
         font-size: 3vh;
+    }
+    .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+    #subNav svg,footer a svg{
+        width: 1.5rem !important;
+        height: 2rem !important;
+    }
+    .navbar button{
+        font-size: 1rem;
     }
 }
 
 /* //Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    #subNav svg{
-        width: 5vh !important;
-        height: 5vh !important;
-    }
     #nameproj {
         font-size: 5vh;
+    }
+    .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+    #subNav svg,footer a svg{
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+    .navbar button{
+        font-size: 1.5rem;
     }
 }
 
@@ -137,12 +152,19 @@ form,input,option,select,label{
     footer #nameproj {
         font-size: large;
     }
-    #subNav svg{
-        width: 5vh !important;
-        height: 5vh !important;
-    }
     #nameproj {
-        font-size: 4vh;
+        font-size: 1.5rem;
+    }
+    .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+    #subNav svg,footer a svg{
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+    .navbar button{
+        font-size: 1.5rem;
     }
  }
 
@@ -151,45 +173,38 @@ form,input,option,select,label{
     footer #nameproj {
         font-size: x-large;
     } 
-    #subNav svg{
-        width: 3vh;
-        height: 3vh;
-    }
-    footer div .media_social svg{
-        width: 3vh;
-        height: 5vh;
-    }
     footer #nameproj {
         font-size: 3vh !important;
     }
-    footer a svg{
-        width: 4vh;
-        height: 5vh;
+    .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+    #subNav svg, footer a svg{
+        width: 2rem !important;
+        height: 2rem !important;
     }
 }
 
  /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px){
-    footer div .media_social svg{
-        width: 3vh;
-        height: 5vh;
-    }
-    footer a svg{
-        width: 4vh;
-        height: 5vh;
-    }
+    
     footer #nameproj {
         font-size: 3vh !important;
     }
     .navbar div #nameproj {
         font-size: 3vh !important;
     }
-    #subNav svg{
-        width: 4vh;
-        height: 4vh;
-    }
     #subNav #navbarResponsive .nav-item a{ 
         font-size: 3vh;
+    }
+    .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
+        height: 2.5rem !important;
+        width: 3rem !important;
+    }
+    #subNav svg, footer a svg{
+        width: 2.5rem !important;
+        height: 3rem !important;
     }
     
 }
@@ -199,32 +214,24 @@ form,input,option,select,label{
     #mainNav div a {
         font-size: 3vh !important;
     }
-    
-    .subNav div #nameproj svg {
-        width: 4vh;
-        height: 5vh;
-    }
-
     #subNav ul li a,
     #subNav div a {
         font-size: 3vh !important;
     }
-    
-    #subNav svg{
-        width: 3vh;
-        height: 4vh;
-    }
-
-    footer div .media_social svg{
-        width: 3vh;
-        height: 5vh;
-    }
-    footer a svg{
-        width: 4vh;
-        height: 5vh;
-    }
+   
     footer #nameproj {
         font-size: 3vh !important;
+    }
+    #subNav a{
+        padding-right: 5rem;
+    }
+    .nav-link svg, .dropdown-item svg, #sai svg{
+        height: 5rem !important;
+        width: 5rem !important;
+    }
+    #subNav svg, footer a svg{
+        width: 5rem !important;
+        height: 5rem !important;
     }
     
 }

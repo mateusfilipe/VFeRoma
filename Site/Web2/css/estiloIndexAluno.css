@@ -31,24 +31,24 @@ h1 {
     width: 5vh;
     height: 5vh;
 }
-#sai svg{
-    height: 5vh;
-    width: 4vh;
+/* #sai svg{
+    height: 2rem !important;
+    width: 2rem !important;
 }
-#sair svg{
-    height: 5vh;
-    width: 4vh;
-}
-
+#sair svg,.nav-link svg, .dropdown-item svg, #sai svg{
+    height: 2rem !important;
+    width: 2rem !important;
+} */
 
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
      #rodape div{
-        padding-top: 2vh;
+        padding-top: 0vh !important;
     }
     #rodape .col {
-        margin-top: 0 !important;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
     }
     
     #rodape svg {
@@ -58,17 +58,10 @@ h1 {
     .indiciplina {
         height: max-content;
         padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding-bottom: 12vh;
     }
     #sai{
         display: none;
-    }
-    #sair svg{
-        height: 5vh !important;
-        width: 3vh !important;
-    }
-    .navbar button{
-        font-size: 2vh;
     }
     #clica{
         width: 4vh !important;
@@ -79,8 +72,6 @@ h1 {
         height: max-content !important;
         margin: unset;
     }
-
-    
 }
 
 
@@ -115,29 +106,14 @@ h1 {
     #sai{
         display: none;
     }
-    #sair svg{
-        height: 6vh;
-        width: 8vh;
-    }
-
     #clica{
         width: 6vh;
         height: 8vh;
     }
-    
-    
 }
 
 
 /* // Medium devices (tablets, 768px and up) */
- /* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
-    .indiciplina {
-        height: 85vh;
-        padding-top: 10vh;
-        background-color: red !important;
-    }
-} */
-
 @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape){
     .indiciplina {
         height: 85vh;
@@ -147,17 +123,6 @@ h1 {
     #rodape {
         bottom: unset;
     }
-    
-    #subNav svg{
-        width: 5vh !important;
-        height: 5vh !important;
-    }
-    
-    #sair svg{
-        height: 5vh !important;
-        width: 5vh !important;
-    }
-   
     #sai{
         display: none;
     }
@@ -189,13 +154,11 @@ h1 {
         padding-top: 8vh;
     }
     
-    #subNav svg{
-        height: 4vh !important;
-    }
+    
     #sair{
         display: none;
     }
-
+    
 }
 
 @media (min-width: 2560px) {
@@ -211,6 +174,5 @@ h1 {
         padding-right: 5rem;
     }
     
-   
     
 }
