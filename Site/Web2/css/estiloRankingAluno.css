@@ -20,17 +20,17 @@ p{
 }
 
 h1 {
-    font-size: 5vh !important;
+    font-size: 2.5rem !important;
 }
 
 h2 {
-    font-size: 3vh !important;
+    font-size: 1.5rem !important;
 }
 
-#clica{
+/* #clica{
     width: 5vh;
     height: 5vh;
-}
+} */
 
 
 tr,th {
@@ -51,8 +51,8 @@ tbody tr:hover{
 }
 
 #text_white {
-    width: 60vh ;
-    height: 20vh ;
+    width: 25rem !important;
+    height: 10rem !important;
     background-color: white;
     border-radius: 10px;
     color: black;
@@ -73,10 +73,10 @@ tbody tr:hover{
     margin-top: 4vh !important;
 }
 #ran p{
-    font-size: 3vh !important;
+    font-size: 1.5rem!important;
 }
 .table-responsive{
-    font-size: 3vh !important;
+    font-size: 1rem !important;
 }
 thead th{
     border-width: 0.5vh !important; 
@@ -85,7 +85,7 @@ td,tr,th{
     border-width: 0.3vh !important; 
 }
 label{
-    font-size: 3vh !important;
+    font-size: 1.5rem !important;
 }
 
 
@@ -115,8 +115,8 @@ label{
         height: 4vh !important;
     }
     #text_white {
-        width: 100%;
-        height: 20vh ;
+        width: 17rem !important;
+        height: 8rem !important;
     }
     #tipoLixo{
         border-right: none !important;
@@ -160,8 +160,8 @@ label{
         height: 8vh;
     }
     #text_white {
-        width: 100%;
-        height: 20vh ;
+        width: 17rem !important;
+        height: 8rem !important;
     }
     #tipoLixo{
         border-right: none !important;
@@ -211,14 +211,12 @@ label{
     #sai{
         display: none;
     }
-    
+
     #text_white {
-        width: 40vh ;
-        height: 20vh ;
+        width: 17rem !important;
+        height: 8rem !important;
     }
     #trp{
-        /* margin-left: 1vh; */
-        /* margin-top: 1vh; */
         margin: auto;
     }
     
