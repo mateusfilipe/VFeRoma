@@ -98,9 +98,9 @@ body {
         height: max-content;
         /* background-color: aqua !important; */
     }
-    #c_blue{
-        /* background-color: aqua !important; */
-    }
+    /* #c_blue{
+        background-color: aqua !important;
+    } */
     h1{
         font-size: 2rem !important;
     }
