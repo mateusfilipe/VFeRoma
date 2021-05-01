@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt_br" style="height: 100vh;">
+
+<head>
+    <title>TrashMap-Feedback</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/estiloContaAdm.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="/node_modules/popper/index.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+
+<body class="">
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" id="subNav">
+            <div class="container-fluid ">
+                <a class="navbar-brand js-scroll-trigger" id="nameproj">
+                    <svg width="35" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.6321 0.688052L3.60807 4.00531C2.30584 4.43625 1.86612 4.69046 1.43338 5.0564C1.00063 5.42235 0.681173 5.86487 0.469898 6.39102C0.258623 6.91716 0.155533 7.41486 0.155533 8.78777V23.7661C0.155533 24.4336 0.224963 24.6756 0.35534 24.9196C0.485716 25.1637 0.677038 25.3552 0.92082 25.4857C1.1646 25.6162 1.40641 25.6857 2.07324 25.6857H30.8991C31.5659 25.6857 31.8077 25.6162 32.0515 25.4857C32.2953 25.3552 32.4866 25.1637 32.617 24.9196C32.7474 24.6756 32.8168 24.4336 32.8168 23.7661V8.75484C32.8168 7.39118 32.7157 6.89702 32.5077 6.37391C32.2998 5.85081 31.985 5.41008 31.5578 5.04383C31.1307 4.67759 30.6963 4.42185 29.4073 3.98053L19.8845 0.720191C18.5429 0.260842 18.0804 0.141504 17.5456 0.0618076C17.0108 -0.017889 16.5133 -0.0204465 15.9777 0.0537482C15.4421 0.127943 14.9784 0.24252 13.6321 0.688052ZM2.64876 23.19H10.9175V10.5599C10.9175 10.0077 11.3652 9.55994 11.9175 9.55994H21.0549C21.6071 9.55994 22.0549 10.0077 22.0549 10.5599V23.19H30.3236V8.75484C30.3236 7.78756 30.2885 7.54145 30.1912 7.29663C30.1326 7.14932 30.0562 7.04241 29.9359 6.93927C29.736 6.76787 29.5148 6.65496 28.6004 6.34192L19.0777 3.08157C17.9373 2.69116 17.5658 2.58802 17.1785 2.53029C16.8786 2.48561 16.6198 2.48428 16.3195 2.52588C15.9316 2.57962 15.559 2.67893 14.4147 3.05761L4.39068 6.37486C3.46809 6.68017 3.2448 6.79166 3.04237 6.96284C2.92043 7.06596 2.84278 7.17351 2.78324 7.32178C2.68442 7.5679 2.64876 7.81511 2.64876 8.78777V23.19Z"
+                            fill="#005FF9" />
+                    </svg>
+                    TrashMap</a>
+                <button class="navbar-toggler ml-auto" style="color: #005FF9; border-color: #005FF9;" type="button"
+                    data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                </button>
+                <ul class="navbar-nav p-3">
+                    <li class="nav-item" id="sair">
+                        <a class="nav-link js-scroll-trigger" href="/index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#005FF9"
+                                class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                                <path fill-rule="evenodd"
+                                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="collapse navbar-collapse " id="navbarResponsive">
+                    <ul class="navbar-nav ml-md-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger " href="/index_adm.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="/ranking_adm.html">Ranking</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link js-scroll-trigger" href="/coleta_adm.html">Coleta</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link js-scroll-trigger" href="/reestudo_adm.html">Re-estudo</a>
+                        </li>
+                        <ul class="navbar-nav menu">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toogle " id="menuD" data-toggle="dropdown" id="navDrop"
+                                    href="" onclick="clica()">
+                                    <svg id="clica" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 21">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                        style="display: none !important;" class="bi bi-chevron-up ap"
+                                        viewBox="0 0 16 21">
+                                        <path fill-rule="evenodd"
+                                            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                        style="display: inline-block !important;" class="bi bi-chevron-down ap"
+                                        viewBox="0 0 16 21">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </a>
+                                <div id="nave" class="dropdown-menu dropdown-menu-right"
+                                    aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="/infoif_adm.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 19">
+                                            <path
+                                                d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z" />
+                                        </svg>Informações If</a>
+                                    <a class="dropdown-item" href="/conta_adm.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 19">
+                                            <path
+                                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                        </svg>Conta</a>
+                                    <a class="dropdown-item" href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 19">
+                                            <path
+                                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                                        </svg> Mensagens</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <li id="sai">
+                            <a class="nav-link js-scroll-trigger" href="/index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#005FF9"
+                                    class="bi bi-box-arrow-right" viewBox="0 0 16 21">
+                                    <path fill-rule="evenodd"
+                                        d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="indiciplina justify-content-center " id="c_blue">
+        <div>
+            <h1 class="">Conta</h1>
+        </div>
+
+        <div id="" class="container-fluid row pt-lg-4 pt-md-2">
+            <div class="container-fluid col col-sm-12 col-md-6 border border-top-0 border-left-0 border-bottom-0 border-white" id="info">
+                <h2 class="col-12 pt">Informações da conta:</h2>
+                <div class="form-group row pt-xs-5 pt-lg-5">
+                    <label class="col-sm-12 col-md-3 col-lg-2 col-lg-3 col-form-label m-0" id="namel">Nome:</label>
+                    <input type="text" class="form-control col nao" id="Nnome" value="Cody Simmmons" readonly
+                        style="background-color: white;">
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-12 col-md-2 col-lg-3 col-form-label m-0" id="ral">Matrícula: </label>
+                    <input type="text" class="form-control col nao" id="Nmtr" value="000000" readonly
+                        style="background-color: white;">
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-12 col-md-3 col-lg-3 col-form-label m-0" id="maill">Email: </label>
+                    <input type="text" class="form-control col nao" id="Nemail" value="cody.simmmons@ifmg.edu.br"
+                        readonly style="background-color: white;">
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-12 col-md-3 col-lg-3 col-form-label m-0" id="usrl">Usuário: </label>
+                    <input type="text" class="form-control col nao" id="Nuser" value="coddy123" readonly
+                        style="background-color: white;">
+                </div>
+            </div>
+            <div class="container-fluid col col-sm-12 col-md-6" id="geral">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header " id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left text-decoration-none" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne" onclick="muda(1)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right muda1" viewBox="0 0 16 16" style="display: inline-block;">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-down muda1" viewBox="0 0 16 16"
+                                        style="display: none;">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    Modificar Senha
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group row pt-0 pb-0">
+                                    <label class="" style="padding-right: 4vh !important;">Senha atual:</label>
+                                    <input type="text" class="form-control nao" id="AOsenha"
+                                        placeholder="Digite a senha atual" required>
+                                </div>
+                                <div class="form-group row pt-0 pb-0">
+                                    <label class="" style="padding-right: 4vh !important;">Nova Senha:</label>
+                                    <input type="text" class="form-control nao" id="ANsenha"
+                                        placeholder="Digite a nova senha" required>
+                                </div>
+                                <small id="passwordHelpBlock" class="form-text text-light pb-3">
+                                    Sua senha deve ter de 8-20 caracteres, tendo letras e números, sem espaços ou emoji.
+                                </small>
+                                <div class="form-group row pt-0 pb-0">
+                                    <label class="" style="padding-right: 4vh !important;">Repita a nova senha:</label>
+                                    <input type="text" class="form-control nao" id="ANRsenha"
+                                        placeholder="Digite a nova senha" required>
+                                </div>
+                                <small style="color: white;"></small>
+                                <div class="enviarNSenha">
+                                    <button type="submit" class="btn btn-outline-light bt" id="enviar1">Enviar</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-decoration-none" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo" onclick="muda(2)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right muda2" viewBox="0 0 16 16"
+                                        style="display: inline-block;">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-down muda2" viewBox="0 0 16 16" style="display: none;">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    Modificar Usuário
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group row pt-0 pb-0">
+                                    <label class="" style="padding-right: 4vh !important;">Novo usuário:</label>
+                                    <input type="text" class="form-control nao" id="Auser"
+                                        placeholder="Digite o novo usuário" required>
+                                </div>
+                                <small style="color: white;"></small>
+                                <div class="enviarNUser">
+                                    <button type="submit" class="btn btn-outline-light bt" id="enviar2">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-decoration-none" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree" onclick="muda(3)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right muda3" viewBox="0 0 16 16"
+                                        style="display: inline-block;">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-down muda3" viewBox="0 0 16 16" style="display: none;">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    Modificar email
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group row pt-0 pb-0">
+                                    <label class="" style="padding-right: 4vh !important;">Novo email:</label>
+                                    <input type="text" class="form-control nao" id="Amail"
+                                        placeholder="Digite o novo email" required>
+                                </div>
+                                <small style="color: white;"></small>
+                                <button type="submit" class="btn btn-outline-light bt" id="enviar3">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <p id="mailInfo" class="text-center pt-5">Quer alterar algum dado diferente? Mande um <a href="mailto:projetotrashmap@gmail.com?subject=Aluno:%20Alterar%20dados" id="emailTo" class="text-decoration-none" style="padding-left: 0.3rem !important;"> e-mail  para a equipe:  trashmap.if@gmail.com</a></p> 
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="row text-center mt-3 ml-0 mr-0 mb-3 p-0" id="rodape">
+        <a class="navbar-brand js-scroll-trigger col d-none d-md-block mt-md-2 mt-lg-3 p-2 " id="nameproj">
+            <svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.6321 0.688052L3.60807 4.00531C2.30584 4.43625 1.86612 4.69046 1.43338 5.0564C1.00063 5.42235 0.681173 5.86487 0.469898 6.39102C0.258623 6.91716 0.155533 7.41486 0.155533 8.78777V23.7661C0.155533 24.4336 0.224963 24.6756 0.35534 24.9196C0.485716 25.1637 0.677038 25.3552 0.92082 25.4857C1.1646 25.6162 1.40641 25.6857 2.07324 25.6857H30.8991C31.5659 25.6857 31.8077 25.6162 32.0515 25.4857C32.2953 25.3552 32.4866 25.1637 32.617 24.9196C32.7474 24.6756 32.8168 24.4336 32.8168 23.7661V8.75484C32.8168 7.39118 32.7157 6.89702 32.5077 6.37391C32.2998 5.85081 31.985 5.41008 31.5578 5.04383C31.1307 4.67759 30.6963 4.42185 29.4073 3.98053L19.8845 0.720191C18.5429 0.260842 18.0804 0.141504 17.5456 0.0618076C17.0108 -0.017889 16.5133 -0.0204465 15.9777 0.0537482C15.4421 0.127943 14.9784 0.24252 13.6321 0.688052ZM2.64876 23.19H10.9175V10.5599C10.9175 10.0077 11.3652 9.55994 11.9175 9.55994H21.0549C21.6071 9.55994 22.0549 10.0077 22.0549 10.5599V23.19H30.3236V8.75484C30.3236 7.78756 30.2885 7.54145 30.1912 7.29663C30.1326 7.14932 30.0562 7.04241 29.9359 6.93927C29.736 6.76787 29.5148 6.65496 28.6004 6.34192L19.0777 3.08157C17.9373 2.69116 17.5658 2.58802 17.1785 2.53029C16.8786 2.48561 16.6198 2.48428 16.3195 2.52588C15.9316 2.57962 15.559 2.67893 14.4147 3.05761L4.39068 6.37486C3.46809 6.68017 3.2448 6.79166 3.04237 6.96284C2.92043 7.06596 2.84278 7.17351 2.78324 7.32178C2.68442 7.5679 2.64876 7.81511 2.64876 8.78777V23.19Z"
+                    fill="#005FF9" />
+            </svg>
+            TrashMap</a>
+        <div class="col mt-3 mr-0 ml-0 pr-0">
+            <a href="" class="media_social text-decoration-none cor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-facebook " viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+            </a>
+            <a href="" class="media_social text-decoration-none cor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </svg>
+            </a>
+            <a href="" class="media_social text-decoration-none cor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+            </a>
+            <a href="" class="media_social text-decoration-none cor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg>
+            </a>
+            <a href="mailto:projetotrashmap@gmail.com?subject=Contato" class="media_social text-decoration-none cor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+</body>
+<script>
+    function clica() {
+        var coll = document.getElementsByClassName("ap");
+        for (var i = 0; i < coll.length; i++) {
+            if (coll[i].style.display == "inline-block") {
+                coll[i].style.display = "none"
+            } else {
+                coll[i].style.display = "inline-block"
+            }
+        }
+    }
+
+    function muda(aux) {
+        var coll = document.getElementsByClassName("muda1");
+        var coll1 = document.getElementsByClassName("muda2");
+        var coll2 = document.getElementsByClassName("muda3");
+        if (aux == 1) {
+            if (coll1[1].style.display == "inline-block") {
+                coll1[1].style.display = "none"
+                coll1[0].style.display = "inline-block"
+            }
+            if (coll2[1].style.display == "inline-block") {
+                coll2[1].style.display = "none"
+                coll2[0].style.display = "inline-block"
+            }
+            for (var i = 0; i < coll.length; i++) {
+                if (coll[i].style.display == "inline-block") {
+                    coll[i].style.display = "none"
+                } else {
+                    coll[i].style.display = "inline-block"
+                }
+            }
+        } else if (aux == 2) {
+            if (coll[1].style.display == "inline-block") {
+                coll[1].style.display = "none"
+                coll[0].style.display = "inline-block"
+            }
+            if (coll2[1].style.display == "inline-block") {
+                coll2[1].style.display = "none"
+                coll2[0].style.display = "inline-block"
+            }
+            for (var i = 0; i < coll1.length; i++) {
+                if (coll1[i].style.display == "inline-block") {
+                    coll1[i].style.display = "none"
+                } else {
+                    coll1[i].style.display = "inline-block"
+                }
+            }
+        } else {
+            if (coll[1].style.display == "inline-block") {
+                coll[1].style.display = "none"
+                coll[0].style.display = "inline-block"
+            }
+            if (coll1[1].style.display == "inline-block") {
+                coll1[1].style.display = "none"
+                coll1[0].style.display = "inline-block"
+            }
+            for (var i = 0; i < coll2.length; i++) {
+
+                if (coll2[i].style.display == "inline-block") {
+                    coll2[i].style.display = "none"
+                } else {
+                    coll2[i].style.display = "inline-block"
+                }
+            }
+        }
+
+    }
+</script>
+
+</html>
