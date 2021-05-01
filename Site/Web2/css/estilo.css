@@ -125,7 +125,7 @@ form,input,option,select,label{
         width: 2rem !important;
     }
     #subNav svg,footer a svg{
-        width: 1.5rem !important;
+        width: 2rem !important;
         height: 2rem !important;
     }
     .navbar button{
@@ -207,8 +207,8 @@ form,input,option,select,label{
         width: 3rem !important;
     }
     #subNav svg, footer a svg{
-        width: 2rem !important;
-        height: 2rem !important;
+        width: 2.5rem !important;
+        height: 3rem !important;
     }
     
 }

@@ -12,30 +12,24 @@
 }
 
 p{
-    font-size: 3vh;
+    font-size: 1.3rem;
 }
 
 h1 {
-    font-size: 5vh !important;
+    font-size: 3rem!important;
     text-align: center;
 }
 
-#clica{
+/* #clica{
     width: 5vh;
     height: 5vh;
-}
-#sai svg{
-    height: 5vh;
-    width: 4vh;
-}
-#sair svg{
-    height: 5vh;
-    width: 4vh;
-}
+} */
+
 
 label{
-    font-size: 3vh !important;
+    font-size: 1.5rem !important;
 }
+
 #enviar{
     background-color: white !important;
     color: #005FF9;
@@ -54,7 +48,7 @@ label{
     justify-content: center;
 }
 input, select, textarea{
-    width: 90vh !important;
+    width: 40rem !important;
 }
 
 #btnp{
@@ -101,33 +95,31 @@ input, select, textarea{
         display: none;
     }
     
-    #clica{
+    /* #clica{
         width: 4vh !important;
         height: 4vh !important;
-    }
-    input, select{
-        width: 40vh !important;
-        height: 7vh !important;
-        font-size: 3vh !important;
-    }
-    #inputTema{
+    } */
+   
+    /* #inputTema{
         width: 40vh !important;
         align-items: center;
         justify-content: center;
-    }
+    } */
     textarea{
-        width: 40vh !important;
+        width: 18rem !important;
     }
     #pos1,#not1{
-        height: 3vh !important;
-        width: 5vh !important;
+        height: 2rem !important;
+        width: 2rem !important;
     }
     #pos2,#not2{
-        margin: unset !important;
-        height: 3vh !important;
-        width: 5vh !important;
+        height: 2rem !important;
+        width: 2rem !important;
     }
-   
+    input, select{
+        width: 18rem !important;
+        font-size: 1rem !important;
+    }
     
     
 }
@@ -153,35 +145,20 @@ input, select, textarea{
     #sai{
         display: none;
     }
-    
-    #clica{
-        width: 6vh;
-        height: 8vh;
-    }
     input, select{
-        width: 80vh !important;
-        height: 7vh !important;
-        font-size: 3vh !important;
+        width: 18rem !important;
+        font-size: 1rem !important;
     }
     textarea{
-        width: 80vh !important;
+        width: 18rem !important;
     }
     #pos1,#not1{
-        height: 5vh !important;
-        width: 4vh !important;
+        height: 2rem !important;
+        width: 2rem !important;
     }
     #pos2,#not2{
-        height: 5vh !important;
-        width: 4vh !important;
-    }
-    p{
-        font-size: 4vh;
-    }
-    h1 {
-        font-size: 6vh !important;
-    }
-    label{
-        font-size: 4vh !important;
+        height: 2rem !important;
+        width: 2rem !important;
     }
 }
 
@@ -200,17 +177,19 @@ input, select, textarea{
     #rodape {
         bottom: unset;
     }
-
+    /* input{
+        font-size: 2rem !important;
+    } */
     #sai{
         display: none;
     }
     #pos1,#not1{
-        height: 5vh !important;
-        width: 4vh !important;
+        height: 2rem !important;
+        width: 2rem !important;
     }
     #pos2,#not2{
-        height: 5vh !important;
-        width: 4vh !important;
+        height: 2rem !important;
+        width: 2rem !important;
     } 
     
 }
@@ -227,18 +206,18 @@ input, select, textarea{
         display: none;
     } 
     #pos1,#not1{
-        height: 5vh !important;
-        width: 4vh !important;
+        height: 2rem !important;
+        width: 2rem !important;
     }
     #pos2,#not2{
-        height: 5vh !important;
-        width: 4vh !important;
+        height: 2rem !important;
+        width: 2rem !important;
     } 
-    input, select{
+    /* input, select{
         width: 90vh !important;
         height: 6vh !important;
         font-size: 2vh !important;
-    }
+    } */
     #rodape{
         height: max-content;
     }
@@ -249,7 +228,7 @@ input, select, textarea{
     .indiciplina {
         height: max-content;
         padding-top: 8vh;
-        padding-bottom: 4vh;
+        padding-bottom: 8vh;
     }
     p{
         padding-left: 3vh !important;
@@ -258,21 +237,35 @@ input, select, textarea{
     #sair{
         display: none;
     }
-    input, select{
+    /* input, select{
         width: 90vh !important;
         height: 5vh !important;
         font-size: 2vh !important;
+    } */
+    input, select, textarea{
+        width: 80rem !important;
+        height: auto !important;
+        font-size: 1.5rem !important;
     }
     #pos1,#not1{
-        height: 10vh !important;
-        width: 5vh !important;
+        height: 3rem !important;
+        width: 3rem !important;
     }
     #pos2,#not2{
-        height: 10vh !important;
-        width: 5vh !important;
+        height: 3rem !important;
+        width: 3rem !important;
+    } 
+    p{
+        font-size: 2rem !important;
+    }
+    input{
+        font-size: 2rem !important;
+    }
+    label{
+        font-size: 2rem !important;
     }
     #enviar{
-        font-size: 3vh !important;
+        font-size: 2rem !important;
     }
     #rodape{
         height: max-content;
@@ -292,28 +285,33 @@ input, select, textarea{
     #subNav a{
         padding-right: 5rem;
     }
-
+    label{
+        font-size: 3rem !important;
+    }
     input, select, textarea{
-        width: 90vh !important;
-        height: 5vh !important;
-        font-size: 2vh !important;
+        width: 120rem !important;
+        height: auto !important;
+        font-size: 2.5rem !important;
     }
     p{
-        font-size: 3.5vh;
+        font-size: 3rem !important;
         padding-top: 2vh !important;
         padding-left: 3vh !important;
     }
+    h1{
+        font-size: 5rem !important;
+    }
 
     #pos1,#not1{
-        height: 5vh !important;
-        width: 4vh !important;
+        height: 5rem !important;
+        width: 5rem !important;
     }
     #pos2,#not2{
-        height: 5vh !important;
-        width: 4vh !important;
-    }
+        height: 5rem !important;
+        width: 5rem !important;
+    } 
     #enviar{
-        font-size: 3vh !important;
+        font-size: 4rem !important;
     }
     .form-group{
         padding-top: 3vh;
