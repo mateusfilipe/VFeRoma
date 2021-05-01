@@ -114,20 +114,22 @@ body {
 @media (min-width: 1200px) and (max-width: 2559.98px){
     .indiciplina{
         height: max-content;
+        padding-bottom: 10vh !important;
     }
     #rodape{
-        bottom: unset;
+        bottom: 0;
         height: max-content;
     }
 }
 
 @media (min-width: 2560px) {
     #rodape{
-        bottom: unset;
+        bottom: 0;
         height: max-content;
     }
     .indiciplina {
         height: max-content;
+        padding-bottom: 5vh;
     }
 
     h1{
