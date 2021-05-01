@@ -212,13 +212,25 @@ label{
     }
 
     #text_white {
-        width: 19rem !important;
+        width: 20rem !important;
         height: 10rem !important;
     }
     #trp{
         margin: auto;
     }
     .table-responsive{
+        font-size: 1.5rem !important;
+    }
+    h1 {
+        font-size: 3.5rem !important;
+    }
+    h2{
+        font-size: 1.7rem !important;
+    }
+    span{
+        font-size: 1.7rem !important;
+    }
+    label{
         font-size: 1.5rem !important;
     }
 }
@@ -238,7 +250,7 @@ label{
 @media (min-width: 768px) and (max-width: 991.98px) and (min-height:576px) and (max-height: 767.98px){
     
     .indiciplina {
-        height: 80vh;
+        height: max-content;
         padding-top: 5vh;
         padding-bottom: 10vh;
         /* background-color: #ffd900 !important; */
@@ -251,9 +263,9 @@ label{
 @media (min-width: 768px) and (max-width: 991.98px) and (min-height: 768px){
     
     .indiciplina {
-        height: 80vh;
+        height: max-content;
         padding-top: 10vh;
-        padding-bottom: 13vh;
+        padding-bottom: 18vh;
          /* background-color: brown !important;  */
     }
     #tipoLixo{
@@ -268,9 +280,10 @@ label{
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .indiciplina {
-        height: 83vh;
+        height: max-content;
         padding-top: 5vh;
-        padding-bottom: 10vh;
+        padding-bottom: 25vh;
+        /* background-color: yellow !important; */
     }
 
     h1 {
@@ -282,27 +295,29 @@ label{
     span{
         font-size: 1.7rem !important;
     }
-    #sair{
-        display: none;
-    }
-    #text_white {
-        width: 40vh !important;
-        height: 20vh !important;
-    }
-    #trp{
-        margin-left: 4vh;
-        margin-top: 1vh;
-    }
-    #rodape{
-        bottom: unset;
-        height: max-content;
-    }
     label{
         font-size: 1.5rem !important;
     }
     .table-responsive{
         font-size: 1.5rem !important;
     }
+    #sair{
+        display: none;
+    }
+    #text_white {
+        width: 20rem !important;
+        height: 10rem !important;
+    }
+    /* #trp{
+        margin-left: 4vh;
+        margin-top: 1vh;
+    } */
+    #rodape{
+        bottom: unset;
+        height: max-content;
+    }
+    
+    
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -310,9 +325,12 @@ label{
     .indiciplina {
         height: max-content;
         padding-top: 8vh;
-        padding-bottom: 13vh;
+        padding-bottom: 18vh;
+        /* background-color: yellowgreen !important; */
     }
-    
+    #rodape{
+        bottom: unset;
+    }
     #sair{
         display: none;
     }
@@ -325,8 +343,8 @@ label{
         font-size: 2rem;
         padding-left: 2rem !important;
     }
-    #ran p{
-        font-size: 1.5rem !important;
+    #ran span{
+        font-size: 2rem !important;
     }
     h1{
         font-size: 3.5rem !important;
