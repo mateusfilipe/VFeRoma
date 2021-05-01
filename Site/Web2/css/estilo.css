@@ -103,16 +103,16 @@ p, label, input,small{
 #nameproj {
     font-family: 'Rubik', sans-serif, Arial !important;
     font-weight: 700 !important;
-    font-size: x-large;
+    /* font-size: x-large; */
 }
 
 form,input,option,select,label{
     font-family: Inter,sans-serif,Arial;
 }
-#subNav svg{
+/* #subNav svg{
     width: 2rem !important;
     height: 2rem !important;
-}
+} */
 
 
 /* //Extra small devices (portrait phones, less than 576px) */
@@ -153,9 +153,6 @@ form,input,option,select,label{
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    footer #nameproj {
-        font-size: large;
-    }
     #nameproj {
         font-size: 1.5rem;
     }
@@ -174,11 +171,9 @@ form,input,option,select,label{
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    footer #nameproj {
-        font-size: x-large;
-    } 
-    footer #nameproj {
-        font-size: 3vh !important;
+    
+    #nameproj {
+        font-size: 1.5rem !important;
     }
     .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
         height: 2rem !important;
@@ -193,14 +188,8 @@ form,input,option,select,label{
  /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px){
     
-    footer #nameproj {
-        font-size: 3vh !important;
-    }
-    .navbar div #nameproj {
-        font-size: 3vh !important;
-    }
-    #subNav #navbarResponsive .nav-item a{ 
-        font-size: 3vh;
+    #nameproj {
+        font-size: 1.5rem !important;
     }
     .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
         height: 2rem !important;
@@ -216,26 +205,27 @@ form,input,option,select,label{
 @media (min-width: 2560px) {
     #mainNav ul li a,
     #mainNav div a {
-        font-size: 3vh !important;
+        font-size: 2.5rem !important;
     }
     #subNav ul li a,
     #subNav div a {
-        font-size: 3vh !important;
+        font-size: 2.5rem !important;
     }
-   
-    footer #nameproj {
-        font-size: 3vh !important;
+    #nameproj {
+        font-size: 2.5rem !important;
     }
+    
     #subNav a{
         padding-right: 5rem;
     }
+
     .nav-link svg, .dropdown-item svg, #sai svg{
-        height: 5rem !important;
-        width: 5rem !important;
+        height: 4rem !important;
+        width: 4rem !important;
     }
     #subNav svg, footer a svg{
-        width: 5rem !important;
-        height: 5rem !important;
+        width: 4rem !important;
+        height: 4rem !important;
     }
     #subNav a{
         padding-right: 5rem !important;

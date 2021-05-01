@@ -30,12 +30,27 @@ border-radius: 4px;
     #rodape{
         bottom: unset;
         height: max-content;
-        margin-top: unset !important;
+        /* margin-top: unset !important; */
     }
     .indiciplina {
         height: max-content;
         padding-bottom: 10vh;
-        padding-top: 15vh;
+        padding-top: 10vh;
+    }
+    h1{
+        font-size: 3rem !important;
+    }
+    label{
+        font-size: 1.5rem !important;
+    }
+    input,select{
+        font-size: 1.5rem !important;
+    }
+    .btn{
+        font-size: 1.5rem !important;
+    }
+    span{
+        font-size: 1rem;
     }
 }
 
@@ -44,27 +59,27 @@ border-radius: 4px;
     #rodape{
         bottom: unset;
         height: max-content;
-        margin-top: unset !important;
+        /* margin-top: unset !important; */
     }
     .indiciplina {
         height: max-content;
-        padding-bottom: 5vh;
+        padding-bottom: 15vh;
         padding-top: 5vh;
     }
     h1{
-        font-size: 5vh !important;
+        font-size: 3rem !important;
     }
     label{
-        font-size: 3vh !important;
+        font-size: 1.5rem !important;
     }
     input,select{
-        font-size: 2.5vh !important;
+        font-size: 1.5rem !important;
     }
     .btn{
-        font-size: 3vh !important;
+        font-size: 1.5rem !important;
     }
     span{
-        font-size: 3vh;
+        font-size: 1rem;
     }
 
 }
@@ -73,11 +88,11 @@ border-radius: 4px;
 /* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) */
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .indiciplina{
+    /* .indiciplina{
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 10vh;
-    }
+    } */
     #rodape{
         bottom: unset;
     }
@@ -95,9 +110,52 @@ border-radius: 4px;
     }
     span{
         font-size: 1rem;
-        padding-bottom: vh;
+        padding-bottom: 1rem;
     }
 
+}
+@media (min-width: 768px) and (max-width: 991.98px) and (max-height:575.98px){
+    .indiciplina {
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 15vh;
+        /* background-color: blueviolet !important; */
+    }
+    #rodape {
+        bottom: unset;
+        height: max-content;
+    }
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) and (min-height:576px) and (max-height: 767.98px){
+    
+    .indiciplina {
+        height: 83vh;
+        padding-top: 5vh;
+        /* padding-bottom: 10vh; */
+        /* background-color: #ffd900 !important; */
+    }
+    #c_blue{
+        min-height: max-content;
+    }
+     #rodape {
+        bottom: unset;
+        height: max-content;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) and (min-height: 768px){
+    
+    .indiciplina {
+        height: 83vh;
+        padding-top: 10vh;
+        padding-bottom: 13vh;
+        /* background-color: brown !important; */
+    }
+
+    #rodape {
+        bottom: unset;
+        height: max-content;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -109,22 +167,28 @@ border-radius: 4px;
     .indiciplina{
         height: max-content;
         padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding-bottom: 20vh;
+    }
+    #rodape {
+        bottom: unset;
+        height: max-content;
+        min-height: max-content;
     }
     h1{
-        font-size: 5vh !important;
+        font-size: 2rem !important;
     }
     label{
-        font-size: 3vh !important;
+        font-size: 1.5rem !important;
     }
     input,select{
-        font-size: 2.5vh !important;
+        font-size: 1rem !important;
     }
     .btn{
-        font-size: 3vh !important;
+        font-size: 1rem !important;
     }
     span{
-        font-size: 3vh;
+        font-size: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
@@ -140,19 +204,19 @@ border-radius: 4px;
         padding-bottom: 8vh;
     }
     h1{
-        font-size: 5vh !important;
+        font-size: 3rem !important;
     }
     label{
-        font-size: 3vh !important;
+        font-size: 1.5rem !important;
     }
     input,select{
-        font-size: 2.5vh !important;
+        font-size: 1.5rem !important;
     }
     .btn{
-        font-size: 3vh !important;
+        font-size: 1.5rem !important;
     }
     span{
-        font-size: 3vh;
+        font-size: 1.5rem;
     }
     
 }
@@ -164,22 +228,22 @@ border-radius: 4px;
         padding-bottom: 20vh;
     }
     h1{
-        font-size: 5vh !important;
+        font-size: 5rem !important;
     }
     label{
-        font-size: 3vh !important;
+        font-size: 2.5rem !important;
     }
     input,select{
-        font-size: 2.5vh !important;
+        font-size: 2.5rem !important;
     }
     .btn{
-        font-size: 3vh !important;
+        font-size: 2.5rem !important;
     }
     .criarAlun{
         padding: 5rem;
     }
     span{
-        font-size: 3vh;
+        font-size: 2rem;
     }
     
 }
