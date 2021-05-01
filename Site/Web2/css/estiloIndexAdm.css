@@ -148,11 +148,11 @@ span{
     .indiciplina {
         height: max-content;
         padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding-bottom: 11vh;
     }
 
     #rodape {
-        bottom: unset;
+        bottom: 0;
     }
     #sai{
         display: none;
@@ -187,9 +187,6 @@ span{
     #trp{
         margin-left: 4vh;
         margin-top: 1vh;
-    }
-    .text_col{
-        border-left: chartreuse 3rem !important;
     }
 }
 
