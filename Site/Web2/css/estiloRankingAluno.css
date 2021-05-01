@@ -141,6 +141,7 @@ label{
         bottom: unset;
         height: max-content !important;
         margin-top: 4vh !important;
+        
     }
 
     #rodape .col {
@@ -151,14 +152,12 @@ label{
         height: max-content;
         padding-top: 10vh;
         padding-bottom: 10vh;
+        
     }
     #sai{
         display: none;
     }
-    #clica{
-        width: 6vh;
-        height: 8vh;
-    }
+   
     
     #tipoLixo{
         border-right: none !important;
@@ -174,20 +173,20 @@ label{
         width: 5vh !important;
     }
     h2 {
-        font-size: 7vh !important;
+        font-size: 2rem !important;
     }
     #c_blue h1{
-        font-size: 10vh !important;
+        font-size: 3rem !important;
     }
     .table-responsive{
-        font-size: 5vh !important;
+        font-size: 1.5rem !important;
     }
     thead th{
-        border-width: 1vh !important; 
+        border-width: 0.3rem !important; 
     }
     
     label{
-        font-size: 4vh !important;
+        font-size: 1.5rem !important;
     }
     
 }
@@ -197,11 +196,11 @@ label{
 /* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) */
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 5vh;
-    }
+    } */
 
     #rodape {
         bottom: unset;
@@ -213,19 +212,63 @@ label{
     }
 
     #text_white {
-        width: 17rem !important;
-        height: 8rem !important;
+        width: 19rem !important;
+        height: 10rem !important;
     }
     #trp{
         margin: auto;
     }
+    .table-responsive{
+        font-size: 1.5rem !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) and (max-height:575.98px){
+    .indiciplina {
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 15vh;
+        /* background-color: blueviolet !important; */
+    }
+    #rodape {
+        bottom: unset;
+        height: max-content;
+    }
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) and (min-height:576px) and (max-height: 767.98px){
     
+    .indiciplina {
+        height: 80vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        /* background-color: #ffd900 !important; */
+    }
+     #rodape {
+        bottom: unset;
+        height: max-content;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) and (min-height: 768px){
+    
+    .indiciplina {
+        height: 80vh;
+        padding-top: 10vh;
+        padding-bottom: 13vh;
+         /* background-color: brown !important;  */
+    }
+    #tipoLixo{
+        border-right: none !important;
+    }
+    #rodape {
+        bottom: unset;
+        height: max-content;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .indiciplina {
-        height: max-content;
+        height: 83vh;
         padding-top: 5vh;
         padding-bottom: 10vh;
     }
@@ -251,9 +294,13 @@ label{
         margin-top: 1vh;
     }
     #rodape{
+        bottom: unset;
         height: max-content;
     }
     label{
+        font-size: 1.5rem !important;
+    }
+    .table-responsive{
         font-size: 1.5rem !important;
     }
 }
@@ -282,19 +329,19 @@ label{
         font-size: 1.5rem !important;
     }
     h1{
-        font-size: 4rem !important;
+        font-size: 3.5rem !important;
     }
     h2{
-        font-size: 3rem !important;
+        font-size: 2.5rem !important;
     }
     .table-responsive{
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
     #inputIF{
         font-size: 1.5rem !important;
     }
     label{
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
 
 }
