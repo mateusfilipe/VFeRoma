@@ -28,14 +28,7 @@ h2 {
     width: 5vh;
     height: 5vh;
 }
-#sai svg{
-    height: 5vh;
-    width: 4vh;
-}
-#sair svg{
-    height: 5vh;
-    width: 4vh;
-}
+
 
 
 .col-form-label{
@@ -213,15 +206,9 @@ h2 {
 
 
 /* // Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) */
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .indiciplina {
-        height: 80vh;
-        padding-top: 5vh;
-        padding-bottom: 8vh;
-    }
-
+@media (min-width: 768px) and (max-width: 991.98px){
+    
     #rodape {
         bottom: unset;
         height: max-content;
@@ -255,6 +242,38 @@ h2 {
     }
     h2{
         font-size: 1.3rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) and (max-height:575.98px){
+    .indiciplina {
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 15vh;
+        /* background-color: blueviolet !important; */
+    }
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) and (min-height:576px) and (max-height: 767.98px){
+    
+    .indiciplina {
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        /* background-color: #ffd900 !important; */
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) and (min-height: 768px){
+    
+    .indiciplina {
+        height: 80vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        /* background-color: brown !important; */
+    }
+    #rodape {
+        bottom: unset;
+        height: max-content;
     }
 }
 
