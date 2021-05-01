@@ -316,6 +316,10 @@ h2 {
         font-size: 3vh !important;
         border-radius: 5px !important; 
     }
+    .btn-block svg{
+        height: 1.5rem !important;
+        width: 1.5rem !important;
+    }
 }
 
 @media (min-width: 2560px) {
@@ -356,6 +360,10 @@ h2 {
     #mailInfo{
         font-size: 3vh !important;
         padding-top: 8vh !important;
+    }
+    .btn-block svg{
+        height: 4rem !important;
+        width: 4rem !important;
     }
     
 }
