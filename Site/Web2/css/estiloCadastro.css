@@ -173,42 +173,47 @@ body {
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px){
     .indiciplina{
-        height: 80vh !important;
-        /* padding-bottom: 9rem; */
+        height: max-content !important;
+        /* padding-bottom: 13vh; */
     }
     #rodape{
-        bottom: 0;
+        bottom: unset;
         height: max-content;
     }
     #c_blue{
         height: max-content;
+        padding-bottom: 18vh;
     }
 }
 
 @media (min-width: 2560px) {
     #rodape{
-        bottom: 0;
+        bottom: unset;
         height: max-content;
+        min-height: max-content;
     }
     .indiciplina {
         height: max-content;
-        padding-bottom: 5vh;
     }
-
+    #c_blue{
+        height: max-content;
+        padding-bottom: 8vh;
+    }
     h1{
-        font-size: 5vh !important;
+        font-size: 5rem !important;
     }
     label{
-        font-size: 3vh !important;
+        font-size: 2.5rem !important;
     }
     input,select{
-        font-size: 2.5vh !important;
-    }
-    small{
-        font-size: 1.5vh !important;
+        font-size: 2.5rem !important;
     }
     .btn{
-        font-size: 2.5vh !important;
+        font-size: 2.5rem !important;
+    }
+    span,small{
+        font-size: 1.5rem !important;
+        padding-bottom: 1rem;
     }
     .criarAlun{
         padding: 5rem;

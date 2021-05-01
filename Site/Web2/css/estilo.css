@@ -118,7 +118,7 @@ form,input,option,select,label{
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     #nameproj {
-        font-size: 3vh;
+        font-size: 1.5rem !important;
     }
     .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
         height: 1.5rem !important;
@@ -136,7 +136,7 @@ form,input,option,select,label{
 /* //Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     #nameproj {
-        font-size: 5vh;
+        font-size: 1.5rem !important;
     }
     .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
         height: 2rem !important;
