@@ -121,11 +121,11 @@ form,input,option,select,label{
         font-size: 3vh;
     }
     .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
-        height: 2rem !important;
+        height: 1.5rem !important;
         width: 2rem !important;
     }
     #subNav svg,footer a svg{
-        width: 2rem !important;
+        width: 1.5rem !important;
         height: 2rem !important;
     }
     .navbar button{
@@ -237,5 +237,7 @@ form,input,option,select,label{
         width: 5rem !important;
         height: 5rem !important;
     }
-    
+    #subNav a{
+        padding-right: 5rem !important;
+    }
 }

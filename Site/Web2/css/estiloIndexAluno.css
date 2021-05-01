@@ -90,15 +90,15 @@ h1 {
     #sai{
         display: none;
     }
-    #clica{
+    /* #clica{
         width: 6vh;
         height: 8vh;
-    }
+    } */
 }
 
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape){
+@media (min-width: 768px) and (max-width: 991.98px) {
     .indiciplina {
         height: max-content;
         padding-top: 10vh;

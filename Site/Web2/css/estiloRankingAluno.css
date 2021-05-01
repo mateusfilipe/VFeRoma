@@ -110,18 +110,18 @@ label{
         display: none;
     }
     
-    #clica{
+    /* #clica{
         width: 4vh !important;
         height: 4vh !important;
+    } */
+    
+    #tipoLixo{
+        border-right: none !important;
     }
     #text_white {
         width: 17rem !important;
         height: 8rem !important;
     }
-    #tipoLixo{
-        border-right: none !important;
-    }
-    
     #trp{
         margin-left: 4vh;
         margin-top: 1vh;
@@ -159,14 +159,14 @@ label{
         width: 6vh;
         height: 8vh;
     }
+    
+    #tipoLixo{
+        border-right: none !important;
+    }
     #text_white {
         width: 17rem !important;
         height: 8rem !important;
     }
-    #tipoLixo{
-        border-right: none !important;
-    }
-    
     #trp{
         margin-left: 4vh;
         margin-top: 1vh;
@@ -231,14 +231,20 @@ label{
     }
 
     h1 {
-        font-size: 5vh !important;
+        font-size: 3.5rem !important;
+    }
+    h2{
+        font-size: 1.7rem !important;
+    }
+    span{
+        font-size: 1.7rem !important;
     }
     #sair{
         display: none;
     }
     #text_white {
-        width: 40vh ;
-        height: 20vh ;
+        width: 40vh !important;
+        height: 20vh !important;
     }
     #trp{
         margin-left: 4vh;
@@ -247,7 +253,9 @@ label{
     #rodape{
         height: max-content;
     }
-
+    label{
+        font-size: 1.5rem !important;
+    }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -266,6 +274,28 @@ label{
         height: 6vh !important;
         width: 6vh !important;
     }
+    p{
+        font-size: 2rem;
+        padding-left: 2rem !important;
+    }
+    #ran p{
+        font-size: 1.5rem !important;
+    }
+    h1{
+        font-size: 4rem !important;
+    }
+    h2{
+        font-size: 3rem !important;
+    }
+    .table-responsive{
+        font-size: 2rem !important;
+    }
+    #inputIF{
+        font-size: 1.5rem !important;
+    }
+    label{
+        font-size: 2rem !important;
+    }
 
 }
 
@@ -279,15 +309,12 @@ label{
     #sair{
         display: none;
     }
-    #subNav a{
-        padding-right: 5rem;
-    }
-
+    
     select{
         height: auto !important;
         font-size: 2vh !important;
     }
-
+    
     #trp{
         height: 6vh !important;
         width: 6vh !important;
@@ -295,5 +322,36 @@ label{
     #inputIF{
         font-size: 3rem !important;
     }
+    #text_white {
+        width: 50rem !important;
+        height: 20rem !important;
+    }
 
+    span{
+        font-size: 4rem !important;
+        padding-left: 1rem;
+    }
+    p{
+        font-size: 3.5rem !important;
+        padding-left: 2rem !important;
+    }
+    #ran p{
+        font-size: 3.5rem !important;
+    }
+    h1{
+        font-size: 6rem !important;
+    }
+    h2{
+        font-size: 4rem !important;
+    }
+    .table-responsive{
+        font-size: 3.5rem !important;
+    }
+    thead th{
+        border-width: 0.5rem !important; 
+    }
+    
+    label{
+        font-size: 3.5vh !important;
+    }
 }
