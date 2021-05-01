@@ -1,0 +1,295 @@
+.dropdown-menu {
+    margin: 0px -3px;
+    padding: 0px;
+}
+.dropdown-menu{
+    color: black;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+.dropdown-item:hover {
+    background-color: unset !important;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 3rem!important;
+    text-align: center;
+}
+
+label{
+    font-size: 1.5rem !important;
+}
+
+#enviar{
+    background-color: white !important;
+    color: #005FF9;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#enviar:hover{
+    color: #005FF9;
+    font-style: italic;
+}
+#text_white{
+    align-items: center;
+    justify-content: center;
+}
+input, select, textarea{
+    width: 40rem !important;
+}
+
+/* //Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #rodape {
+        bottom: unset;
+        height: max-content !important;
+        margin-bottom: 2rem !important;
+        margin-top: 2rem !important;
+
+    }
+    #rodape .col {
+        margin-top: 0 !important;
+    }
+   
+    .indiciplina {
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    #sai{
+        display: none;
+    }
+    
+    /* #clica{
+        width: 4vh !important;
+        height: 4vh !important;
+    } */
+   
+    /* #inputTema{
+        width: 40vh !important;
+        align-items: center;
+        justify-content: center;
+    } */
+    textarea{
+        width: 18rem !important;
+    }
+    #pos1,#not1{
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+    #pos2,#not2{
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+    input, select{
+        width: 18rem !important;
+        font-size: 1rem !important;
+    }
+    
+    
+}
+
+
+/* //Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #rodape {
+        bottom: unset;
+        margin-bottom: 2rem !important;
+        margin-top: 1rem !important;
+    }
+
+    #rodape .col {
+        margin-top: 0 !important;
+    }
+   
+    .indiciplina {
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    #sai{
+        display: none;
+    }
+    input, select{
+        width: 18rem !important;
+        font-size: 1rem !important;
+    }
+    textarea{
+        width: 18rem !important;
+    }
+    #pos1,#not1{
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+    #pos2,#not2{
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) */
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    
+    .indiciplina {
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    #rodape {
+        bottom: unset;
+    }
+    /* input{
+        font-size: 2rem !important;
+    } */
+    #sai{
+        display: none;
+    }
+    #pos1,#not1{
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+    #pos2,#not2{
+        height: 2rem !important;
+        width: 2rem !important;
+    } 
+    
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .indiciplina {
+        height: max-content;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+    }
+
+    #sair{
+        display: none;
+    } 
+    #pos1,#not1{
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+    #pos2,#not2{
+        height: 2rem !important;
+        width: 2rem !important;
+    } 
+    /* input, select{
+        width: 90vh !important;
+        height: 6vh !important;
+        font-size: 2vh !important;
+    } */
+    #rodape{
+        height: max-content;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 2559.98px) {
+    .indiciplina {
+        height: max-content;
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
+    p{
+        padding-left: 3vh !important;
+    }
+   
+    #sair{
+        display: none;
+    }
+    /* input, select{
+        width: 90vh !important;
+        height: 5vh !important;
+        font-size: 2vh !important;
+    } */
+    input, select, textarea{
+        width: 80rem !important;
+        height: auto !important;
+        font-size: 1.5rem !important;
+    }
+    #pos1,#not1{
+        height: 3rem !important;
+        width: 3rem !important;
+    }
+    #pos2,#not2{
+        height: 3rem !important;
+        width: 3rem !important;
+    } 
+    p{
+        font-size: 2rem !important;
+    }
+    input{
+        font-size: 2rem !important;
+    }
+    label{
+        font-size: 2rem !important;
+    }
+    #enviar{
+        font-size: 2rem !important;
+    }
+    #rodape{
+        height: max-content;
+    }
+}
+
+@media (min-width: 2560px) {
+    .indiciplina {
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    #sair{
+        display: none;
+    }
+    #subNav a{
+        padding-right: 5rem;
+    }
+    label{
+        font-size: 3rem !important;
+    }
+    input, select, textarea{
+        width: 120rem !important;
+        height: auto !important;
+        font-size: 2.5rem !important;
+    }
+    p{
+        font-size: 3rem !important;
+        padding-top: 2vh !important;
+        padding-left: 3vh !important;
+    }
+    h1{
+        font-size: 5rem !important;
+    }
+
+    #pos1,#not1{
+        height: 5rem !important;
+        width: 5rem !important;
+    }
+    #pos2,#not2{
+        height: 5rem !important;
+        width: 5rem !important;
+    } 
+    #enviar{
+        font-size: 4rem !important;
+    }
+    .form-group{
+        padding-top: 3vh;
+    }
+    #rodape{
+        height: max-content;
+    }
+    
+
+}
