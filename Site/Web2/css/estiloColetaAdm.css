@@ -79,14 +79,7 @@ input, select, textarea{
     textarea{
         width: 18rem !important;
     }
-    #pos1,#not1{
-        height: 2rem !important;
-        width: 2rem !important;
-    }
-    #pos2,#not2{
-        height: 2rem !important;
-        width: 2rem !important;
-    }
+
     input, select{
         width: 18rem !important;
         font-size: 1rem !important;
@@ -123,14 +116,7 @@ input, select, textarea{
     textarea{
         width: 18rem !important;
     }
-    #pos1,#not1{
-        height: 2rem !important;
-        width: 2rem !important;
-    }
-    #pos2,#not2{
-        height: 2rem !important;
-        width: 2rem !important;
-    }
+
 }
 
 
@@ -154,14 +140,6 @@ input, select, textarea{
     #sai{
         display: none;
     }
-    #pos1,#not1{
-        height: 2rem !important;
-        width: 2rem !important;
-    }
-    #pos2,#not2{
-        height: 2rem !important;
-        width: 2rem !important;
-    } 
     
 }
 
@@ -176,14 +154,7 @@ input, select, textarea{
     #sair{
         display: none;
     } 
-    #pos1,#not1{
-        height: 2rem !important;
-        width: 2rem !important;
-    }
-    #pos2,#not2{
-        height: 2rem !important;
-        width: 2rem !important;
-    } 
+
     /* input, select{
         width: 90vh !important;
         height: 6vh !important;
@@ -218,14 +189,7 @@ input, select, textarea{
         height: auto !important;
         font-size: 1.5rem !important;
     }
-    #pos1,#not1{
-        height: 3rem !important;
-        width: 3rem !important;
-    }
-    #pos2,#not2{
-        height: 3rem !important;
-        width: 3rem !important;
-    } 
+
     p{
         font-size: 2rem !important;
     }
@@ -273,14 +237,6 @@ input, select, textarea{
         font-size: 5rem !important;
     }
 
-    #pos1,#not1{
-        height: 5rem !important;
-        width: 5rem !important;
-    }
-    #pos2,#not2{
-        height: 5rem !important;
-        width: 5rem !important;
-    } 
     #enviar{
         font-size: 4rem !important;
     }
