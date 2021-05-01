@@ -69,6 +69,22 @@ body {
     .indiciplina {
         height: max-content;
     }
+    h1{
+        font-size: 2rem !important;
+    }
+    label{
+        font-size: 1.5rem !important;
+    }
+    input,select{
+        font-size: 1rem !important;
+    }
+    .btn{
+        font-size: 1rem !important;
+    }
+    span{
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
 
 }
 
@@ -80,6 +96,26 @@ body {
     }
     .indiciplina {
         height: max-content;
+        /* background-color: aqua !important; */
+    }
+    #c_blue{
+        /* background-color: aqua !important; */
+    }
+    h1{
+        font-size: 2rem !important;
+    }
+    label{
+        font-size: 1.5rem !important;
+    }
+    input,select{
+        font-size: 1rem !important;
+    }
+    .btn{
+        font-size: 1rem !important;
+    }
+    span{
+        font-size: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
@@ -91,22 +127,46 @@ body {
     }
     .indiciplina {
         height: max-content;
+        
     }
     #sair svg{
         height: 5vh !important;
         width: 5vh !important;
     }
-
 }
+
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     #rodape{
-        bottom: 0;
+        bottom: unset !important;
         height: max-content;
+        min-height: max-content;
+        /* background-color: blueviolet !important; */
+    }
+    #c_blue{
+        /* background-color: yellowgreen !important; */
+        height: max-content;
+        padding-bottom: 15vh;
     }
     .indiciplina {
-        height: 80vh;
+        height: max-content;
+    }
+    h1{
+        font-size: 2rem !important;
+    }
+    label{
+        font-size: 1.5rem !important;
+    }
+    input,select{
+        font-size: 1rem !important;
+    }
+    .btn{
+        font-size: 1rem !important;
+    }
+    span{
+        font-size: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
