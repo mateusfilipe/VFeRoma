@@ -203,12 +203,12 @@ form,input,option,select,label{
         font-size: 3vh;
     }
     .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
-        height: 2.5rem !important;
-        width: 3rem !important;
+        height: 2rem !important;
+        width: 2.5rem !important;
     }
     #subNav svg, footer a svg{
-        width: 2.5rem !important;
-        height: 3rem !important;
+        width: 2rem !important;
+        height: 2.5rem !important;
     }
     
 }
