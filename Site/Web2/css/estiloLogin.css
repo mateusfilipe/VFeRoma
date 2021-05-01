@@ -154,8 +154,9 @@ border-radius: 4px;
 
 @media (min-width: 2560px) {
     .indiciplina{
-        height: 85vh;
+        height: max-content;
         padding-top: 10vh;
+        padding-bottom: 20vh;
     }
     h1{
         font-size: 5vh !important;
