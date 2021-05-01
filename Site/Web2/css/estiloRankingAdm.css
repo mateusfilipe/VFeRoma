@@ -1,0 +1,357 @@
+.dropdown-menu {
+    margin: 0px -3px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.dropdown-menu{
+    color: black;
+    filter: drop-shadow(4px 4px 4px black);
+}
+.dropdown-item:hover {
+    background-color: unset !important;
+}
+
+p{
+    font-size: 3vh;
+}
+
+h1 {
+    font-size: 2.5rem !important;
+}
+
+h2 {
+    font-size: 1.5rem !important;
+}
+
+/* #clica{
+    width: 5vh;
+    height: 5vh;
+} */
+
+
+tr,th {
+    color: white;
+    font-family: Inter,sans-serif,Arial;
+}
+tbody tr:hover{
+    color: #005FF9 !important;
+    background-color: white !important;
+}
+
+#tipoLixo{
+    border-width: 0.7vh !important; 
+}
+
+.text_col {
+    text-align: center !important;
+}
+
+#text_white {
+    width: 25rem !important;
+    height: 10rem !important;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+/* #card1{
+    background-color: #FFFFCC;
+    height: vh !important;
+    border-radius: 50%;
+} */
+
+#trp{
+    margin-left: 8vh;
+    margin-top: 1vh;
+    color: gold;
+}
+#ran{
+    margin-top: 4vh !important;
+}
+#ran p{
+    font-size: 1.5rem!important;
+}
+.table-responsive{
+    font-size: 1rem !important;
+}
+thead th{
+    border-width: 0.5vh !important; 
+}
+td,tr,th{
+    border-width: 0.3vh !important; 
+}
+label{
+    font-size: 1.5rem !important;
+}
+
+
+/* //Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #rodape {
+        bottom: unset;
+        height: max-content;
+        margin: unset;
+        padding-bottom: 2rem !important;
+    }
+    #rodape .col {
+        margin-top: 0 !important;
+    }
+    
+    .indiciplina {
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    #sai{
+        display: none;
+    }
+    
+    /* #clica{
+        width: 4vh !important;
+        height: 4vh !important;
+    } */
+    
+    #tipoLixo{
+        border-right: none !important;
+    }
+    #text_white {
+        width: 17rem !important;
+        height: 8rem !important;
+    }
+    #trp{
+        margin-left: 4vh;
+        margin-top: 1vh;
+        height: 5vh !important;
+        width: 5vh !important;
+    }
+    h2 {
+        font-size: 5vh !important;
+    }
+    
+}
+
+
+/* //Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #rodape {
+        bottom: unset;
+        height: max-content !important;
+        margin-top: 4vh !important;
+    }
+
+    #rodape .col {
+        margin-top: 0 !important;
+    }
+    
+    .indiciplina {
+        height: max-content;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+    #sai{
+        display: none;
+    }
+    #clica{
+        width: 6vh;
+        height: 8vh;
+    }
+    
+    #tipoLixo{
+        border-right: none !important;
+    }
+    #text_white {
+        width: 17rem !important;
+        height: 8rem !important;
+    }
+    #trp{
+        margin-left: 4vh;
+        margin-top: 1vh;
+        height: 5vh !important;
+        width: 5vh !important;
+    }
+    h2 {
+        font-size: 7vh !important;
+    }
+    #c_blue h1{
+        font-size: 10vh !important;
+    }
+    .table-responsive{
+        font-size: 5vh !important;
+    }
+    thead th{
+        border-width: 1vh !important; 
+    }
+    
+    label{
+        font-size: 4vh !important;
+    }
+    
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .indiciplina {
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    #rodape {
+        bottom: unset;
+        height: max-content;
+    }
+
+    #sai{
+        display: none;
+    }
+
+    #text_white {
+        width: 17rem !important;
+        height: 8rem !important;
+    }
+    #trp{
+        margin: auto;
+    }
+    
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .indiciplina {
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+    }
+
+    h1 {
+        font-size: 3.5rem !important;
+    }
+    h2{
+        font-size: 1.7rem !important;
+    }
+    span{
+        font-size: 1.7rem !important;
+    }
+    #sair{
+        display: none;
+    }
+    #text_white {
+        width: 40vh !important;
+        height: 20vh !important;
+    }
+    #trp{
+        margin-left: 4vh;
+        margin-top: 1vh;
+    }
+    #rodape{
+        height: max-content;
+    }
+    label{
+        font-size: 1.5rem !important;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 2559.98px) {
+    .indiciplina {
+        height: max-content;
+        padding-top: 8vh;
+        padding-bottom: 13vh;
+    }
+    
+    #sair{
+        display: none;
+    }
+    
+    #trp{
+        height: 6vh !important;
+        width: 6vh !important;
+    }
+    p{
+        font-size: 2rem;
+        padding-left: 2rem !important;
+    }
+    #ran p{
+        font-size: 1.5rem !important;
+    }
+    h1{
+        font-size: 4rem !important;
+    }
+    h2{
+        font-size: 3rem !important;
+    }
+    .table-responsive{
+        font-size: 2rem !important;
+    }
+    #inputIF{
+        font-size: 1.5rem !important;
+    }
+    label{
+        font-size: 2rem !important;
+    }
+
+}
+
+@media (min-width: 2560px) {
+    .indiciplina {
+        height: max-content;
+        padding-top: 13vh;
+        padding-bottom: 18vh;
+    }
+
+    #sair{
+        display: none;
+    }
+    
+    select{
+        height: auto !important;
+        font-size: 2vh !important;
+    }
+    
+    #trp{
+        height: 6vh !important;
+        width: 6vh !important;
+    }
+    #inputIF{
+        font-size: 3rem !important;
+    }
+    #text_white {
+        width: 50rem !important;
+        height: 20rem !important;
+    }
+
+    span{
+        font-size: 4rem !important;
+        padding-left: 1rem;
+    }
+    p{
+        font-size: 3.5rem !important;
+        padding-left: 2rem !important;
+    }
+    #ran p{
+        font-size: 3.5rem !important;
+    }
+    h1{
+        font-size: 6rem !important;
+    }
+    h2{
+        font-size: 4rem !important;
+    }
+    .table-responsive{
+        font-size: 3.5rem !important;
+    }
+    thead th{
+        border-width: 0.5rem !important; 
+    }
+    
+    label{
+        font-size: 3.5vh !important;
+    }
+}
