@@ -102,9 +102,14 @@ border-radius: 4px;
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .indiciplina{
+    /* .indiciplina{
         height: 80vh;
         padding-top: 10vh;
+    } */
+    .indiciplina{
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
     h1{
         font-size: 5vh !important;
