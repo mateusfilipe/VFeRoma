@@ -13,12 +13,19 @@
     <script src="/node_modules/jquery/dist/jquery.slim.js"></script>
     <script src="/node_modules/popper/index.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="script/carregamento.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 
 <body class="">
+    <div id="preloader">
+        <div class="inner">
+            <div class="spinner-border text-light d-block"
+                style="width: 15rem; height: 15rem; animation-timing-function: linear;" role="status">
+            </div>
+        </div>
+    </div>
     <!-- Cabeçalho -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" id="subNav">

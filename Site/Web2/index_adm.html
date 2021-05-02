@@ -2,7 +2,7 @@
 <html lang="pt_br">
 
 <head>
-    <title>TrashMap-VFeRoma</title>
+    <title>Index-Adm</title>
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="/css/estilo.css">
@@ -13,12 +13,19 @@
     <script src="/node_modules/jquery/dist/jquery.slim.js"></script>
     <script src="/node_modules/popper/index.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="script/carregamento.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
-
 <body class="">
+    <div id="preloader">
+        <div class="inner">
+            <div class="spinner-border text-light d-block"
+                style="width: 15rem; height: 15rem; animation-timing-function: linear;" role="status">
+            </div>
+        </div>
+    </div>
     <!-- Cabeçalho -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" id="subNav">
@@ -133,7 +140,7 @@
         <div id="" class="container-fluid row">
             <p class="text_white col-12 pt-md-5">Pontos de coleta perto de você:</p>
             <div class="border border-top-0 border-left-0 border-bottom-0 border-white col-md-6 d-flex" id="diva">
-                <div id="map-container-google-1" class="z-depth-1-half m-0 col align-self-center mx-auto" style="height: 40vh !important;">
+                <div id="map-container-google-1" class="z-depth-1-half m-0 col align-self-center mx-auto" style="height: 20rem !important;">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15009.149206050868!2d-43.838397!3d-19.8700868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x779dd569368a90d4!2sInstituto%20Federal%20de%20Minas%20Gerais%20Campus%20Sabar%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1619576702328!5m2!1spt-BR!2sbr"
                         loading="lazy" style="border:0" class="h-100 w-100 align-self-center" allowfullscreen>
@@ -228,6 +235,13 @@
     </footer>
 </body>
 <script>
+     //<![CDATA[
+$(window).on('load', function () {
+    $('#preloader .inner').fadeOut();
+    $('#preloader').delay(350).fadeOut('slow'); 
+    $('body').delay(350).css({'overflow': 'visible'});
+})
+//]]>
     var coll = document.getElementsByClassName("ap");
 
 
@@ -251,6 +265,7 @@
             }
         }
     }
+       
 </script>
 
 </html>
