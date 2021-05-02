@@ -30,33 +30,37 @@ h1 {
 }
 
 #enviar:hover{
+    /* background-color: #d3d3d3 !important; */
     color: #005FF9;
     font-style: italic;
 }
 
-#text_white{
-    align-items: center;
-    justify-content: center;
+.form-group label{
+    font-size: 1.5rem !important;
 }
 
-#inputData{
-    border-radius: 10px;
+
+#inputDia,#inputMes,#inputAno{
+    /* border-radius: 10px; */
     width: 10rem !important;
     text-align: center;
 }
 
-#inputQtd{
-    border-radius: 10px;
-    width: 30rem !important;
+
+
+#inputlocal, #inputtipo, #inputQtd{
+    /* border-radius: 10px; */
+    width: 70vh !important;
 }
 
-#inputIF{
-    border-radius: 10px;
-    width: 50rem !important;
-}
-
-input, select, textarea{
+/* input, select, textarea{
     width: 40rem !important;
+} */
+.indiciplina {
+    min-height: 82vh;
+    max-height: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 /* //Extra small devices (portrait phones, less than 576px) */
@@ -66,43 +70,47 @@ input, select, textarea{
         height: max-content !important;
         margin-bottom: 2rem !important;
         margin-top: 2rem !important;
-
     }
     #rodape .col {
         margin-top: 0 !important;
     }
    
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 5vh;
-    }
+    } */
     #sai{
         display: none;
     }
-    
-    /* #clica{
-        width: 4vh !important;
-        height: 4vh !important;
+    /* #text_white, #data, #select_trash4{
+        justify-items: center !important;
+        align-items: center !important;
+        text-align: center !important;
     } */
-   
-    /* #inputTema{
-        width: 40vh !important;
-        align-items: center;
-        justify-content: center;
-    } */
-    textarea{
-        width: 18rem !important;
+    #titulo h1{
+        font-size: 2.5rem !important;
     }
-
-    input, select{
-        width: 18rem !important;
+    .form-group label,#data label{
+        font-size: 1.3rem !important;
+    }
+    input,select{
         font-size: 1rem !important;
+    }
+    .btn{
+        margin-top: 1rem !important;
+        font-size: 1rem !important;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    #inputlocal, #inputtipo,#inputQtd{
+        width: 35vh !important;
     }
     
     
 }
-
+/* AQQI mudar tamanho input,select para vh */
 
 /* //Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -116,20 +124,35 @@ input, select, textarea{
         margin-top: 0 !important;
     }
    
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 5vh;
-    }
+    } */
     #sai{
         display: none;
     }
-    input, select{
-        width: 18rem !important;
+    #text_white{
+        align-items: center !important;
+    }
+    #titulo h1{
+        font-size: 2.5rem !important;
+    }
+    .form-group label,#data label{
+        font-size: 1.3rem !important;
+    }
+    input,select{
         font-size: 1rem !important;
     }
-    textarea{
-        width: 18rem !important;
+    .btn{
+        margin-top: 1rem !important;
+        font-size: 1rem !important;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    #inputlocal, #inputtipo,#inputQtd{
+        width: 50vh !important;
     }
 
 }
@@ -140,11 +163,11 @@ input, select, textarea{
 
 @media (min-width: 768px) and (max-width: 991.98px){
     
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 5vh;
-    }
+    } */
 
     #rodape {
         bottom: unset;
@@ -155,16 +178,38 @@ input, select, textarea{
     #sai{
         display: none;
     }
+    #text_white{
+        align-items: center !important;
+    }
+    #titulo h1{
+        font-size: 3rem !important;
+    }
+    .form-group label,#data label{
+        font-size: 1.5rem !important;
+    }
+    input,select{
+        font-size: 1.5rem !important;
+    }
+    .btn{
+        margin-top: 1rem !important;
+        font-size: 1.5rem !important;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    #inputlocal, #inputtipo,#inputQtd{
+        width: 50vh !important;
+    }
     
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 10vh;
         padding-bottom: 5vh;
-    }
+    } */
 
     #sair{
         display: none;
@@ -177,16 +222,17 @@ input, select, textarea{
     } */
     #rodape{
         height: max-content;
+        background-color: yellowgreen !important;
     }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px) {
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 8vh;
         padding-bottom: 8vh;
-    }
+    } */
     p{
         padding-left: 3vh !important;
     }
@@ -199,18 +245,18 @@ input, select, textarea{
         height: 5vh !important;
         font-size: 2vh !important;
     } */
-    input, select, textarea{
+    /* input, select, textarea{
         width: 80rem !important;
         height: auto !important;
         font-size: 1.5rem !important;
-    }
+    } */
 
     p{
         font-size: 2rem !important;
     }
-    input{
+    /* input{
         font-size: 2rem !important;
-    }
+    } */
     label{
         font-size: 2rem !important;
     }
@@ -223,11 +269,11 @@ input, select, textarea{
 }
 
 @media (min-width: 2560px) {
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 5vh;
-    }
+    } */
 
     #sair{
         display: none;
@@ -238,11 +284,11 @@ input, select, textarea{
     label{
         font-size: 3rem !important;
     }
-    input, select, textarea{
+    /* input, select, textarea{
         width: 120rem !important;
         height: auto !important;
         font-size: 2.5rem !important;
-    }
+    } */
     p{
         font-size: 3rem !important;
         padding-top: 2vh !important;
