@@ -43,7 +43,7 @@ tbody tr:hover{
 }
 
 #tipoLixo{
-    border-width: 0.7vh !important; 
+    border-width: 0.3rem !important; 
 }
 
 .text_col {
@@ -79,10 +79,10 @@ tbody tr:hover{
     font-size: 1rem !important;
 }
 thead th{
-    border-width: 0.5vh !important; 
+    border-width: 0.3rem !important; 
 }
 td,tr,th{
-    border-width: 0.3vh !important; 
+    border-width: 0.1rem !important; 
 }
 label{
     font-size: 1.5rem !important;

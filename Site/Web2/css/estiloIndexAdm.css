@@ -21,8 +21,8 @@ h1 {
 }
 
 #trp{
-    margin-left: 8vh;
-    margin-top: 1vh;
+    /* margin-left: 8vh;
+    margin-top: 1vh; */
     color: #ffd900;
 }
 #text_white {
@@ -37,7 +37,7 @@ span{
     font-size: 1.5rem;
 }
 #diva{
-    border-width: 0.7vh !important; 
+    border-width: 0.3rem !important; 
 }
 .indiciplina {
     min-height: 80vh;

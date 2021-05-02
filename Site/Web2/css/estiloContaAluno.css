@@ -19,7 +19,7 @@ p{
 }
 
 h1 {
-    font-size: 5vh !important;
+    font-size: 3rem !important;
     text-align: center;
 }
 
@@ -102,14 +102,14 @@ h2 {
 .form-group{
     padding-left: 2vh !important;
 }
-html{
+/* html{
     overflow: scroll;
     height: 100%;
-}
+} */
 .indiciplina {
     min-height: 85vh;
     max-height: 100%;
-    padding-top: 5vh;
+    padding-top: 7vh;
     padding-bottom: 5vh;
 }
 
@@ -198,7 +198,7 @@ html{
         font-size: 1.5rem !important;
     }
     h1{
-        font-size: 3.5rem !important;
+        font-size: 3rem !important;
     }
    #info{
         border-right: unset !important;  
@@ -229,17 +229,16 @@ html{
     }
    
     .form-group #usrl{
-        min-width: 6rem !important;
+        min-width: 7rem !important;
     }
     .form-group #maill{
-        min-width: 6rem !important;
+        min-width: 7rem !important;
     }
     .form-group #ral{
-        min-width: 6rem !important;
-       
+        min-width: 8rem !important;
     }
     .form-group #namel{
-        min-width: 6rem !important;
+        min-width: 7rem !important;
     }
     h1{
         font-size: 3rem !important;
@@ -252,6 +251,9 @@ html{
         font-size: 1rem!important;
     }
     h2{
+        font-size: 1.3rem !important;
+    }
+    #namel,#ral,#maill,#usrl,label, input{
         font-size: 1.3rem !important;
     }
 }
@@ -298,20 +300,27 @@ html{
     } */
 
     h1 {
-        font-size: 7vh !important;
+        font-size: 2.5rem !important;
     }
-    #sair{
-        display: none;
+    h2 .btn-link,h2{
+        font-size: 1.3rem !important;
     }
-    #rodape{
-        height: max-content;
+    .card-body, .card-body .btn{
+        font-size: 1rem !important;
     }
-    h2 .btn-link{
-        font-size: 3vh !important;
+    .card-body small{
+        font-size: 1rem !important;
     }
     #mailInfo{
-        font-size: 3vh !important;
-        padding-top: 8vh !important;
+        font-size: 1.3rem !important;
+        padding-top: 3rem !important;
+    }
+    #namel,#ral,#maill,#usrl,label, input{
+        font-size: 1.3rem !important;
+    }
+    .btn-block svg{
+        height: 1.3rem !important;
+        width: 1.3rem !important;
     }
 }
 
@@ -325,22 +334,21 @@ html{
     #sair{
         display: none;
     }
-    h2 .btn-link{
-        font-size: 3vh !important;
+    h2 .btn-link,h2{
+        font-size: 1.7rem !important;
     }
-    .card-body{
-        font-size: 3vh !important;
+    .card-body, .card-body .btn{
+        font-size: 1.5rem !important;
     }
-    .card-body small, .card-body .btn{
-        font-size: 2vh !important;
+    .card-body small{
+        font-size: 1rem !important;
     }
     #mailInfo{
-        font-size: 3vh !important;
-        padding-top: 8vh !important;
+        font-size: 1.7rem !important;
+        padding-top: 5rem !important;
     }
-    label, input{
-        font-size: 3vh !important;
-        border-radius: 5px !important; 
+    #namel,#ral,#maill,#usrl,label, input{
+        font-size: 1.5rem !important;
     }
     .btn-block svg{
         height: 1.5rem !important;
@@ -361,31 +369,25 @@ html{
     #subNav a{
         padding-right: 5rem;
     }
-
-    select{
-        height: auto !important;
-        font-size: 2vh !important;
-    }
-    h2 .btn-link{
-        font-size: 3vh !important;
+    h2 .btn-link,h2{
+        font-size: 3.5rem !important;
     }
     .card-body{
-        font-size: 3vh !important;
+        font-size: 3.5rem !important;
     }
     .card-body small{
-        font-size: 2vh !important;
+        font-size: 2rem !important;
     }
     .card-body .btn{
-        font-size: 3vh !important;
-        margin-left: 1vh;
+        font-size: 2.5rem !important;
+        margin-left: 1rem;
     }
-    label, input{
-        font-size: 3vh !important;
-        border-radius: 10px !important; 
+    #namel,#ral,#maill,#usrl,label, input{
+        font-size: 3rem !important;
     }
     #mailInfo{
-        font-size: 3vh !important;
-        padding-top: 8vh !important;
+        font-size: 3rem !important;
+        padding-top: 10rem !important;
     }
     .btn-block svg{
         height: 4rem !important;

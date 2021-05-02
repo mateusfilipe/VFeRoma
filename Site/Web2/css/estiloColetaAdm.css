@@ -48,10 +48,10 @@ h1 {
 
 
 
-#inputlocal, #inputtipo, #inputQtd{
-    /* border-radius: 10px; */
+/* #inputlocal, #inputtipo, #inputQtd{
+    border-radius: 10px;
     width: 70vh !important;
-}
+} */
 
 /* input, select, textarea{
     width: 40rem !important;
@@ -227,23 +227,23 @@ h1 {
         align-items: center !important;
     }
     #titulo h1{
-        font-size: 4rem !important;
+        font-size: 3.5rem !important;
     }
     .form-group label,#data label{
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
     input,select{
         font-size: 1.5rem !important;
     }
     .btn{
         margin-top: 1rem !important;
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
     p{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     #inputlocal, #inputtipo,#inputQtd{
-        width: 35rem !important;
+        width: 30rem !important;
     }
 }
 

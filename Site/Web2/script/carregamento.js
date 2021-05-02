@@ -7,4 +7,4 @@
         document.getElementById("preloader").style.display = "none";
         document.getElementById("conteudo").style.display = "inline";
     
-    }, 1000);
+    }, 800);

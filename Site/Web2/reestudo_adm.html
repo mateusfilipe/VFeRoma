@@ -6,20 +6,25 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="/css/estilo.css">
-    <link rel="stylesheet" href="/css/estiloContaAdm.css">
-    <link rel="stylesheet" href="/css/reestudo_adm.css">
+    <link rel="stylesheet" href="/css/estiloReestudo.css">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/node_modules/jquery/dist/jquery.slim.js"></script>
     <script src="/node_modules/popper/index.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="script/carregamento.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 
 <body class="">
+    <div id="preloader">
+        <div class="inner">
+            <div class="spinner-border text-light d-block" style="width: 15rem; height: 15rem;" role="status">
+            </div>
+        </div>
+    </div>
     <!-- Cabeçalho -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" id="subNav">
@@ -36,7 +41,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                 </button>
-                <ul class="navbar-nav p-3">
+                <ul class="navbar-nav p-2">
                     <li class="nav-item" id="sair">
                         <a class="nav-link js-scroll-trigger" href="/index.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#005FF9"
@@ -132,24 +137,25 @@
         </div>
 
         <div id="" class="container-fluid row pt-lg-4 pt-md-2">
-            <div class="container-fluid col col-sm-12 col-md-6 border border-top-0 border-left-0 border-bottom-0 border-white"
-                id="info">
+            <div class="container-fluid col col-sm-12 col-md-6 border border-top-0 border-left-0 border-bottom-0 border-white" id="info">
                 <div class="form d-flex flex-column">
-                    <div class="form-group align-self-center">
-                        <label>Informe quais as mudanças:</label>
-                        <select id="inputIF" class="form-control" required="">
+                    <h2>Informe quais as mudanças:</h2>
+                    <div class="form-group d-block px-4 pt-2">
+                        <label class="align-self-center">Lixera/Local:</label>
+                        <select id="inputlx" class="form-control" required="">
                             <option class="dropdown-item" selected="">Lixeira/Local</option>
                             <option class="dropdown-item">...</option>
                         </select>
                     </div>
-                    <div class="form-group align-self-center">
-                        <textarea class="form-control" id="inputfeedback" rows="6"
+                    <div class="form-group d-block px-4 pt-2">
+                        <label>Informe detalhes da mudança:</label>
+                        <textarea class="form-control" id="inputdeta" rows="6"
                             placeholder="Digite mais detalhas da mudança" required="" style="resize: none;"></textarea>
                     </div>
-                    <div class="form-group align-self-center">
-                        <div class="col-lg-">
+                    <div class=" d-block align-self-center pb-4" id="mud">
+                        <div class="gsvg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                class="bi bi-images" viewBox="0 0 16 16">
+                                class="bi bi-images " viewBox="0 0 16 16">
                                 <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                                 <path
                                     d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z" />
@@ -163,59 +169,74 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid col col-sm-12 col-md-6" id="geral">
-                <label> Veja os Feedbacks dos Usuários:</label>
-                <div>
+            <div class="d-block align-self-center col-sm-12 col-md-6 mt-3" id="geral">
+                <h2> Veja os Feedbacks dos Usuários:</h2>
+                <div class="p-2 gsvg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                         class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
                         <path
                             d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
                     </svg>
-                    <label>70%</label>
+                    <span>70%</span>
                 </div>
-                <div>
+                <div class="p-2 gsvg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                         class="bi bi-hand-thumbs-down-fill" viewBox="0 0 16 16">
                         <path
                             d="M6.956 14.534c.065.936.952 1.659 1.908 1.42l.261-.065a1.378 1.378 0 0 0 1.012-.965c.22-.816.533-2.512.062-4.51.136.02.285.037.443.051.713.065 1.669.071 2.516-.211.518-.173.994-.68 1.2-1.272a1.896 1.896 0 0 0-.234-1.734c.058-.118.103-.242.138-.362.077-.27.113-.568.113-.856 0-.29-.036-.586-.113-.857a2.094 2.094 0 0 0-.16-.403c.169-.387.107-.82-.003-1.149a3.162 3.162 0 0 0-.488-.9c.054-.153.076-.313.076-.465a1.86 1.86 0 0 0-.253-.912C13.1.757 12.437.28 11.5.28H8c-.605 0-1.07.08-1.466.217a4.823 4.823 0 0 0-.97.485l-.048.029c-.504.308-.999.61-2.068.723C2.682 1.815 2 2.434 2 3.279v4c0 .851.685 1.433 1.357 1.616.849.232 1.574.787 2.132 1.41.56.626.914 1.28 1.039 1.638.199.575.356 1.54.428 2.591z" />
                     </svg>
-                    <label>30%</label>
-                    <div class="mb-4 mt-2">
-                        <select id="inputIF" class="form-control" required>
-                            <option class="dropdown-item" selected>Falta de Espaço</option>
-                            <option class="dropdown-item">...</option>
-                        </select>
-                    </div>
-                    <div class="mb-4">
-                        <select id="inputIF" class="form-control" required>
-                            <option class="dropdown-item" selected>Lixeira Mal Localizada</option>
-                            <option class="dropdown-item">...</option>
-                        </select>
-                    </div>
-                    <div class="mb-4">
-                        <select id="inputIF" class="form-control" required>
-                            <option class="dropdown-item" selected>Local bem Limpo</option>
-                            <option class="dropdown-item">...</option>
-                        </select>
-                    </div>
-                    <div class="mb-4">
-                        <select id="inputIF" class="form-control" required>
-                            <option class="dropdown-item" selected>Localização Perfeita</option>
-                            <option class="dropdown-item">...</option>
-                        </select>
-                    </div>
-                    <p class="text-center">Ver mais Feedbakcs +</p>
+                    <span>30%</span>
                 </div>
+                <div class="accordion p-2" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header " id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left text-decoration-none" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne" onclick="muda()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right muda1" viewBox="0 0 16 16"
+                                        style="display: inline-block;">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-down muda1" viewBox="0 0 16 16" style="display: none;">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    Ver feedbacks
+                                </button>
+                            </h2>
+                        </div>
 
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="card p-3">
+                                    <div class="card-body c">
+                                        <h5 class="card-title">Falta de espaço</h5>
+                                        <p class="card-text">Falta espaço no ponto de coleta de orgânicos.</p>
+                                    </div>
+                                </div>
+                                <div class="card p-3">
+                                    <div class="card-body c">
+                                        <h5 class="card-title">Localização perfeita!</h5>
+                                        <p class="card-text">O ponto de coleta de papel está em um ótimo local!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
+            <p id="mailInfo" class="text-center mx-auto pt-5">Quer alterar algum dado diferente? Mande um <a
+                    href="mailto:projetotrashmap@gmail.com?subject=Aluno:%20Alterar%20dados" id="emailTo"
+                    class="text-decoration-none" style="padding-left: 0.3rem !important;"> e-mail para a equipe:
+                    trashmap.if@gmail.com</a></p>
         </div>
-        <p id="mailInfo" class="text-center pt-5">Quer alterar algum dado diferente? Mande um <a
-                href="mailto:projetotrashmap@gmail.com?subject=Aluno:%20Alterar%20dados" id="emailTo"
-                class="text-decoration-none" style="padding-left: 0.3rem !important;"> e-mail para a equipe:
-                trashmap.if@gmail.com</a></p>
     </div>
-
     <!-- Rodapé -->
     <footer class="row text-center mt-3 ml-0 mr-0 mb-3 p-0" id="rodape">
         <a class="navbar-brand js-scroll-trigger col d-none d-md-block mt-md-2 mt-lg-3 p-2 " id="nameproj">
@@ -264,5 +285,29 @@
         </div>
     </footer>
 </body>
+<script>
+    function clica() {
+        var coll = document.getElementsByClassName("ap");
+        for (var i = 0; i < coll.length; i++) {
+            if (coll[i].style.display == "inline-block") {
+                coll[i].style.display = "none"
+            } else {
+                coll[i].style.display = "inline-block"
+            }
+        }
+    }
+
+    function muda() {
+        var coll = document.getElementsByClassName("muda1");
+        for (var i = 0; i < coll.length; i++) {
+            if (coll[i].style.display == "inline-block") {
+                coll[i].style.display = "none"
+            } else {
+                coll[i].style.display = "inline-block"
+            }
+        }
+
+    }
+</script>
 
 </html>

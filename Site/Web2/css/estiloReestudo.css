@@ -51,6 +51,7 @@ h2 {
     background-color: transparent !important;
     color: #005FF9 !important;
 }
+
 .card-header{
     background-color: transparent !important; 
     color: white !important;
@@ -60,6 +61,12 @@ h2 {
     background-color: transparent !important;
     color: white !important;
     
+}
+.c{
+    border: initial !important;
+    background-color: white !important;
+    color: darkslateblue !important;
+    border-radius: 5px;
 }
 .btn-link{
     color: white !important;
@@ -76,7 +83,7 @@ h2 {
     background-color: transparent !important;
     box-shadow: none !important;
 }
-.bt{
+#enviar{
     background-color: white !important;
     color: #005FF9 !important;
     border-radius: 10px;
@@ -84,14 +91,12 @@ h2 {
     padding-right: 50px;
 }
 
-.bt:hover{
+#enviar:hover{
     background-color: white !important; 
     color: #005FF9 !important;
     font-style: italic;
 }
-#mailInfo{
-    font-size: 2.5vh !important;
-}
+
 #emailTo{
     color: white;
 }
@@ -107,15 +112,29 @@ h2 {
     height: 100%;
 } */
 .indiciplina {
-    min-height: 85vh;
+    min-height: 90vh;
     max-height: 100%;
     padding-top: 7vh;
     padding-bottom: 5vh;
 }
-
+/* Esconde o input */
+input[type='file'] {
+    display: none
+  }
+  
+  /* Aparência que terá o seletor de arquivo */
+  .labelMap {
+    background-color: #fff  !important;
+    border-radius: 6px;
+    color: #005FF9;
+    cursor: pointer;
+    margin: 10px;
+    padding: 6px 20px
+  }
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    
     #rodape {
         bottom: unset;
         height: max-content;
@@ -136,10 +155,10 @@ h2 {
         display: none;
     }
     
-    /* #clica{
+    #clica{
         width: 4vh !important;
         height: 4vh !important;
-    } */
+    }
     h1{
         font-size: 3rem !important;
     }
@@ -165,7 +184,9 @@ h2 {
     h2, .card-header h2 .btn{
         font-size: 1.2rem !important;
     }
-    
+    #geral{
+        padding-top: 2rem !important;
+    }
 }
 
 
@@ -209,8 +230,8 @@ h2 {
     #mailInfo{
         font-size: 1rem !important;
     }
-    .col-form-label{
-        font-size: 1.3rem!important;
+    #geral{
+        padding-top: 2rem !important;
     }
 }
 
@@ -227,34 +248,34 @@ h2 {
     #sai{
         display: none;
     }
-   
-    .form-group #usrl{
-        min-width: 7rem !important;
+    h1 {
+        font-size: 2.5rem !important;
     }
-    .form-group #maill{
-        min-width: 7rem !important;
+    h2 .btn-link,h2{
+        font-size: 1.4rem !important;
     }
-    .form-group #ral{
-        min-width: 8rem !important;
-    }
-    .form-group #namel{
-        min-width: 7rem !important;
-    }
-    h1{
-        font-size: 3rem !important;
+    
+    .card-body,p{
+        font-size: 1.3rem !important;
     }
     #mailInfo{
+        font-size: 1.2rem !important;
+        padding-top: 5rem !important;
+        
+    }
+    #inputlx,#inputdeta,#selecao-arquivo,label,.btn,span{
         font-size: 1rem !important;
-        padding-top: 8vh !important;
     }
-    .col-form-label{
-        font-size: 1rem!important;
+    .gsvg svg{
+        height: 1.7rem !important;
+        width: 1.7rem !important;
     }
-    h2{
-        font-size: 1.3rem !important;
+    .btn-block svg{
+        height: 1.5rem !important;
+        width: 1.5rem !important;
     }
-    #namel,#ral,#maill,#usrl,label, input{
-        font-size: 1.3rem !important;
+    #mud{
+        padding-bottom: 2rem !important;
     }
 }
 
@@ -303,24 +324,33 @@ h2 {
         font-size: 2.5rem !important;
     }
     h2 .btn-link,h2{
-        font-size: 1.3rem !important;
+        font-size: 1.7rem !important;
     }
-    .card-body, .card-body .btn{
-        font-size: 1rem !important;
-    }
-    .card-body small{
-        font-size: 1rem !important;
+    
+    .card-body,p{
+        font-size: 1.5rem !important;
     }
     #mailInfo{
-        font-size: 1.3rem !important;
-        padding-top: 3rem !important;
+        font-size: 1.5rem !important;
+        padding-top: 5rem !important;
+        
     }
-    #namel,#ral,#maill,#usrl,label, input{
-        font-size: 1.3rem !important;
+    #inputlx,#inputdeta,#selecao-arquivo,label,.btn,span{
+        font-size: 1rem !important;
+    }
+    .gsvg svg{
+        height: 1.7rem !important;
+        width: 1.7rem !important;
     }
     .btn-block svg{
-        height: 1.3rem !important;
-        width: 1.3rem !important;
+        height: 1.5rem !important;
+        width: 1.5rem !important;
+    }
+    #mud{
+        padding-bottom: 2rem !important;
+    }
+    #sair{
+        display: none;
     }
 }
 
@@ -334,25 +364,33 @@ h2 {
     #sair{
         display: none;
     }
-    h2 .btn-link,h2{
-        font-size: 1.7rem !important;
+    h1{
+        font-size: 3.5rem !important;
     }
-    .card-body, .card-body .btn{
+    h2 .btn-link, h2{
+        font-size: 2rem !important;
+    }
+    .card-body,p{
         font-size: 1.5rem !important;
-    }
-    .card-body small{
-        font-size: 1rem !important;
     }
     #mailInfo{
-        font-size: 1.7rem !important;
-        padding-top: 5rem !important;
-    }
-    #namel,#ral,#maill,#usrl,label, input{
         font-size: 1.5rem !important;
+        padding-top: 5rem !important;
+        
+    }
+    #inputlx,#inputdeta,#selecao-arquivo,label,.btn,span{
+        font-size: 1.5rem !important;
+    }
+    .gsvg svg{
+        height: 2.3rem !important;
+        width: 2.3rem !important;
     }
     .btn-block svg{
         height: 1.5rem !important;
         width: 1.5rem !important;
+    }
+    #mud{
+        padding-bottom: 3rem !important;
     }
 }
 
@@ -370,28 +408,32 @@ h2 {
         padding-right: 5rem;
     }
     h2 .btn-link,h2{
-        font-size: 3.5rem !important;
+        font-size: 4rem !important;
     }
-    .card-body{
-        font-size: 3.5rem !important;
+    h1{
+        font-size: 6rem !important;
     }
-    .card-body small{
-        font-size: 2rem !important;
-    }
-    .card-body .btn{
+    .card-body,p{
         font-size: 2.5rem !important;
-        margin-left: 1rem;
-    }
-    #namel,#ral,#maill,#usrl,label, input{
-        font-size: 3rem !important;
     }
     #mailInfo{
-        font-size: 3rem !important;
-        padding-top: 10rem !important;
+        font-size: 2.5rem !important;
+        padding-top: 5rem !important;
+        
+    }
+    #inputlx,#inputdeta,#selecao-arquivo,label,.btn,span{
+        font-size: 2.5rem !important;
+    }
+    .gsvg svg{
+        height: 3.5rem !important;
+        width: 3.5rem !important;
     }
     .btn-block svg{
         height: 4rem !important;
         width: 4rem !important;
+    }
+    #mud{
+        padding-bottom: 4rem !important;
     }
     
 }
