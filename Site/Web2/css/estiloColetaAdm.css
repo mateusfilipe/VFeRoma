@@ -83,11 +83,11 @@ h1 {
     #sai{
         display: none;
     }
-    /* #text_white, #data, #select_trash4{
+    #text_white, #data, #inputDia{
         justify-items: center !important;
         align-items: center !important;
         text-align: center !important;
-    } */
+    }
     #titulo h1{
         font-size: 2.5rem !important;
     }
@@ -105,12 +105,12 @@ h1 {
         font-size: 1.3rem;
     }
     #inputlocal, #inputtipo,#inputQtd{
-        width: 35vh !important;
+        width: 25rem !important;
     }
     
     
 }
-/* AQQI mudar tamanho input,select para vh */
+
 
 /* //Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -152,7 +152,7 @@ h1 {
         font-size: 1.3rem;
     }
     #inputlocal, #inputtipo,#inputQtd{
-        width: 50vh !important;
+        width: 25rem !important;
     }
 
 }
@@ -198,7 +198,7 @@ h1 {
         font-size: 1.5rem;
     }
     #inputlocal, #inputtipo,#inputQtd{
-        width: 50vh !important;
+        width: 30rem !important;
     }
     
 }
@@ -222,7 +222,28 @@ h1 {
     } */
     #rodape{
         height: max-content;
-        background-color: yellowgreen !important;
+    }
+    #text_white{
+        align-items: center !important;
+    }
+    #titulo h1{
+        font-size: 4rem !important;
+    }
+    .form-group label,#data label{
+        font-size: 2rem !important;
+    }
+    input,select{
+        font-size: 1.5rem !important;
+    }
+    .btn{
+        margin-top: 1rem !important;
+        font-size: 2rem !important;
+    }
+    p{
+        font-size: 2rem;
+    }
+    #inputlocal, #inputtipo,#inputQtd{
+        width: 35rem !important;
     }
 }
 
@@ -240,31 +261,27 @@ h1 {
     #sair{
         display: none;
     }
-    /* input, select{
-        width: 90vh !important;
-        height: 5vh !important;
-        font-size: 2vh !important;
-    } */
-    /* input, select, textarea{
-        width: 80rem !important;
-        height: auto !important;
+    #text_white{
+        align-items: center !important;
+    }
+    #titulo h1{
+        font-size: 4rem !important;
+    }
+    .form-group label,#data label{
+        font-size: 2rem !important;
+    }
+    input,select{
         font-size: 1.5rem !important;
-    } */
-
+    }
+    .btn{
+        margin-top: 1rem !important;
+        font-size: 2rem !important;
+    }
     p{
-        font-size: 2rem !important;
+        font-size: 2rem;
     }
-    /* input{
-        font-size: 2rem !important;
-    } */
-    label{
-        font-size: 2rem !important;
-    }
-    #enviar{
-        font-size: 2rem !important;
-    }
-    #rodape{
-        height: max-content;
+    #inputlocal, #inputtipo,#inputQtd{
+        width: 35rem !important;
     }
 }
 
@@ -281,28 +298,32 @@ h1 {
     #subNav a{
         padding-right: 5rem;
     }
-    label{
-        font-size: 3rem !important;
+    #text_white{
+        align-items: center !important;
     }
-    /* input, select, textarea{
-        width: 120rem !important;
-        height: auto !important;
-        font-size: 2.5rem !important;
-    } */
-    p{
-        font-size: 3rem !important;
-        padding-top: 2vh !important;
-        padding-left: 3vh !important;
+    #titulo h1{
+        font-size: 8rem !important;
     }
-    h1{
-        font-size: 5rem !important;
-    }
-
-    #enviar{
+    .form-group label,#data label{
         font-size: 4rem !important;
     }
-    .form-group{
-        padding-top: 3vh;
+    input,select{
+        font-size: 3rem !important;
+    }
+    .btn{
+        margin-top: 1rem !important;
+        font-size: 4rem !important;
+    }
+    p{
+        font-size: 4rem;
+    }
+    #inputlocal, #inputtipo,#inputQtd{
+        width: 70rem !important;
+    }
+    #inputDia,#inputMes,#inputAno{
+        /* border-radius: 10px; */
+        width: 20rem !important;
+        text-align: center;
     }
     #rodape{
         height: max-content;
