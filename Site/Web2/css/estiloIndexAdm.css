@@ -39,6 +39,12 @@ span{
 #diva{
     border-width: 0.7vh !important; 
 }
+.indiciplina {
+    min-height: 80vh;
+    max-height: 100%;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -50,11 +56,11 @@ span{
         margin-bottom: 1rem !important;
     }
     
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 8vh;
-    }
+    } */
     #sai{
         display: none;
     }
@@ -80,10 +86,10 @@ span{
         height: 8rem !important;
     }
     #trp{
-        margin-left: 4vh;
-        margin-top: 1vh;
-        height: 5vh !important;
-        width: 5vh !important;
+        /* margin-left: 4vh;
+        margin-top: 1vh; */
+        height: 2rem !important;
+        width: 2rem !important;
     }
     #diva{
         border-right: unset !important;
@@ -115,12 +121,11 @@ span{
         margin-top: 0 !important;
     }
     
-    .indiciplina {
+    /* .indiciplina {
         height: max-content !important;
         padding-top: 5vh;
         padding-bottom: 5vh;
-        
-    }
+    } */
     #sai{
         display: none;
     }
@@ -129,10 +134,10 @@ span{
         height: 8rem !important;
     }
     #trp{
-        margin-left: 4vh;
-        margin-top: 1vh;
-        height: 5vh !important;
-        width: 5vh !important;
+        /* margin-left: 4vh;
+        margin-top: 1vh; */
+        height: 2rem !important;
+        width: 2rem !important;
     }
     .text_col{
         padding-top: 2rem !important;
@@ -156,17 +161,18 @@ span{
         height: 8rem !important;
     }
     #trp{
-        margin: auto;
+        height: 2rem !important;
+        width: 2rem !important;
     }
     
 }
 @media (min-width: 768px) and (max-width: 991.98px) and (max-height:575.98px){
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 15vh;
-        /* background-color: blueviolet !important; */
-    }
+        background-color: blueviolet !important;
+    } */
     #rodape {
         bottom: unset;
         height: max-content;
@@ -175,12 +181,12 @@ span{
 
 @media (min-width: 768px) and (max-width: 991.98px) and (min-height:576px) and (max-height: 767.98px){
     
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 10vh;
-        /* background-color: #ffd900 !important; */
-    }
+        background-color: #ffd900 !important;
+    } */
      #rodape {
         bottom: unset;
         height: max-content;
@@ -188,12 +194,12 @@ span{
 }
 @media (min-width: 768px) and (max-width: 991.98px) and (min-height: 768px){
     
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 10vh;
         padding-bottom: 13vh;
-        /* background-color: brown !important; */
-    }
+        background-color: brown !important;
+    } */
 
     #rodape {
         bottom: unset;
@@ -203,11 +209,11 @@ span{
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 10vh;
         padding-bottom: 10vh;
-    }
+    } */
     h1 {
         font-size: 5vh !important;
     }
@@ -219,17 +225,17 @@ span{
         height: 20vh !important;
     }
     #trp{
-        margin-left: 4vh;
-        margin-top: 1vh;
+        height: 3rem !important;
+        width: 3rem !important;
     }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px) {
-    .indiciplina {
+    /* .indiciplina {
         height: 80vh;
         padding-top: 8vh;
-    }
+    } */
     #sair{
         display: none;
     }
@@ -237,26 +243,26 @@ span{
         font-size: 2rem;
     }
     #trp{
-        height: 6vh !important;
-        width: 6vh !important;
+        height: 3rem !important;
+        width: 3rem !important;
     }
     
 }
 
 @media (min-width: 2560px) {
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 10vh;
         padding-bottom: 18vh;
-    }
+    } */
 
     #sair{
         display: none;
     }
     
     #trp{
-        height: 6vh !important;
-        width: 6vh !important;
+        height: 5rem !important;
+        width: 5rem !important;
     }
     #text_white {
         width: 50rem !important;

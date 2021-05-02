@@ -65,8 +65,8 @@ tbody tr:hover{
 } */
 
 #trp{
-    margin-left: 8vh;
-    margin-top: 1vh;
+    /* margin-left: 8vh;
+    margin-top: 1vh; */
     color: gold;
 }
 #ran{
@@ -128,10 +128,8 @@ label{
         height: 8rem !important;
     }
     #trp{
-        margin-left: 4vh;
-        margin-top: 1vh;
-        height: 5vh !important;
-        width: 5vh !important;
+        height: 2rem !important;
+        width: 2rem !important;
     }
     h2 {
         font-size: 4vh !important;
@@ -172,10 +170,8 @@ label{
         height: 8rem !important;
     }
     #trp{
-        margin-left: 4vh;
-        margin-top: 1vh;
-        height: 5vh !important;
-        width: 5vh !important;
+        height: 2rem !important;
+        width: 2rem !important;
     }
     h2 {
         font-size: 2rem !important;
@@ -222,7 +218,8 @@ label{
         height: 10rem !important;
     }
     #trp{
-        margin: auto;
+        height: 2rem !important;
+        width: 2rem !important;
     }
     .table-responsive{
         font-size: 1.5rem !important;
@@ -320,10 +317,10 @@ label{
         width: 20rem !important;
         height: 10rem !important;
     }
-    /* #trp{
-        margin-left: 4vh;
-        margin-top: 1vh;
-    } */
+    #trp{
+        height: 3rem !important;
+        width: 3rem !important;
+    }
     #rodape{
         bottom: unset;
         height: max-content;
@@ -348,8 +345,8 @@ label{
     }
     
     #trp{
-        height: 6vh !important;
-        width: 6vh !important;
+        height: 3rem !important;
+        width: 3rem !important;
     }
     p{
         font-size: 2rem;
@@ -393,8 +390,8 @@ label{
     }
     
     #trp{
-        height: 6vh !important;
-        width: 6vh !important;
+        height: 5rem !important;
+        width: 5rem !important;
     }
     #inputIF{
         font-size: 3rem !important;
