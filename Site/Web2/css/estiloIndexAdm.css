@@ -42,9 +42,10 @@ span{
 .indiciplina {
     min-height: 80vh;
     max-height: 100%;
-    padding-top: 10vh;
-    padding-bottom: 5vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
+
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -81,7 +82,6 @@ span{
         padding-top: 2rem !important;
     }
     #text_white {
-        
         width: 17rem !important;
         height: 8rem !important;
     }
@@ -106,7 +106,7 @@ span{
         padding-bottom: 1rem !important;
     }
     #rodape div{
-        padding-top: 2vh;
+        padding-top: 1rem;
     }
     p{
         font-size: 1.5rem;
@@ -215,14 +215,14 @@ span{
         padding-bottom: 10vh;
     } */
     h1 {
-        font-size: 5vh !important;
+        font-size: 3rem !important;
     }
     #sair{
         display: none;
     }
     #text_white {
-        width: 40vh !important;
-        height: 20vh !important;
+        width: 20rem !important;
+        height: 10rem !important;
     }
     #trp{
         height: 3rem !important;

@@ -17,7 +17,7 @@ p{
 
 h1 {
     font-size: 3rem !important;
-    text-align: center;
+    text-align: center; 
 }
 
 
@@ -59,8 +59,8 @@ h1 {
 .indiciplina {
     min-height: 82vh;
     max-height: 100%;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 /* //Extra small devices (portrait phones, less than 576px) */
@@ -105,7 +105,7 @@ h1 {
         font-size: 1.3rem;
     }
     #inputlocal, #inputtipo,#inputQtd{
-        width: 25rem !important;
+        width: 18rem !important;
     }
     
     
@@ -255,7 +255,7 @@ h1 {
         padding-bottom: 8vh;
     } */
     p{
-        padding-left: 3vh !important;
+        padding-left: 2rem !important;
     }
    
     #sair{
@@ -302,20 +302,20 @@ h1 {
         align-items: center !important;
     }
     #titulo h1{
-        font-size: 8rem !important;
+        font-size: 7rem !important;
     }
     .form-group label,#data label{
-        font-size: 4rem !important;
+        font-size: 3.5rem !important;
     }
     input,select{
-        font-size: 3rem !important;
+        font-size: 2.5rem !important;
     }
     .btn{
-        margin-top: 1rem !important;
-        font-size: 4rem !important;
+        margin-top: 2rem !important;
+        font-size: 3.5rem !important;
     }
     p{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     #inputlocal, #inputtipo,#inputQtd{
         width: 70rem !important;

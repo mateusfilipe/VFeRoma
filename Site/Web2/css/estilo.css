@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 
+ 
+   
+  /* ini: Preloader */
+   
+  #preloader {
+      position:fixed !important;
+      top:0 !important;
+      left:0 !important;
+      right:0 !important;
+      bottom:0 !important;
+      background-color:#005FF9 !important; /* cor do background que vai ocupar o body */
+      z-index:999 !important; /* z-index para jogar para frente e sobrepor tudo */
+  }
+  #preloader .inner {
+      position: absolute !important;
+      top: 50% !important; /* centralizar a parte interna do preload (onde fica a animação)*/
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;  
+  }
+  /* end: Preloader */
 .text{
     font-family: Inter,sans-serif,Arial;
     font-weight: 500;

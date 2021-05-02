@@ -1,3 +1,6 @@
+/* .indiciplina{
+overflow: scroll;
+} */
 .dropdown-menu {
     margin: 0px -3px;
     padding: 0px;
@@ -24,10 +27,10 @@ h2 {
     font-size: 3vh !important;
 }
 
-#clica{
+/* #clica{
     width: 5vh;
     height: 5vh;
-}
+} */
 
 
 
@@ -38,8 +41,6 @@ h2 {
 }
 .nao{
     margin-right: 5vh !important;
-    /* min-width: 60vh !important;
-    max-width: 70vh !important; */
 }
 
 .card-header{
@@ -101,10 +102,14 @@ h2 {
 .form-group{
     padding-left: 2vh !important;
 }
+html{
+    overflow: scroll;
+    height: 100%;
+}
 .indiciplina {
-    min-height: 87vh;
+    min-height: 85vh;
     max-height: 100%;
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-bottom: 5vh;
 }
 
