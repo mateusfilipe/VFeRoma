@@ -129,6 +129,7 @@ p, label, input,small{
 form,input,option,select,label{
     font-family: Inter,sans-serif,Arial;
 }
+
 /* #subNav svg{
     width: 2rem !important;
     height: 2rem !important;
@@ -137,10 +138,10 @@ form,input,option,select,label{
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    #nameproj, #subNav #navbarResponsive {
+    #nameproj, #subNav #navbarResponsive,#mainNav {
         font-size: 1.5rem !important;
     }
-    .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
+    .navbar div #nameproj svg, .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
         height: 1.5rem !important;
         width: 2rem !important;
     }
@@ -155,10 +156,10 @@ form,input,option,select,label{
 
 /* //Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    #nameproj, #subNav #navbarResponsive {
+    #nameproj, #subNav #navbarResponsive,#mainNav {
         font-size: 1.5rem !important;
     }
-    .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
+    .navbar div #nameproj svg, .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
         height: 2rem !important;
         width: 2rem !important;
     }
@@ -173,10 +174,10 @@ form,input,option,select,label{
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    #nameproj, #subNav #navbarResponsive {
+    #nameproj, #subNav #navbarResponsive,#mainNav {
         font-size: 1.5rem;
     }
-    .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
+    .navbar div #nameproj svg, .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
         height: 2rem !important;
         width: 2rem !important;
     }
@@ -192,10 +193,10 @@ form,input,option,select,label{
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     
-    #nameproj, #subNav #navbarResponsive {
+    #nameproj, #subNav #navbarResponsive,#mainNav {
         font-size: 1.5rem !important;
     }
-    .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
+    .navbar div #nameproj svg, .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
         height: 2rem !important;
         width: 2rem !important;
     }
@@ -208,10 +209,10 @@ form,input,option,select,label{
  /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px){
     
-    #nameproj, #subNav #navbarResponsive{
+    #nameproj, #subNav #navbarResponsive, #mainNav{
         font-size: 1.5rem !important;
     }
-    .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
+    .navbar div #nameproj svg, .nav-link svg, .dropdown-item svg, #sai svg, #sair svg{
         height: 2rem !important;
         width: 2.5rem !important;
     }
@@ -239,7 +240,7 @@ form,input,option,select,label{
         padding-right: 5rem;
     }
 
-    .nav-link svg, .dropdown-item svg, #sai svg{
+    .navbar div #nameproj svg,.nav-link svg, .dropdown-item svg, #sai svg{
         height: 4rem !important;
         width: 4rem !important;
     }

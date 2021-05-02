@@ -47,18 +47,23 @@ svg{
     font-style: italic;
 }
 
-.indiciplina{
+/* .indiciplina{
     height: 83vh;
     background-color: #005FF9; 
-}
+} */
 #rodape{
     bottom: 0;
 }
-
-body {
-    height: 100%;
-    
+ #c_blue{
+    min-height: 83vh;
+    max-height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
+
+/* body {
+    height: 100%;
+} */
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -66,9 +71,9 @@ body {
         bottom: unset;
         height: max-content;
     }
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
-    }
+    } */
     h1{
         font-size: 2rem !important;
     }
@@ -94,10 +99,10 @@ body {
         bottom: unset;
         height: max-content;
     }
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
-        /* background-color: aqua !important; */
-    }
+        background-color: aqua !important;
+    } */
     /* #c_blue{
         background-color: aqua !important;
     } */
@@ -125,14 +130,9 @@ body {
         bottom: unset;
         height: max-content;
     }
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
-        
-    }
-    #sair svg{
-        height: 5vh !important;
-        width: 5vh !important;
-    }
+    } */
 }
 
 
@@ -144,14 +144,14 @@ body {
         min-height: max-content;
         /* background-color: blueviolet !important; */
     }
-    #c_blue{
-        /* background-color: yellowgreen !important; */
+    /* #c_blue{
+        background-color: yellowgreen !important;
         height: max-content;
         padding-bottom: 15vh;
     }
     .indiciplina {
         height: max-content;
-    }
+    } */
     h1{
         font-size: 2rem !important;
     }
@@ -172,10 +172,10 @@ body {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px){
-    .indiciplina{
+    /* .indiciplina{
         height: max-content !important;
-        /* padding-bottom: 13vh; */
-    }
+        padding-bottom: 13vh;
+    } */
     #rodape{
         bottom: unset;
         height: max-content;
@@ -183,6 +183,22 @@ body {
     #c_blue{
         height: max-content;
         padding-bottom: 18vh;
+    }
+    h1{
+        font-size: 2rem !important;
+    }
+    label{
+        font-size: 1.5rem !important;
+    }
+    input,select{
+        font-size: 1rem !important;
+    }
+    .btn{
+        font-size: 1rem !important;
+    }
+    span{
+        font-size: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
@@ -192,13 +208,13 @@ body {
         height: max-content;
         min-height: max-content;
     }
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
     }
     #c_blue{
         height: max-content;
         padding-bottom: 8vh;
-    }
+    } */
     h1{
         font-size: 5rem !important;
     }

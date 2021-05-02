@@ -31,7 +31,7 @@
 #mainNav ul li a,
 #mainNav div a {
     color: white;
-    font-size: x-large;
+    /* font-size: x-large; */
     font-family: Inter,sans-serif,Arial;
 }
 
@@ -101,7 +101,7 @@
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     #img_1 {
-        height: 50rem;
+        height: 60rem;
         width: 100%;
     }
     #i_img1{
@@ -121,35 +121,35 @@
         width: auto;
     }
     
-    .navbar div #nameproj {
+    /* .navbar div #nameproj {
         font-size: x-large;
-    }
+    } */
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     
-    .navbar div #nameproj {
+    /* .navbar div #nameproj {
         font-size: x-large;
-    }
+    } */
 
     #img_1 {
-        height: 70vh;
+        height: 60rem;
         width: 100%;
     }
 
-    #mainNav ul li a,
+    /* #mainNav ul li a,
     #mainNav div a {
         font-size: large;
-    }
+    } */
 
-    #mainNav #navbarResponsive .nav-item .btn {
+    /* #mainNav #navbarResponsive .nav-item .btn {
         font-size: small;
-    }
+    } */
 
-    .text {
+    /* .text {
         font-size: x-large;
-    }
+    } */
 
     #i_img1{
         height: 20rem;
@@ -173,7 +173,7 @@
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px) {
     #img_1 {
-        height: 50rem;
+        height: 70rem;
         width: 100%;
     }
     #i_img1{
@@ -196,10 +196,7 @@
 }
 
 @media (min-width: 2560px) {
-    #img_1 {
-        height: 50rem;
-        width: 100%;
-    }
+    
     #i_img1{
         height: 30rem;
         width: auto;
@@ -218,17 +215,17 @@
     }
     
     #img_1 {
-        height: 80vh;
+        height: 80rem;
         width: 100%;
     }
 
-    #mainNav ul li a,
+    /* #mainNav ul li a,
     #mainNav div a {
         font-size: 3vh !important;
-    }
+    } */
 
     .text p{
-        font-size: 4vh !important;
+        font-size: 5rem !important;
     }
 
     #text_proj{
@@ -236,20 +233,20 @@
     }
     
     h2{
-        font-size: 4vh !important;
+        font-size: 4rem !important;
     }
     p{
-        font-size: 2vh !important;
+        font-size: 2.5rem !important;
     }
     
-    .navbar div #nameproj svg {
+    /* .navbar div #nameproj svg {
         width: 4vh;
         height: 5vh;
-    }
+    } */
     
     #btn_git{
-        font-size: 2.5vh;
-        padding: 1vh;
+        font-size: 3rem;
+        /* padding: 1vh; */
     }
     
 }

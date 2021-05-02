@@ -24,6 +24,13 @@ input, select{
     box-shadow: 0px 1px 2px rgba(50, 43, 95, 0.08);
 border-radius: 4px;
 }
+.indiciplina {
+    min-height: 85vh;
+    max-height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -32,11 +39,11 @@ border-radius: 4px;
         height: max-content;
         /* margin-top: unset !important; */
     }
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-bottom: 10vh;
         padding-top: 10vh;
-    }
+    } */
     h1{
         font-size: 2rem !important;
     }
@@ -62,11 +69,11 @@ border-radius: 4px;
         height: max-content;
         /* margin-top: unset !important; */
     }
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-bottom: 15vh;
         padding-top: 5vh;
-    }
+    } */
     h1{
         font-size: 2.5rem !important;
     }
@@ -116,12 +123,12 @@ border-radius: 4px;
 
 }
 @media (min-width: 768px) and (max-width: 991.98px) and (max-height:575.98px){
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 15vh;
-        /* background-color: blueviolet !important; */
-    }
+        background-color: blueviolet !important;
+    } */
     #rodape {
         bottom: unset;
         height: max-content;
@@ -130,12 +137,12 @@ border-radius: 4px;
 
 @media (min-width: 768px) and (max-width: 991.98px) and (min-height:576px) and (max-height: 767.98px){
     
-    .indiciplina {
+    /* .indiciplina {
         height: 83vh;
         padding-top: 5vh;
-        /* padding-bottom: 10vh; */
-        /* background-color: #ffd900 !important; */
-    }
+        padding-bottom: 10vh;
+        background-color: #ffd900 !important;
+    } */
     #c_blue{
         min-height: max-content;
     }
@@ -146,12 +153,12 @@ border-radius: 4px;
 }
 @media (min-width: 768px) and (max-width: 991.98px) and (min-height: 768px){
     
-    .indiciplina {
+    /* .indiciplina {
         height: 83vh;
         padding-top: 10vh;
         padding-bottom: 13vh;
-        /* background-color: brown !important; */
-    }
+        background-color: brown !important;
+    } */
 
     #rodape {
         bottom: unset;
@@ -165,11 +172,11 @@ border-radius: 4px;
         height: 80vh;
         padding-top: 10vh;
     } */
-    .indiciplina{
+    /* .indiciplina{
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 20vh;
-    }
+    } */
     #rodape {
         bottom: unset;
         height: max-content;
@@ -199,11 +206,11 @@ border-radius: 4px;
         height: 80vh;
         padding-top: 8vh;
     } */
-    .indiciplina{
+    /* .indiciplina{
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 8vh;
-    }
+    } */
     h1{
         font-size: 3rem !important;
     }
@@ -223,11 +230,11 @@ border-radius: 4px;
 }
 
 @media (min-width: 2560px) {
-    .indiciplina{
+    /* .indiciplina{
         height: max-content;
         padding-top: 10vh;
         padding-bottom: 20vh;
-    }
+    } */
     h1{
         font-size: 5rem !important;
     }
