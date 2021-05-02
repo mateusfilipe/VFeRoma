@@ -73,6 +73,13 @@ input, select, textarea{
     
 } */
 
+.indiciplina {
+    min-height: 87vh;
+    max-height: 100%;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
 /* //Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     #rodape {
@@ -86,11 +93,11 @@ input, select, textarea{
         margin-top: 0 !important;
     }
    
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 5vh;
-    }
+    } */
     #sai{
         display: none;
     }
@@ -137,11 +144,11 @@ input, select, textarea{
         margin-top: 0 !important;
     }
    
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 5vh;
-    }
+    } */
     #sai{
         display: none;
     }
@@ -168,11 +175,11 @@ input, select, textarea{
 
 @media (min-width: 768px) and (max-width: 991.98px){
     
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 5vh;
-    }
+    } */
 
     #rodape {
         bottom: unset;
@@ -196,11 +203,12 @@ input, select, textarea{
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 10vh;
         padding-bottom: 5vh;
-    }
+    } */
+    
 
     #sair{
         display: none;
@@ -225,11 +233,11 @@ input, select, textarea{
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px) {
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 8vh;
         padding-bottom: 8vh;
-    }
+    } */
     p{
         padding-left: 3vh !important;
     }
@@ -273,11 +281,11 @@ input, select, textarea{
 }
 
 @media (min-width: 2560px) {
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 5vh;
-    }
+    } */
 
     #sair{
         display: none;

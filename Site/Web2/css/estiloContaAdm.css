@@ -101,7 +101,12 @@ h2 {
 .form-group{
     padding-left: 2vh !important;
 }
-
+.indiciplina {
+    min-height: 87vh;
+    max-height: 100%;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
 
 
 /* //Extra small devices (portrait phones, less than 576px) */
@@ -116,12 +121,12 @@ h2 {
         margin-top: 0 !important;
     }
     
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 5vh;
         width: 100%;
-    }
+    } */
     #sai{
         display: none;
     }
@@ -171,11 +176,11 @@ h2 {
         margin-top: 0 !important;
     }
     
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 5vh;
-    }
+    } */
     #sai{
         display: none;
     }
@@ -226,6 +231,7 @@ h2 {
     }
     .form-group #ral{
         min-width: 6rem !important;
+       
     }
     .form-group #namel{
         min-width: 6rem !important;
@@ -246,44 +252,45 @@ h2 {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) and (max-height:575.98px){
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 15vh;
-        /* background-color: blueviolet !important; */
-    }
+        background-color: blueviolet !important;
+    } */
  }
 
 @media (min-width: 768px) and (max-width: 991.98px) and (min-height:576px) and (max-height: 767.98px){
     
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 10vh;
-        /* background-color: #ffd900 !important; */
-    }
+        background-color: #ffd900 !important;
+    } */
 }
 @media (min-width: 768px) and (max-width: 991.98px) and (min-height: 768px){
     
-    .indiciplina {
+    /* .indiciplina {
         height: 80vh;
         padding-top: 5vh;
         padding-bottom: 10vh;
-        /* background-color: brown !important; */
-    }
+        background-color: brown !important;
+    } */
     #rodape {
         bottom: unset;
         height: max-content;
     }
+
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 5vh;
         padding-bottom: 10vh;
-    }
+    } */
 
     h1 {
         font-size: 7vh !important;
@@ -305,11 +312,11 @@ h2 {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 2559.98px) {
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 8vh;
         padding-bottom: 15vh;
-    }
+    } */
     #sair{
         display: none;
     }
@@ -337,11 +344,11 @@ h2 {
 }
 
 @media (min-width: 2560px) {
-    .indiciplina {
+    /* .indiciplina {
         height: max-content;
         padding-top: 18vh;
         padding-bottom: 18vh;
-    }
+    } */
 
     #sair{
         display: none;
