@@ -5,6 +5,6 @@
       
         // O código desejado é apenas isto:
         document.getElementById("preloader").style.display = "none";
-        document.getElementById("conteudo").style.display = "inline";
+        // document.getElementById("conteudo").style.display = "inline";
     
-    }, 800);
+    }, 1000);
