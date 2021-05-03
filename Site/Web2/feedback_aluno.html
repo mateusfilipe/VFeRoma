@@ -13,12 +13,18 @@
     <script src="/node_modules/jquery/dist/jquery.slim.js"></script>
     <script src="/node_modules/popper/index.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="script/carregamento.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 
 <body class="">
+    <div id="preloader">
+        <div class="inner">
+            <div class="spinner-border text-light d-block" style="width: 15rem; height: 15rem;" role="status">
+            </div>
+        </div>
+    </div>
     <!-- Cabeçalho -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" id="subNav">
@@ -35,7 +41,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                 </button>
-                <ul class="navbar-nav p-3">
+                <ul class="navbar-nav p-2">
                     <li class="nav-item" id="sair">
                         <a class="nav-link js-scroll-trigger" href="/index.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#005FF9"

@@ -35,8 +35,8 @@ h1 {
 .indiciplina {
     min-height: 83vh;
     max-height: 100%;
-    padding-top: 10vh;
-    padding-bottom: 5vh;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 /* //Extra small devices (portrait phones, less than 576px) */
