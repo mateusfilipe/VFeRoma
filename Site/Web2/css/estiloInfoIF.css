@@ -109,7 +109,7 @@ h2 {
 .indiciplina {
     min-height: 85vh;
     max-height: 100%;
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-bottom: 4rem;
 }
 
@@ -220,7 +220,9 @@ h2 {
 /* // Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) and (max-width: 991.98px){
-    
+    .indiciplina {
+        padding-top: 3rem !important;
+    }
     #rodape {
         bottom: unset;
         height: max-content;
@@ -230,16 +232,16 @@ h2 {
         display: none;
     }
    
-    .form-group #usrl{
+    .form-group #Ncampus{
         min-width: 7rem !important;
     }
-    .form-group #maill{
+    .form-group #Nlocalidade{
         min-width: 7rem !important;
     }
-    .form-group #ral{
+    .form-group #Nalunos{
         min-width: 8rem !important;
     }
-    .form-group #namel{
+    .form-group #Nlixeiras{
         min-width: 7rem !important;
     }
     h1{
@@ -255,8 +257,11 @@ h2 {
     h2{
         font-size: 1.3rem !important;
     }
-    #namel,#ral,#maill,#usrl,label, input{
-        font-size: 1.3rem !important;
+    #Ncampus,#Nlocalidade,#Nalunos,#Nlixeiras,#lix,#alu,#loc,#camp{
+        font-size: 1rem !important;
+    }
+    #loc{
+        padding-right: 6rem !important;
     }
 }
 
@@ -320,13 +325,17 @@ h2 {
         font-size: 1.3rem !important;
         padding-top: 3rem !important;
     }
-    #namel,#ral,#maill,#usrl,label, input{
+    #Ncampus,#Nlocalidade,#Nalunos,#Nlixeiras,#lix,#alu,#loc,#camp{
         font-size: 1.3rem !important;
     }
     .btn-block svg{
         height: 1.3rem !important;
         width: 1.3rem !important;
     }
+    #loc{
+        padding-right: 8rem !important;
+    }
+    
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -352,7 +361,7 @@ h2 {
         font-size: 1.7rem !important;
         padding-top: 5rem !important;
     }
-    #namel,#ral,#maill,#usrl,label, input{
+    #Ncampus,#Nlocalidade,#Nalunos,#Nlixeiras,#lix,#alu,#loc,#camp{
         font-size: 1.5rem !important;
     }
     .btn-block svg{
@@ -390,7 +399,7 @@ h2 {
         font-size: 2.5rem !important;
         margin-left: 1rem;
     }
-    #namel,#ral,#maill,#usrl,label, input{
+    #Ncampus,#Nlocalidade,#Nalunos,#Nlixeiras,#lix,#alu,#loc,#camp{
         font-size: 3rem !important;
     }
     #mailInfo{
@@ -407,5 +416,5 @@ h2 {
     .indiciplina {
         padding-top: 8rem;
         padding-bottom: 4rem;
-    } 
+    }
 }

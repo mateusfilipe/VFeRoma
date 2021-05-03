@@ -6,19 +6,26 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="/css/estilo.css">
-    <link rel="stylesheet" href="/css/estiloContaAdm.css">
+    <link rel="stylesheet" href="/css/estiloInfoIF.css">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/node_modules/jquery/dist/jquery.slim.js"></script>
     <script src="/node_modules/popper/index.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="script/carregamento.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 
 <body class="">
+    <div id="preloader">
+        <div class="inner">
+            <div class="spinner-border text-light d-block"
+                style="width: 15rem; height: 15rem; animation-timing-function: linear;" role="status">
+            </div>
+        </div>
+    </div>
     <!-- Cabeçalho -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" id="subNav">
@@ -35,7 +42,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                 </button>
-                <ul class="navbar-nav p-3">
+                <ul class="navbar-nav p-2">
                     <li class="nav-item" id="sair">
                         <a class="nav-link js-scroll-trigger" href="/index.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#005FF9"
@@ -134,22 +141,22 @@
             <div class="container-fluid col col-sm-12 col-md-6 border border-top-0 border-left-0 border-bottom-0 border-white" id="info">
                 <h2 class="col-12 pt">Informações do IF gerenciado:</h2>
                 <div class="form-group row pt-xs-5 pt-lg-5">
-                    <label class="col-sm-12 col-md-3 col-lg-2 col-lg-3 col-form-label m-0" id="namel">Campus:</label>
+                    <label class="col-sm-12 col-md-3 col-lg-2 col-lg-3 col-form-label m-0" id="camp">Campus:</label>
                     <input type="text" class="form-control col nao" id="Ncampus" value="Campus Sabará" readonly
                         style="background-color: white;">
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-12 col-md-2 col-lg-3 col-form-label m-0" id="ral">Localidade: </label>
+                    <label class="col-sm-12 col-md-2 col-lg-3 col-form-label m-0" id="loc">Localidade: </label>
                     <input type="text" class="form-control col nao" id="Nlocalidade" value="Rodovia MGC 262 Sobradinho, MG" readonly
                         style="background-color: white;">
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-12 col-md-3 col-lg-3 col-form-label m-0" id="maill">Nº de Alunos: </label>
+                    <label class="col-sm-12 col-md-3 col-lg-3 col-form-label m-0" id="alu">Nº de Alunos: </label>
                     <input type="text" class="form-control col nao" id="Nalunos" value="1200"
                         readonly style="background-color: white;">
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-12 col-md-3 col-lg-3 col-form-label m-0" id="usrl">Nº de Lixeiras: </label>
+                    <label class="col-sm-12 col-md-3 col-lg-3 col-form-label m-0" id="lix">Nº de Lixeiras: </label>
                     <input type="text" class="form-control col nao" id="Nlixeiras" value="2" readonly
                         style="background-color: white;">
                 </div>

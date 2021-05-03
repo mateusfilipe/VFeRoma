@@ -90,7 +90,7 @@ h2 {
     font-style: italic;
 }
 #mailInfo{
-    font-size: 2.5vh !important;
+    font-size: 1rem !important;
 }
 #emailTo{
     color: white;
@@ -100,7 +100,7 @@ h2 {
     font-style: italic;
 }
 .form-group{
-    padding-left: 2vh !important;
+    padding-left: 1rem !important;
 }
 /* html{
     overflow: scroll;
@@ -109,8 +109,8 @@ h2 {
 .indiciplina {
     min-height: 85vh;
     max-height: 100%;
-    padding-top: 7vh;
-    padding-bottom: 5vh;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
 }
 
 
@@ -136,15 +136,15 @@ h2 {
         display: none;
     }
     
-    #clica{
+    /* #clica{
         width: 4vh !important;
         height: 4vh !important;
-    }
+    } */
     h1{
         font-size: 3rem !important;
     }
     #mailInfo{
-        font-size: 2vh !important;
+        font-size: 1rem !important;
     }
     #info{
         border: none !important;
@@ -158,6 +158,8 @@ h2 {
     .form-group input{
         display: flex !important;
         flex-direction: row !important;
+        min-width: 18rem;
+        max-width: 20rem;
     }
     #geral{
         flex-basis: unset !important;       
@@ -190,10 +192,10 @@ h2 {
         display: none;
     }
     
-    #clica{
+    /* #clica{
         width: 6vh;
         height: 8vh;
-    }
+    } */
     h2, .card-header h2 .btn{
         font-size: 1.5rem !important;
     }
@@ -299,6 +301,9 @@ h2 {
         padding-bottom: 10vh;
     } */
 
+    #sair{
+        display: none;
+    }
     h1 {
         font-size: 2.5rem !important;
     }
@@ -335,7 +340,7 @@ h2 {
         display: none;
     }
     h2 .btn-link,h2{
-        font-size: 1.7rem !important;
+        font-size: 2rem !important;
     }
     .card-body, .card-body .btn{
         font-size: 1.5rem !important;
@@ -353,6 +358,9 @@ h2 {
     .btn-block svg{
         height: 1.5rem !important;
         width: 1.5rem !important;
+    }
+    h1{
+        font-size: 4rem !important;
     }
 }
 
@@ -393,5 +401,11 @@ h2 {
         height: 4rem !important;
         width: 4rem !important;
     }
-    
+    h1{
+        font-size: 6rem !important;
+    }
+    .indiciplina {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    } 
 }
