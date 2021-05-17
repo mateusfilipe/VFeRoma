@@ -223,4 +223,29 @@
         </div>
     </footer>
 </body>
+<script>
+    var coll = document.getElementsByClassName("ap");
+
+
+    function clica() {
+        for (var i = 0; i < coll.length; i++) {
+            if (coll[i].style.display == "inline-block") {
+                coll[i].style.display = "none"
+            } else {
+                coll[i].style.display = "inline-block"
+            }
+        }
+    }
+
+    function verf() {
+        var c = document.getElementById("nave")
+        if (c.getAttribute("class") != "dropdown-menu dropdown-menu-right show") {
+            if (coll[1].style.display == "none") {
+                coll[1].style.display = "inline-block"
+            } else {
+                coll[1].style.display = "inline-block"
+            }
+        }
+    }
+</script>
 </html>
