@@ -261,6 +261,7 @@ const client = new mongodb.MongoClient(uri, { useNewUrlParser: true, useUnifiedT
     //Listar todos os posts de Coleta
     async function loadPostsCollectionUsuario(){
         await client.connect();
+        client.db('Veferoma').collection('Usuario').createIndex({email:1},{unique:true})
         return client.db('Veferoma').collection('Usuario');
     }
         //GET all
