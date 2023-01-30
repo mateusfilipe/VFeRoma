@@ -7,7 +7,7 @@
     "bootstrap": "^4.6.0",
     "bootstrap-icons": "^1.4.1",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fetch": "^1.1.0",
     "jquery": "^3.6.0",
     "mongodb": "^3.6.6",
