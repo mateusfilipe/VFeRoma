@@ -1,12 +1,11 @@
 # VFeRoma :rocket:
 <h3>Autores do Código: </h3>
-<UL> 
-  <LI><a href="https://github.com/Bruno-Vasconcelos">Bruno Vasconcelos :racehorse:</a></LI>
-  <LI><a href="https://github.com/Bimbole">Felipe Urias :penguin:</a></LI>
-  <LI><a href="https://github.com/ElfinLobster243">Marcos Pires :octopus:</a></LI>
-  <LI><a href="https://github.com/mateusfilipe">Mateus Filipe :water_buffalo:</a></LI>
-  <LI><a href="https://github.com/RodrigoMalaquias">Rodrigo Malaquias :dog2:</a></LI>
-</UL>
+
+<a href="https://github.com/mateusfilipe/VFeRoma/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=mateusfilipe/VFeRoma" />
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
 
 <h3>Objetivo deste código: :dart:</h3>
 
