@@ -1,11 +1,4 @@
 # VFeRoma :rocket:
-<h3>Autores do Código: </h3>
-
-<a href="https://github.com/mateusfilipe/VFeRoma/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=mateusfilipe/VFeRoma" />
-</a>
-
-Made with [contributors-img](https://contrib.rocks).
 
 <h3>Objetivo deste código: :dart:</h3>
 
